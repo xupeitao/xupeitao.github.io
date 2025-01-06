@@ -187,7 +187,7 @@ a.main-filled-button:hover {
 }
 
 a.main-button-icon {
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 25px;
   padding: 13px 25px;
   background-color: #5fb759;
@@ -967,7 +967,7 @@ about
 */
 
 #about {
-  padding: 120px 0px 0px 0px;
+  padding: 60px 0px 0px 0px;
   position: relative;
   z-index: 9;
 }
@@ -1136,6 +1136,47 @@ testimonials
   margin-bottom: 60px;
 }
 
+#testimonials .responsive {
+  padding: 0px 0px;
+  float: left;
+  text-align: center;
+  width: 30%;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+#testimonials .responsive h4{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 22px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+#testimonials .responsive span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+
 #testimonials .item {
   position: relative;
   text-align: center;
@@ -1155,8 +1196,8 @@ testimonials
 #testimonials .item span {
   color: #fff;
   font-weight: 500;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 16px;
+  /* text-transform: uppercase; */
   letter-spacing: 0.5px;
 }
 
@@ -1265,7 +1306,7 @@ contact
 */
 
 #contact-us .section-heading {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 #contact-us .section-heading h6 {
@@ -1273,7 +1314,7 @@ contact
 }
 
 #contact-us .left-text-content ul li {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #contact-us .left-text-content ul li {
@@ -1601,7 +1642,7 @@ portfolio
   padding: 15px 0px;
   cursor: pointer;
   position: relative;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   color: #9a9a9a;
   text-transform: uppercase;
@@ -1626,7 +1667,7 @@ portfolio
 #projects .filters-content .hide {
   opacity: 0;
   visibility: hidden;
-  transition: all 350ms;
+  transition: all 3000ms;
 }
 
 #projects .filters-content .all {
@@ -1660,7 +1701,7 @@ portfolio
 }
 
 #projects {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 #projects .section-heading {

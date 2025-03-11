@@ -815,6 +815,13 @@ banner
 }
 
 /* ==== Slider Style === */
+.Project-banner .item .img-fill{
+  height:15vh;
+  background:#000;
+}
+
+
+/* ==== Slider Style === */
 .Modern-Slider .item .img-fill{
   height:95vh;
   background:#000;
@@ -1295,6 +1302,213 @@ testimonials
 }
 
 
+/*
+--------------------------------------------
+GIS
+--------------------------------------------
+*/
+#GIS {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+  /* background-image: url(../images/slide-03.jpg); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#GIS .section-heading {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+#GIS .section-heading h6 {
+  text-align: center;
+  color: #5fb759;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#GIS .section-heading h4 {
+  text-align: center;
+  color: #1d8a15;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#GIS .section-heading h3 {
+  text-align: Center;
+  font-weight: bold;
+  color: #009999;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#GIS .responsive {
+  padding: 0px 0px;
+  float: left;
+  text-align: center;
+  width: 30%;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+#GIS .responsive h4{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#GIS .responsive span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+#GIS .responsive h6 {
+  color: #5fb759;
+  font-weight: 500;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+#GIS .item {
+  position: relative;
+  text-align: center;
+}
+
+#GIS .item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 22px;
+  margin-bottom: 7px;
+}
+
+
+#GIS .item span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+#GIS .item .member-thumb {
+  position: relative;
+}
+
+#GIS .item .hover-effect {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.95);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#GIS .item .hover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#GIS .item:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+}
+
+#GIS .item .hover-effect ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+#GIS .item .hover-effect ul li a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #5fb759;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#GIS .item .hover-effect ul li a:hover {
+  color: #fff;
+  background-color: #5fb759;
+}
+
+#GIS .owl-carousel {
+  padding-bottom: 60px;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.owl-dots .owl-dot {
+  outline: none;
+  height: 10px;
+}
+
+.owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 5px;
+  outline: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.owl-dots .active span {
+  width: 10px;
+  height: 10px;
+  margin-bottom: -1px;
+} 
 
 
 

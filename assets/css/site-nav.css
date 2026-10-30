@@ -1,0 +1,195 @@
+/* Shared navigation: Projects is a direct link; More contains secondary work. */
+.header-area .main-nav .nav li.nav-more {
+  position: relative;
+}
+
+.header-area .main-nav .more-menu > summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  list-style: none;
+  cursor: pointer;
+}
+
+.header-area .main-nav .more-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.header-area .main-nav .more-menu > summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.background-header .main-nav .more-menu > summary,
+.project-page .header-area .main-nav .more-menu > summary {
+  color: #203b30;
+}
+
+.header-area .main-nav .more-menu[open] > summary,
+.header-area .main-nav .more-menu > summary:hover,
+.header-area .main-nav .more-menu > summary.active {
+  color: #dee379;
+}
+
+.background-header .main-nav .more-menu[open] > summary,
+.background-header .main-nav .more-menu > summary:hover,
+.background-header .main-nav .more-menu > summary.active,
+.project-page .header-area .main-nav .more-menu[open] > summary,
+.project-page .header-area .main-nav .more-menu > summary:hover,
+.project-page .header-area .main-nav .more-menu > summary.active {
+  color: #246746;
+}
+
+.header-area .main-nav .more-menu[open] > summary::after {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.header-area .main-nav .more-menu > .more-menu-links {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  z-index: 1000;
+  width: 210px;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid #dbe5df;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(32, 59, 48, .12);
+  list-style: none;
+}
+
+.header-area .main-nav .more-menu:not([open]) > .more-menu-links {
+  display: none;
+}
+
+.header-area .main-nav .nav .more-menu-links li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header-area .main-nav .nav .more-menu-links li a {
+  height: auto;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background: #fff;
+  color: #203b30 !important;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.header-area .main-nav .nav .more-menu-links li a:hover,
+.header-area .main-nav .nav .more-menu-links li a[aria-current="page"] {
+  background: #edf4ef;
+  color: #246746 !important;
+}
+
+.header-area .main-nav .more-menu > summary:focus-visible,
+.header-area .main-nav .nav a:focus-visible,
+.header-area .main-nav .menu-trigger:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+.header-area .main-nav button.menu-trigger {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.resource-sheet {
+  margin: 28px 0 0;
+}
+
+.resource-sheet > a {
+  display: block;
+  border: 1px solid #dbe5df;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.resource-sheet img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.resource-sheet figcaption {
+  margin-top: 14px;
+  color: #59685f;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.resource-link {
+  display: inline-block;
+  padding: 11px 18px;
+  border: 1px solid #246746;
+  border-radius: 6px;
+  background: #246746;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.resource-link:hover {
+  background: #1b5036;
+  color: #fff;
+}
+
+.resource-link:focus-visible,
+.resource-sheet > a:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav {
+    overflow: visible;
+  }
+
+  .header-area .main-nav .more-menu > summary {
+    justify-content: center;
+    height: 50px;
+    background: #f7f7f7;
+    color: #191a20;
+    line-height: 50px;
+  }
+
+  .header-area .main-nav .more-menu[open] > summary,
+  .header-area .main-nav .more-menu > summary:hover,
+  .header-area .main-nav .more-menu > summary.active {
+    color: #246746;
+  }
+
+  .header-area .main-nav .more-menu > .more-menu-links {
+    position: static;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .header-area .main-nav .nav .more-menu-links li a {
+    height: auto !important;
+    padding: 12px 20px !important;
+    background: #edf4ef !important;
+    line-height: 1.6 !important;
+  }
+}

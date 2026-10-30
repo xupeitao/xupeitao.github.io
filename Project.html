@@ -5,13 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Explore Peitao Xu’s projects in GIS, data analytics, structural design and BIM.">
+    <meta name="author" content="Peitao Xu">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="assets/pic/GIs Icon.png">
     
-    <title>Peitao Xu | Eng-GIS</title>
+    <title>Projects | Peitao Xu</title>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -26,12 +26,13 @@
 
     <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
 
-    <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/project-catalog.css">
+    <link rel="stylesheet" href="assets/css/site-nav.css">
 
 
 </head>
 
-<body>
+<body class="project-page">
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -45,41 +46,27 @@
 
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky background-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            .Peitao Xu | Evan.
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
+                    <nav class="main-nav" aria-label="Main navigation">
+                        <a href="index.html" class="logo">.Peitao Xu | Evan.</a>
+                        <ul class="nav" id="primary-navigation">
                             <li class="scroll-to-section"><a href="index.html">Home</a></li>
                             <li class="scroll-to-section"><a href="About.html">About</a></li>
-                            <!-- <li class="scroll-to-section"><a href="Portfolio.html">Portfolio</a></li> -->
-                            <!-- <li class="scroll-to-section"><a href="Project.html">Projects</a></li> -->
-                            <li class="submenu">
-                                <a href="javascript:;" class="active">Projects</a>
-                                <ul>
-                                    <li><a href="#top">projects</a></li>
-                                    <li><a href="#GIS">GIS</a></li>
-                                    <li><a href="#subscribe">Data Analysis</a></li>
-                                    <li><a href="#projects">BIM</a></li>
-                                    <li><a href="#testimonials">Structural Design</a></li>
-                                </ul>
+                            <li class="scroll-to-section"><a href="Project.html" class="active" aria-current="page">Projects</a></li>
+                            <li class="nav-more">
+                                <details class="more-menu">
+                                    <summary>More</summary>
+                                    <ul class="more-menu-links">
+                                        <li><a href="Publications.html">Publications</a></li>
+                                        <li><a href="GraphicDesign.html">Graphic Design</a></li>
+                                    </ul>
+                                </details>
                             </li>
-                            <!-- <li class="scroll-to-section"><a href="Gallery.html">Gallery</a></li> -->
-                            <!-- <div class="search-icon">
-                                <a href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
-                            </div> -->
                         </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
+                        <button type="button" class="menu-trigger" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation"><span>Menu</span></button>
                     </nav>
                 </div>
             </div>
@@ -88,443 +75,211 @@
     <!-- ***** Header Area End ***** -->
 
 
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner header-text" id="top">
-        <div class="Project-banner">
-            <div class="item">
-                <div class="img-fill">
-                    <img src="assets/images/slide-03.jpg" alt="">
+    <main>
+        <section class="project-hero header-text" id="top" aria-labelledby="projects-heading">
+            <div class="container">
+                <p class="project-eyebrow">SELECTED WORK / 專案作品</p>
+                <h1 id="projects-heading">Projects</h1>
+                <p class="project-intro">Selected work in geospatial analysis, data workflows and the built environment.</p>
+            </div>
+        </section>
+
+        <section class="project-catalog" id="project-catalog" data-project-catalog aria-label="Project collection">
+            <div class="container">
+                <div class="project-toolbar">
+                    <div class="project-filters" data-project-filters role="group" aria-label="Filter projects by discipline" hidden>
+                        <button type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-results">All <span data-filter-count>10</span></button>
+                        <button type="button" data-project-filter="data" aria-pressed="false" aria-controls="project-results">Data Analytics <span data-filter-count>0</span></button>
+                        <button type="button" data-project-filter="gis" aria-pressed="false" aria-controls="project-results">GIS <span data-filter-count>8</span></button>
+                        <button type="button" data-project-filter="structure" aria-pressed="false" aria-controls="project-results">Structural Design <span data-filter-count>1</span></button>
+                        <button type="button" data-project-filter="bim" aria-pressed="false" aria-controls="project-results">BIM <span data-filter-count>1</span></button>
+                    </div>
+                    <p class="project-count" data-project-count role="status" aria-live="polite">Showing 10 projects</p>
+                </div>
+                <div class="project-groups" id="project-results">
+            <section class="project-group" id="project-data" data-project-group="data" aria-labelledby="project-heading-data" hidden>
+                <div class="project-group-heading">
+                    <div>
+                        <p class="project-eyebrow">01 / DATA</p>
+                        <h2 id="project-heading-data">Data Analytics</h2>
+                    </div>
+                    <span class="project-group-count" data-project-group-count>0 projects</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card" data-project-categories="data">
+                        <a class="project-card-link" href="GIS_Signboard.html" aria-labelledby="project-title-4">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/04.png" alt="Signboard Lens in Urban Streets project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Research</p>
+                                <h3 id="project-title-4">Signboard Lens in Urban Streets</h3>
+                                <p class="project-description">Geospatial and text analysis exploring signboards and urban activity.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="data">
+                        <a class="project-card-link" href="GIS_NAPS.html" aria-labelledby="project-title-6">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/07.png" alt="NAPS Automation Project project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Data automation</p>
+                                <h3 id="project-title-6">NAPS Automation Project</h3>
+                                <p class="project-description">An automated workflow for collecting and processing air quality data.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-group" id="project-gis" data-project-group="gis" aria-labelledby="project-heading-gis">
+                <div class="project-group-heading">
+                    <div>
+                        <p class="project-eyebrow">02 / GEOSPATIAL</p>
+                        <h2 id="project-heading-gis">GIS</h2>
+                    </div>
+                    <span class="project-group-count" data-project-group-count>8 projects</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="https://fanshawe.maps.arcgis.com/apps/dashboards/9bcf3c426c0a4ba89cb78fce14088f0d" aria-labelledby="project-title-0">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/01.png" alt="School Zone and Enrolment Insights in Ontario project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Dashboard</p>
+                                <h3 id="project-title-0">School Zone and Enrolment Insights in Ontario</h3>
+                                <p class="project-description">School zones and enrolment patterns presented in an interactive ArcGIS dashboard.</p>
+                                <span class="project-card-cta">View dashboard <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="https://storymaps.arcgis.com/stories/6474b334b9524f00b8e20eccf58fbcc5" aria-labelledby="project-title-1">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/02.png" alt="Fire Service Coverage Study in Toronto project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">StoryMap</p>
+                                <h3 id="project-title-1">Fire Service Coverage Study in Toronto</h3>
+                                <p class="project-description">A spatial study of fire service coverage, presented as an ArcGIS StoryMap.</p>
+                                <span class="project-card-cta">View StoryMap <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_TrainDerailment.html" aria-labelledby="project-title-2">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/03.png" alt="Train Derailment Evacuation Planning in London, ON project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">GIS toolbox</p>
+                                <h3 id="project-title-2">Train Derailment Evacuation Planning in London, ON</h3>
+                                <p class="project-description">GIS tools for exploring evacuation planning around railway incidents.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_RATRV.html" aria-labelledby="project-title-3">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/06.jpg" alt="Raster Analysis in Thames River Valley project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Raster analysis</p>
+                                <h3 id="project-title-3">Raster Analysis in Thames River Valley</h3>
+                                <p class="project-description">A raster-based study of the Thames River Valley, presented as an academic poster.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
                     
-                    <div class="text-content">                      
-
-                        <!-- <div class="row">
-                            <div class="intro" style="width:65%; text-align: left;">
-                                <br>
-                                <h4 style="font-size: 20px;"><b>Hi! I'm Peitao, a GIS Analyst, Structural Engineer, and BIM Modeler passionate
-                                        about driving 
-                                        innovation in urban and architectural design. My focus is on integrating GIS,
-                                        data analytics,
-                                        and BIM to create sustainable cities and buildings that respond to today’s
-                                        environmental challenges.
-                                    </b></h4>
-                                <h4 style="font-size: 18px;">您好，我是徐沛韜，我是一名 GIS 分析師、結構工程師和 BIM 建模師，熱衷於推動城市和建築的設計創新。
-                                    我致力於將地理信息、建築信息和裝配式設計結合，利用數據分析和機器學習，打造可持續的的城市和建築，應對當今的環境變化。</h4>
-
-                                <a href="#about" class="main-filled-button"><b>Education</b></a>
-                                <a href="#projects" class="main-filled-button"><b>Experience</b></a>
-                                <a href="#testimonials" class="main-filled-button"><b>Leadership & Volunteer</b></a>
-                                <a href="#contact-us" class="main-filled-button"><b>Footprint</b></a>&emsp;
-                                <a href="https://www.linkedin.com/in/peitaoxu" class="main-stroked-button"><i
-                                        class="fa fa-linkedin"></i></a>
-                                <a href="mailto:peitao.xu@outlook.com" class="main-stroked-button"><i
-                                        class="fa fa-envelope"></i></a>
-
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_LONS.html" aria-labelledby="project-title-5">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/05.jpg" alt="Landforms of Nova Scotia project preview" loading="lazy" decoding="async">
                             </div>
-
-                            <div class="intro" style="width:5%;"> </div>
-
-                            <div class="intro" style="width:30%;">
-                                <div class="left-text-content">
-                                    <div class="section-heading" style="width: 80%;
-                                background-color: rgba(255, 255, 255, 0.476); border-radius: 0%;
-                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                        <img src="assets/pic/PX.png"
-                                            style="width:0.1%; height:1%; float:center; border-radius: 0%;">
-                                    </div>
-                                </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Cartography</p>
+                                <h3 id="project-title-5">Landforms of Nova Scotia</h3>
+                                <p class="project-description">A cartographic exploration of the landforms of Nova Scotia.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
                             </div>
-                        </div> -->
+                        </a>
+                    </article>
+                    
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_GIS.html" aria-labelledby="project-title-7">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/08.jpg" alt="Project Graffiti IntelliSense project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">WebGIS</p>
+                                <h3 id="project-title-7">Project Graffiti IntelliSense</h3>
+                                <p class="project-description">A WebGIS project for exploring graffiti in urban spaces.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-group" id="project-structure" data-project-group="structure" aria-labelledby="project-heading-structure">
+                <div class="project-group-heading">
+                    <div>
+                        <p class="project-eyebrow">03 / ENGINEERING</p>
+                        <h2 id="project-heading-structure">Structural Design</h2>
                     </div>
+                    <span class="project-group-count" data-project-group-count>1 project</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card" data-project-categories="structure">
+                        <a class="project-card-link" href="assets/pic/experience-big-05.png" aria-labelledby="project-title-8" data-lightbox="jianxiang-project" data-title="Office Building of Jianxiang Factory">
+                            <div class="project-card-image">
+                                <img src="assets/pic/experience-big-05.png" alt="Office Building of Jianxiang Factory project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Structural design</p>
+                                <h3 id="project-title-8">Office Building of Jianxiang Factory</h3>
+                                <p class="project-description">Finite element analysis, precast components and drawings for a prefabricated office building.</p>
+                                <span class="project-card-cta">View project sheet <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-group" id="project-bim" data-project-group="bim" aria-labelledby="project-heading-bim">
+                <div class="project-group-heading">
+                    <div>
+                        <p class="project-eyebrow">04 / DIGITAL CONSTRUCTION</p>
+                        <h2 id="project-heading-bim">BIM</h2>
+                    </div>
+                    <span class="project-group-count" data-project-group-count>1 project</span>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card" data-project-categories="bim">
+                        <a class="project-card-link" href="assets/pic/experience-big-04.png" aria-labelledby="project-title-9" data-lightbox="kenya-project" data-title="Central Bank of Kenya Pension Towers">
+                            <div class="project-card-image">
+                                <img src="assets/pic/experience-big-04.png" alt="Central Bank of Kenya Pension Towers project preview" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">BIM &amp; drawings</p>
+                                <h3 id="project-title-9">Central Bank of Kenya Pension Towers</h3>
+                                <p class="project-description">Construction and shop drawings with architectural and structural BIM models.</p>
+                                <span class="project-card-cta">View project sheet <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- <div class="scroll-down scroll-to-section"><a href="#GIS"><i class="fa fa-arrow-down"></i></a></div> -->
-
-    <!-- ***** Main Banner Area End ***** -->
-
-    <section class="section" id="GIS">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>GIS Projects</h2>
-                        <!-- <h6>Geographic Information Systems</h6> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="container-fluid tm-container-content tm-mt-60">
-
-            <div class="row tm-mb-20 tm-gallery">
-                                
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\01.png" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Dashboard</h2>
-                            <a href="https://fanshawe.maps.arcgis.com/apps/dashboards/9bcf3c426c0a4ba89cb78fce14088f0d">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>School Zone and Enrolment Insights in Ontario</h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\02.png" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>StoryMaps</h2>
-                            <a href="https://storymaps.arcgis.com/stories/6474b334b9524f00b8e20eccf58fbcc5">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Fire Service Coverage Study in Toroto</h4>
-                    </div>
-                </div>
-
-                
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\03.png" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>GIS-Toolbox</h2>
-                            <a href="GIS_TrainDerailment.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Train Derailment Evacuation Planning in London ON</h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\06.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Academic-Poster</h2>
-                            <a href="GIS_RATRV.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Raster Analysis <br>in Thames River Valley</h4>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\04.png" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Research</h2>
-                            <a href="GIS_Signboard.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Signboard Lens in Urban Streets</h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\05.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Cartography</h2>
-                            <a href="GIS_LONS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Landforms of Nova Scotia</h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\07.png" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Automation</h2>
-                            <a href="GIS_NAPS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>NAPS Automation Project</h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\08.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>WebGIS</h2>
-                            <a href="GIS_GIS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Project Graffiti IntelliSense (GIS)</h4>
-                    </div>
-                </div>
-
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-16.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>Peace</h2>
-                            <a href="photo-detail.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="d-flex justify-content-between tm-text-gray">
-                        <span class="tm-text-gray-light">3 Aug 2020</span>
-                        <span>21,204 views</span>
-                    </div>
-                </div>          -->
-
-            </div>
-            
-        </div> 
-
-    </section>
-
-    <!-- <div class="scroll-down scroll-to-section"><a href="#subscribe"><i class="fa fa-arrow-down"></i></a></div> -->
-    
-    <!-- ***** Learning Item Start ***** -->
-    <!-- <section class="section" id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Geographic Information Systems</h6>
-                        <h2>Data Analysis</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid tm-container-content tm-mt-60">
-
-            <div class="row tm-mb-20 tm-gallery">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\08.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>WebGIS</h2>
-                            <a href="GIS_GIS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Project Graffiti IntelliSense (GIS)</h4>
-                    </div>
-                </div>
-
-                
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\08.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>WebGIS</h2>
-                            <a href="GIS_GIS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Project Graffiti IntelliSense (GIS)</h4>
-                    </div>
-                </div>
-
-                
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\08.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>WebGIS</h2>
-                            <a href="GIS_GIS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Project Graffiti IntelliSense (GIS)</h4>
-                    </div>
-                </div>
-
-                
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="assets\pic\Project\GIS\08.jpg" alt="Image" class="img-fluid">
-                        <figcaption class="d-flex align-items-center justify-content-center">
-                            <h2>WebGIS</h2>
-                            <a href="GIS_GIS.html">View more</a>
-                        </figcaption>                    
-                    </figure>
-                    <div class="section-heading">
-                        <h4>Project Graffiti IntelliSense (GIS)</h4>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="section-heading">
-                        <h2><b style="color: #dfdb68 ">Lifelong learning</b></h2><br>
-                        <h4> is more than just education through schooling, it's about always</h4>
-                        <h2><b style="color: #dfdb68 ">opening to new ideas!</b></h2>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- </section> 
-
-    <div class="scroll-down scroll-to-section"><a href="#projects"><i class="fa fa-arrow-down"></i></a></div> -->
-    <!-- ***** Learning Item End ***** -->
-
-
-    <!-- ***** Experience Starts ***** -->
-    <!-- <section class="section" id="projects">     
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="section-heading">
-                        <h6>工 作 經 歷</h6>
-                        <h2>BIM Projects</h2>
-                    </div>
-                    <div class="filters">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".gis">GIS Analyst</li>
-                            <li data-filter=".data">Data Analyst</li>
-                            <li data-filter=".sd">Structural Design</li>
-                            <li data-filter=".bim">BIM Modeler</li>
-                            <li data-filter=".con">Consultant</li>
-                        </ul>
-                    </div>
-                    <br><br>
-                    <div class="row">
-                        <div class="col-md-12" style="text-align: left;">
-                            <a href="#testimonials" class="main-button-icon">
-                                &emsp; <i class="fa fa-arrow-down"></i>&emsp;
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-    </section> -->
-
-    <!-- <div class="scroll-down scroll-to-section"><a href="#testimonials"><i class="fa fa-arrow-down"></i></a></div> -->
-
-    <!-- ***** Leadership Starts ***** -->
-
-    <!-- <section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>領 導 力 + 志 願 經 歷</h6>
-                        <h2>Structural Projects</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="responsive" style="width: 30%; margin-right: 50px;">
-                        <img src="assets/pic/Vol-01.png" alt="">
-                        <h4>Student<br> Volunteer</h4>
-                        <span>Western International</span><br>
-                        <span>Oct.2024 - Present</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%;margin-right: 50px;">
-                        <img src="assets/pic/Vol-02.png" alt="">
-                        <h4>International Digital Ambassador / Peer Tutor</h4>
-                        <span>Fanshawe College</span><br>
-                        <span>Oct.2023 - Sept.2024</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%; ">
-                        <img src="assets/pic/Vol-03.png" alt="">
-                        <h4>Events <br>Volunteer </h4>
-                        <span>Pride Toronto</span><br>
-                        <span>May.2024 - Jul.2024</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%; margin-right: 50px;">
-                        <img src="assets/pic/Vol-04.png" alt="">
-                        <h4>Events Volunteer & Designer</h4>
-                        <span>Wuhan LGBTQ+ Center</span><br>
-                        <span>Oct.2016 - Dec.2018</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%;margin-right: 50px;">
-                        <img src="assets/pic/Vol-05.png" alt="">
-                        <h4>Events <br>Volunteer</h4>
-                        <span>Ontario Public Service Pride Network</span><br>
-                        <span>June.2024 - Aug.2024</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%; ">
-                        <img src="assets/pic/Vol-06.png" alt="">
-                        <h4>Usher &<br> Greeter</h4>
-                        <span>Forest City Film Festival</span><br>
-                        <span>Oct.2024</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%; margin-right: 50px;">
-                        <img src="assets/pic/Vol-07.png" alt="">
-                        <h4>Logistics Volunteer </h4>
-                        <span>Lucky Lion Night Market</span><br>
-                        <span>Sept.2024</span>
-                    </div>
-
-                    <div class="responsive" style="width: 30%; margin-right: 50px;">
-                        <img src="assets/pic/Vol-08.png" alt="">
-                        <h4>··· </h4>
-                        <span>···</span><br>
-                        <span>···</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section> -->
-
-    <!-- <div class="scroll-down scroll-to-section"><a href="#contact-us"><i class="fa fa-arrow-down"></i></a></div> -->
-
-    <!-- ***** Testimonials Ends ***** -->
-
-    <!-- ***** Contact Us Area Starts ***** -->
-    <!-- <section class="section" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading" style="text-align: center;">
-                        <h6>Map my footprint</h6>
-                        <h2>Where I've been | 我 的 足 跡</h2>
-                    </div>
-                </div>
-
-                <div class="col-lg-8">
-                    <img src="assets/pic/Map_I.png" style="width: 150%;" alt="">
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="section-heading" style="text-align: center;">
-                        <br>
-                        <h6>你走出千萬人群獨行，往柳暗花明山窮水盡去 —— 張懸 <a href="https://www.youtube.com/watch?v=CMH-VJ9cvG8">
-                                <玫瑰色的你>
-                            </a></h6>
-                         <h6>You walked out of millions of people alone to the willow, dark flowers and mountains to exhaust the water. 
-                            <br>—— Deserts Chang   [Rose-colored]</h6> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- ***** Contact Us Area Ends ***** -->
+        </section>
+    </main>
 
     <!-- ***** Footer Start ***** -->
     <footer>
@@ -580,23 +335,8 @@
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
-
-        $(function () {
-            var selectedClass = "";
-            $("p").click(function () {
-                selectedClass = $(this).attr("data-rel");
-                $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("." + selectedClass).fadeOut();
-                setTimeout(function () {
-                    $("." + selectedClass).fadeIn();
-                    $("#portfolio").fadeTo(50, 1);
-                }, 500);
-
-            });
-        });
-
-    </script>
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/project-catalog.js"></script>
 
 </body>
 

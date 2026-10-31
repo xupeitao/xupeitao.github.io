@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <meta name="description" content="Peitao (Evan) Xu's experience in GIS, geospatial data, analytics, workflow automation and engineering.">
+    <meta name="author" content="Peitao Xu">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="assets/pic/GIs Icon.png">
-    <title>Peitao Xu | Eng-GIS</title>
+    <title>Peitao Xu | GIS &amp; Data Analytics</title>
+    <link rel="canonical" href="https://xupeitao.github.io/">
 
-<!--
+    <!--
 
 Breezed Template
 https://templatemo.com/tm-543-breezed
@@ -28,12 +30,15 @@ https://templatemo.com/tm-543-breezed
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
-        <link rel="stylesheet" href="assets/css/site-nav.css">
+    <link rel="stylesheet" href="assets/css/profile.css?v=20261031-experience-consistency">
+
+    <link rel="stylesheet" href="assets/css/site-nav.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
 
 </head>
-    
-    <body>
-    
+
+<body>
+
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -41,16 +46,16 @@ https://templatemo.com/tm-543-breezed
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
-    
-    
+
+
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky responsive-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav">
+                    <nav class="main-nav" aria-label="Main navigation">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
                             .Peitao Xu | Evan.
@@ -58,18 +63,10 @@ https://templatemo.com/tm-543-breezed
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" id="primary-navigation">
-                            <li class="scroll-to-section"><a href="#top" class="active" aria-current="page">Home</a></li>
-                            <li class="scroll-to-section"><a href="About.html">About</a></li>
-                            <li class="scroll-to-section"><a href="Project.html">Projects</a></li>
-                            <li class="nav-more">
-                                <details class="more-menu">
-                                    <summary>More</summary>
-                                    <ul class="more-menu-links">
-                                        <li><a href="Publications.html">Publications</a></li>
-                                        <li><a href="GraphicDesign.html">Graphic Design</a></li>
-                                    </ul>
-                                </details>
-                            </li>
+                            <li><a href="#top" class="active" aria-current="page">About Me</a></li>
+                            <li><a href="Project.html">Projects</a></li>
+                            <li><a href="Publications.html">Publications</a></li>
+                            <li><a href="GraphicDesign.html">Graphic Design</a></li>
                         </ul>
                         <button type="button" class="menu-trigger" aria-controls="primary-navigation"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -82,76 +79,631 @@ https://templatemo.com/tm-543-breezed
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
-    
+
     <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner header-text" id="top">
-        <div class="Modern-Slider">
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/pic/TopSlides-000.png" alt="">
-                <div class="text-content">
-                  <h5>Hi there, I'm <b>Peitao / Evan</b>👋 。</h5>
-                  <!-- <h5>Welcome To My Space</h5> -->
-                  <h5>GIS   ·   Geospatial Analytics   ·   BIM    ·   Structural Design</h5>
-                  <a href="About.html" class="main-stroked-button">Learn more about Me</a>
-                  <a href="About.html#projects" class="main-stroked-button">My experience</a>
-                </div>
+    <div class="main-banner header-text about-hero" id="top" aria-labelledby="intro-heading">
+        <img class="hero-background" src="assets/images/slide-02.jpg" alt="">
+        <div class="hero-layout">
+            <div class="about-intro">
+                <h1 id="intro-heading">Hi, I'm Peitao (Evan) Xu.</h1>
+                <p>I work across data engineering, analytics and GIS.</p>
+                <p class="intro-translation" lang="zh-Hant">您好，我是徐沛韜，專注於數據工程、數據分析與地理信息系統（GIS）。</p>
+
+                <p>At Ontario Ministry of Natural Resources, I support the Forest Resources Inventory program
+                    by analyzing geospaital vector and raster data with GIS, building data pipelines with Python, SQL, Azure and Databricks, automating data
+                    quality checks, and developing Tableau dashboards for analysis and reporting.
+                    My background in civil engineering and BIM helps me connect data workflows
+                    with environmental and infrastructure needs.</p>
+
+                <p class="intro-translation" lang="zh-Hant">目前，我在 安大略省自然資源部 森林資源清查計畫 工作，
+                    使用GIS分析地理空間矢量和柵格數據，運用 Python、SQL、Azure 與 Databricks 建置數據管道、自動化數據品質檢查與更新，
+                    並以 Tableau 製作分析與報告儀表板。<br>
+                    我的土木工程與 BIM 背景，這些經理讓我能將數據工作與環境及基礎設施需求連結。</p>
+
+                <nav class="hero-actions" aria-label="About sections">
+                    <a href="#about" class="main-filled-button"><b>Education</b></a>
+                    <a href="#subscribe" class="main-filled-button"><b>Skills</b></a>
+                    <a href="#projects" class="main-filled-button"><b>Experience</b></a>
+                    <a href="#testimonials" class="main-filled-button"><b>Leadership &amp; Volunteer</b></a>
+                    <a href="#contact-us" class="main-filled-button"><b>Footprint</b></a>
+                </nav>
             </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/pic/TopSlides-01.png" alt="">
-                <div class="text-content">
-                    <h5>Hi there, I'm <b>Peitao / Evan</b>👋 。</h5>
-                    <!-- <h5>Welcome To My Space</h5> -->
-                    <h5><b>GIS   ·   Geospatial Analytics</b>   ·   BIM    ·   Structural Design</h5>
-                    <a href="Project.html?category=gis" class="main-filled-button">GIS Projects</a>
-                    <a href="Project.html?category=data" class="main-filled-button">Data analysis</a>
-                  </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/pic/TopSlides-02.png" alt="">
-                <div class="text-content">
-                    <h5>Hi there, I'm <b>Peitao / Evan</b>👋 。</h5>
-                    <!-- <h5>Welcome To My Space</h5> -->
-                    <h5>GIS   ·   Geospatial Analytics   ·   <b>BIM    ·   Structural Design</b></h5>
-                    <a href="Project.html?category=bim" class="main-stroked-button">BIM Projects</a>
-                    <a href="Project.html?category=structure" class="main-stroked-button">Structural Design</a>
-                  </div>
-            </div>
-          </div>
-          <!-- // Item -->
+
+            <figure class="hero-portrait">
+                <img src="assets/pic/PX.png" alt="Peitao (Evan) Xu" width="800" height="1000">
+            </figure>
         </div>
     </div>
-    
+
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
     <!-- ***** Main Banner Area End ***** -->
-    
+
+    <!-- ***** Education Area Starts ***** -->
+    <section class="section education-section" id="about" aria-labelledby="education-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h6>教 育 背 景</h6>
+                <h2 id="education-heading">Education</h2>
+            </div>
+            <ol class="education-grid" aria-label="Education, most recent first">
+                <li class="education-entry">
+                    <div class="education-logo">
+                        <img src="assets/pic/UWO.png" alt="Western University logo" loading="lazy">
+                    </div>
+                    <div class="education-content">
+                        <p class="education-dates"><time datetime="2024-09">Sep 2024</time> &ndash; <time datetime="2025-08">Aug 2025</time></p>
+                        <h3>Master of Engineering - Civil and Environmental Engineering</h3>
+                        <p class="education-school">Western University, Canada</p>
+                    </div>
+                </li>
+                <li class="education-entry">
+                    <div class="education-logo">
+                        <img src="assets/pic/fanshawe-college-logo.png" alt="Fanshawe College logo" loading="lazy">
+                    </div>
+                    <div class="education-content">
+                        <p class="education-dates"><time datetime="2023-09">Sep 2023</time> &ndash; <time datetime="2024-08">Aug 2024</time></p>
+                        <h3>Graduate Certificate - Geographic Information Systems (GIS)</h3>
+                        <p class="education-school">Fanshawe College, Canada</p>
+                    </div>
+                </li>
+                <li class="education-entry">
+                    <div class="education-logo">
+                        <img src="assets/pic/WHUT.png" alt="Wuhan University of Technology logo" loading="lazy">
+                    </div>
+                    <div class="education-content">
+                        <p class="education-dates"><time datetime="2015-09">Sep 2015</time> &ndash; <time datetime="2018-06">Jun 2018</time></p>
+                        <h3>Master of Science - Civil Engineering</h3>
+                        <p class="education-school">Wuhan University of Technology, China</p>
+                        <!-- <p class="education-detail"><strong>Instructor:</strong> Dr. Wenhui Wei<br><strong>Thesis:</strong> Study on seismic performance of frame-embedded walls.</p> -->
+                    </div>
+                </li>
+                <li class="education-entry">
+                    <div class="education-logo">
+                        <img src="assets/pic/WHUT.png" alt="Wuhan University of Technology logo" loading="lazy">
+                    </div>
+                    <div class="education-content">
+                        <p class="education-dates"><time datetime="2011-09">Sep 2011</time> &ndash; <time datetime="2015-06">Jun 2015</time></p>
+                        <h3>Bachelor of Engineering - Civil Engineering</h3>
+                        <p class="education-school">Wuhan University of Technology, China</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <div class="scroll-down scroll-to-section"><a href="#subscribe"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Education Area Ends ***** -->
+
+    <!-- ***** Skills Start ***** -->
+    <section class="section skills-section" id="subscribe" aria-labelledby="skills-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h6>專 業 技 能</h6>
+                <h2 id="skills-heading">Skills &amp; Tools</h2>
+                <p class="skills-note">Colors match the filters and skill tags in Experience below.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-group" data-skill-category="data" aria-labelledby="skill-data">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true"><i class="fa fa-database"></i></span>
+                        <h3 id="skill-data">Data &amp; automation</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="Data and automation tools and methods">
+                        <li>Python</li><li>SQL</li><li>R</li><li>C#</li><li>MS Azure</li><li>Databricks</li>
+                        <li>PostgreSQL</li><li>Google APIs</li><li>Data pipelines</li>
+                        <li title="Bronze, Silver and Gold data layers">Medallion architecture</li>
+                        <li>Automation workflow</li><li>QA/QC</li>
+                    </ul>
+                </article>
+                <article class="skill-group" data-skill-category="gis" aria-labelledby="skill-gis">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <ellipse cx="12" cy="12" rx="4" ry="9"></ellipse>
+                                <path d="M3 12h18M5 6.5h14M5 17.5h14"></path>
+                            </svg>
+                        </span>
+                        <h3 id="skill-gis">GIS &amp; spatial analysis</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="GIS tools and methods">
+                        <li>ArcGIS Pro</li><li>ArcGIS Online</li><li>QGIS</li>
+                        <li>ArcGIS Field Maps</li><li>ArcGIS Survey123</li><li>GeoServer</li><li>Toolbox development</li>
+                        <li>Geocoding</li><li>Network analysis</li><li>Remote sensing</li>
+                    </ul>
+                </article>
+                <article class="skill-group" data-skill-category="analytics" aria-labelledby="skill-analytics">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true"><i class="fa fa-line-chart"></i></span>
+                        <h3 id="skill-analytics">Analytics &amp; visualization</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="Analytics and visualization tools">
+                        <li>Tableau Cloud / Public</li><li>Power BI</li><li>Tableau Prep</li><li>ArcGIS Experience Builder</li><li>ArcGIS StoryMaps</li>
+                        <li>Databricks dashboards</li>
+                        <li>Machine learning</li><li>SHAP</li><li>HTML reports</li><li>Natural Language Processing (NLP)</li>
+                    </ul>
+                </article>
+                <article class="skill-group" data-skill-category="engineering" aria-labelledby="skill-engineering">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true"><i class="fa fa-building-o"></i></span>
+                        <h3 id="skill-engineering">Structural design &amp; BIM</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="Structural design and BIM tools and methods">
+                        <li>AutoCAD</li><li>Revit</li><li>ALLPLAN Precast</li><li>Tekla</li>
+                        <li>Construction drawings</li><li>Shop drawings</li>
+                        <li>Finite element analysis</li><li>ANSYS</li><li>Abaqus</li><li>SAP2000</li><li>ETABS</li>
+                        <li>Green construction</li><li>BIM Model review</li>
+                    </ul>
+                </article>
+                <article class="skill-group" data-skill-category="design" aria-labelledby="skill-design">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true"><i class="fa fa-paint-brush"></i></span>
+                        <h3 id="skill-design">Graphic &amp; web design</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="Graphic and web design tools">
+                        <li>Adobe Illustrator</li><li>Adobe Photoshop</li><li>Canva</li><li>Adobe Premiere</li>
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li><li>Wix</li><li>WordPress</li>
+                        <li>Vibe Coding</li><li>Codex</li><li>Google AI Studio</li>
+                    </ul>
+                </article>
+                <article class="skill-group" data-skill-category="management" aria-labelledby="skill-management">
+                    <div class="skill-group-heading">
+                        <span class="skill-icon" aria-hidden="true"><i class="fa fa-tasks"></i></span>
+                        <h3 id="skill-management">Project management</h3>
+                    </div>
+                    <ul class="skill-tools" aria-label="Project delivery tools and methods">
+                        <li>Microsoft Project</li><li>MS Planner</li><li>GitHub</li><li>Miro</li>
+                        <li>Project planning & tracking</li>
+                        <li>Stakeholder communication</li><li>Workflow documentation</li><li>Team coordination</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-down scroll-to-section"><a href="#projects"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Skills End ***** -->
+
+
+    <!-- ***** Experience Starts ***** -->
+    <section class="section experience-section" id="projects" aria-labelledby="experience-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h6>工 作 經 歷</h6>
+                <h2 id="experience-heading">Experience</h2>
+            </div>
+            <nav class="career-overview" aria-label="Career timeline, earliest to most recent">
+                <ol class="career-timeline">
+                    <li class="career-step">
+                        <a href="#experience-whut" data-career-link>
+                            <span class="career-role"><span class="career-role-line">Assistant Project</span> <span class="career-role-line">Engineer</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2015-09">2015</time>
+                            <span class="career-organization">WHUT</span>
+                        </a>
+                    </li>
+                    <li class="career-step">
+                        <a href="#experience-fjadi" data-career-link>
+                            <span class="career-role"><span class="career-role-line">Structural / BIM</span> <span class="career-role-line">Engineer</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2018-07">2018</time>
+                            <span class="career-organization">FJADI</span>
+                        </a>
+                    </li>
+                    <li class="career-step">
+                        <a href="#experience-fcepbri" data-career-link>
+                            <span class="career-role"><span class="career-role-line">Prefabricated</span> <span class="career-role-line">Building Consultant</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2022-01">2022</time>
+                            <span class="career-organization">FCE-PBRI</span>
+                        </a>
+                    </li>
+                    <li class="career-step">
+                        <a href="#experience-labt" data-career-link>
+                            <span class="career-role"><span class="career-role-line">GIS Analyst &amp;</span> <span class="career-role-line">Team Lead</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2023-10">2023</time>
+                            <span class="career-organization">Lab T+</span>
+                        </a>
+                    </li>
+                    <li class="career-step">
+                        <a href="#experience-mecp" data-career-link>
+                            <span class="career-role">GIS Assistant</span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2024-05">2024</time>
+                            <span class="career-organization">Ontario MECP</span>
+                        </a>
+                    </li>
+                    <li class="career-step">
+                        <a href="#experience-mnr-programming" data-career-link>
+                            <span class="career-role"><span class="career-role-line">Geospatial</span> <span class="career-role-line">Programming Analyst</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2025-09">2025</time>
+                            <span class="career-organization">Ontario MNR</span>
+                        </a>
+                    </li>
+                    <li class="career-step career-step-current">
+                        <a href="#experience-mnr-current" data-career-link>
+                            <span class="career-role"><span class="career-role-line">Remote Sensing</span> <span class="career-role-line">Analyst</span></span>
+                            <span class="career-marker" aria-hidden="true"></span>
+                            <time datetime="2026-06">2026 &ndash; Present</time>
+                            <span class="career-organization">Ontario MNR</span>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="experience-sidebar">
+                        <div class="experience-filters" data-experience-filters role="group"
+                            aria-label="Filter experience by area" hidden>
+                            <button type="button" data-experience-filter="all" aria-pressed="true" aria-controls="experience-list internship-list">All experience</button>
+                            <button type="button" data-experience-filter="data" data-skill-category="data" aria-pressed="false" aria-controls="experience-list internship-list">Data &amp; automation</button>
+                            <button type="button" data-experience-filter="gis" data-skill-category="gis" aria-pressed="false" aria-controls="experience-list internship-list">GIS &amp; spatial analysis</button>
+                            <button type="button" data-experience-filter="analytics" data-skill-category="analytics" aria-pressed="false" aria-controls="experience-list internship-list">Analytics &amp; visualization</button>
+                            <button type="button" data-experience-filter="engineering" data-skill-category="engineering" aria-pressed="false" aria-controls="experience-list internship-list">Structural design &amp; BIM</button>
+                            <button type="button" data-experience-filter="design" data-skill-category="design" aria-pressed="false" aria-controls="experience-list internship-list">Graphic &amp; web design</button>
+                            <button type="button" data-experience-filter="management" data-skill-category="management" aria-pressed="false" aria-controls="experience-list internship-list">Project delivery</button>
+                        </div>
+                        <p class="experience-count" data-experience-count role="status" aria-live="polite">Showing 6 experiences + 3 earlier internships</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="experience-list" id="experience-list">
+                        <article class="experience-entry experience-entry-current" data-experience-categories="data gis analytics management" aria-labelledby="experience-mnr">
+                            <h3 id="experience-mnr">Ontario Ministry of Natural Resources (MNR)</h3>
+                            <p class="experience-context">Forest Resources Inventory (FRI) Unit · Sault Ste. Marie, ON · Full-time</p>
+                            <div class="experience-role-details">
+                            <div class="experience-role">
+                                <h4 id="experience-mnr-current">Remote Sensing Analyst</h4>
+                                <span class="experience-dates"><time datetime="2026-06">Jun 2026</time> &ndash; Present</span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Cloud Data Management and Automation Project</h5>
+                                    <p>Developed Python and SQL workflows using Microsoft Azure and Databricks to clean and standardize forest inventory data, creating curated Gold-layer datasets with supporting metadata for reusable Tableau reporting.</p>
+                                </li>
+                                <li>
+                                    <h5>Term 2 Forest Inventory Analysis and Tableau Dashboard Project</h5>
+                                    <p>Validated and analyzed spatial and tabular data for eight Crown Forest inventories using ArcGIS Pro and Python; developed interactive Tableau dashboards for forest-level analysis and cross-forest comparisons.</p>
+                                </li>
+                                <li>
+                                    <h5>Photo Interpretation QA and Contract Reporting Project</h5>
+                                    <p>Developed SQL data models and Databricks dashboards to track photo-interpretation QA/QC results, vendor progress and weekly targets, supporting contract planning and management reporting.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools used as Remote Sensing Analyst">
+                                <li data-skill-category="data">Python</li>
+                                <li data-skill-category="data">SQL</li>
+                                <li data-skill-category="data">Microsoft Azure</li>
+                                <li data-skill-category="data">Databricks</li>
+                                <li data-skill-category="gis">ArcGIS Pro</li>
+                                <li data-skill-category="analytics">Tableau</li>
+                            </ul>
+                            </div>
+                            <div class="experience-role-details">
+                            <div class="experience-role">
+                                <h4 id="experience-mnr-programming">Geospatial Programming Analyst</h4>
+                                <span class="experience-dates"><time datetime="2025-09">Sep 2025</time> &ndash; <time datetime="2026-06">Jun 2026</time></span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Inventory Project Tracking and Dashboard Automation Project</h5>
+                                    <p>Created Tableau dashboards for FRI management and the Provincial Forest Inventory Advisory Committee to monitor tasks and project progress; built Tableau Prep workflows to standardize data preparation and automate reporting refreshes.</p>
+                                </li>
+                                <li>
+                                    <h5>Vegetation Sampling Network (VSN) Mapping</h5>
+                                    <p>Prepared field plot maps and presentation materials for field technicians and project stakeholders, supporting field planning and communicating spatial information to technical and non-technical audiences.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools and methods used as Geospatial Programming Analyst">
+                                <li data-skill-category="analytics">Tableau</li>
+                                <li data-skill-category="analytics">Tableau Prep</li>
+                                <li data-skill-category="gis">Field mapping</li>
+                                <li data-skill-category="management">Stakeholder communication</li>
+                            </ul>
+                            </div>
+                        </article>
+
+                        <article class="experience-entry" data-experience-categories="data gis" aria-labelledby="experience-mecp">
+                            <h3 id="experience-mecp">Ontario Ministry of the Environment, Conservation and Parks (MECP)</h3>
+                            <p class="experience-context">Drinking Water and Environmental Compliance Division · Toronto, ON · Internship</p>
+                            <div class="experience-role">
+                                <h4>GIS Assistant</h4>
+                                <span class="experience-dates"><time datetime="2024-05">May 2024</time> &ndash; <time datetime="2024-08">Aug 2024</time></span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>NAPS Automation Project</h5>
+                                    <p>Developed Python scripts to automate NAPS air quality data processing, reducing workload; contributed to presentations, documentation, field sampling and quality control.</p>
+                                </li>
+                                <li>
+                                    <h5>Excess Soil Project</h5>
+                                    <p>Integrated and analyzed excess soil site data in Ontario using ArcGIS Pro and ArcGIS Online; maintained compliance maps.</p>
+                                </li>
+                                <li>
+                                    <h5>OPS-docs Digitization Project</h5>
+                                    <p>Assisted in digitizing historical documents and performing QA/QC to maintain long-term data integrity and accessibility.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools and methods used at MECP">
+                                <li data-skill-category="data">Python</li>
+                                <li data-skill-category="gis">ArcGIS Pro</li>
+                                <li data-skill-category="gis">ArcGIS Online</li>
+                                <li data-skill-category="data">QA/QC</li>
+                                <li data-skill-category="data">Document digitization</li>
+                            </ul>
+                        </article>
+
+                        <article class="experience-entry" data-experience-categories="data gis analytics design management" aria-labelledby="experience-labt">
+                            <h3 id="experience-labt">Lab T+</h3>
+                            <p class="experience-context">Shanghai, China / London, ON, Canada · Remote, project-based</p>
+                            <div class="experience-role">
+                                <h4>GIS Analyst &amp; Team Lead</h4>
+                                <span class="experience-dates"><time datetime="2023-10">Oct 2023</time> &ndash; <time datetime="2024-01">Jan 2024</time></span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Signboard Lens in Urban Streets</h5>
+                                    <p>Led a 3-person remote team to deliver a machine learning and geospatial analysis project within a 3-month timeline, coordinating tasks and producing heatmaps and spatial design outputs using ArcGIS, Python and Adobe Illustrator.</p>
+                                    <p>Developed a natural language processing (NLP) model analyzing relationships between signboards, social activity, physical flow and social media data, generating data-driven insights for urban infrastructure design.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools and methods used at Lab T+">
+                                <li data-skill-category="data">Python</li>
+                                <li data-skill-category="analytics">NLP</li>
+                                <li data-skill-category="gis">ArcGIS</li>
+                                <li data-skill-category="design">Adobe Illustrator</li>
+                                <li data-skill-category="management">Team coordination</li>
+                            </ul>
+                        </article>
+
+                        <article class="experience-entry" data-experience-categories="data analytics engineering management" aria-labelledby="experience-fcepbri">
+                            <h3 class="experience-title-long" id="experience-fcepbri">Fujian Construction Engineering Prefabricated Building Research Institute</h3>
+                            <p class="experience-context">Fuzhou, Fujian Province, China · Permanent full-time · On-site</p>
+                            <div class="experience-role">
+                                <h4>Prefabricated Building Consultant</h4>
+                                <span class="experience-dates"><time datetime="2022-01">Jan 2022</time> &ndash; <time datetime="2023-03">Mar 2023</time></span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Smart City and BIM</h5>
+                                    <p>Led a team reviewing 1,000+ BIM reports, assessed smart city and green construction solutions, and compiled a trend report.</p>
+                                </li>
+                                <li>
+                                    <h5>Prefabricated Building Design and Data Analysis</h5>
+                                    <p>Performed statistical analysis and visualization for prefabricated building design.</p>
+                                </li>
+                                <li>
+                                    <h5>FEM Analysis and Experimental Research</h5>
+                                    <p>Conducted experimental and finite element analysis on large-span precast floors, promoting sustainable design.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Areas of work at the research institute">
+                                <li data-skill-category="engineering">BIM review</li>
+                                <li data-skill-category="analytics">Statistical analysis</li>
+                                <li data-skill-category="analytics">Data visualization</li>
+                                <li data-skill-category="engineering">Finite element analysis</li>
+                                <li data-skill-category="engineering">Sustainable construction</li>
+                                <li data-skill-category="management">Team leadership</li>
+                            </ul>
+                        </article>
+
+                        <article class="experience-entry" data-experience-categories="data engineering management" aria-labelledby="experience-fjadi">
+                            <h3 class="experience-title-long" id="experience-fjadi">Fujian Provincial Institute of Architectural Design and Research</h3>
+                            <p class="experience-context">Fuzhou, Fujian Province, China · Permanent full-time · On-site</p>
+                            <div class="experience-role">
+                                <h4>Structural / BIM Engineer</h4>
+                                <span class="experience-dates"><time datetime="2018-07">Jul 2018</time> &ndash; <time datetime="2022-01">Jan 2022</time></span>
+                            </div>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Large-Span Precast Floor System</h5>
+                                    <p>Conducted experimental and numerical analysis using a scaffolding-free method to improve efficiency and reduce emissions.</p>
+                                </li>
+                                <li>
+                                    <h5>Prefabricated Component Modeling</h5>
+                                    <p>Developed and maintained Smart-Part programs in ALLPLAN, increasing work efficiency across 6 projects.</p>
+                                </li>
+                                <li>
+                                    <h5>Construction Documentation</h5>
+                                    <p>Produced drawings and BIM models using AutoCAD, Revit and Tekla for 20+ projects, including Asia-Pacific Plaza and Kenya Central Bank Tower.</p>
+                                </li>
+                                <li>
+                                    <h5>Green Construction Research</h5>
+                                    <p>Performed experimental and finite element analysis leading to patented prefabrication technology and published research.</p>
+                                </li>
+                                <li>
+                                    <h5>Provincial Standards Development</h5>
+                                    <p>Collaborated with a team to compile 5 provincial standards promoting sustainable construction.</p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools and methods used at FJADI">
+                                <li data-skill-category="engineering">ALLPLAN Smart-Part</li>
+                                <li data-skill-category="engineering">AutoCAD</li>
+                                <li data-skill-category="engineering">Revit</li>
+                                <li data-skill-category="engineering">Tekla</li>
+                                <li data-skill-category="engineering">Finite element analysis</li>
+                                <li data-skill-category="management">Standards development</li>
+                            </ul>
+                        </article>
+
+                        <article class="experience-entry" data-experience-categories="engineering management" aria-labelledby="experience-whut">
+                            <h3 id="experience-whut">Wuhan University of Technology</h3>
+                            <p class="experience-context">School of Civil and Architecture Engineering · Wuhan, Hubei, China · Apprenticeship</p>
+                            <div class="experience-role">
+                                <h4>Assistant Project Engineer</h4>
+                                <span class="experience-dates"><time datetime="2015-09">Sep 2015</time> &ndash; <time datetime="2018-06">Jun 2018</time></span>
+                            </div>
+                            <ul class="experience-summary">
+                                <li>Performed finite element analysis.</li>
+                                <li>Supported project management and team coordination.</li>
+                            </ul>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Engineering Technology Research of Wuhan Public Railway Joint Construction of Super Large Diameter Shield Tunnel (Shanghai Tunnel Engineering Co., Ltd.)</h5>
+                                    <p class="experience-project-dates"><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2018-01">Jan 2018</time></p>
+                                </li>
+                                <li>
+                                    <h5>Theoretical analysis and experimental study of dry opening beam and column joints and seismic performance</h5>
+                                    <p class="experience-project-dates"><time datetime="2016-07">Jul 2016</time> &ndash; <time datetime="2016-11">Nov 2016</time></p>
+                                </li>
+                            </ul>
+                            <ul class="experience-tools" aria-label="Tools and methods used at Wuhan University of Technology">
+                                <li data-skill-category="engineering">ABAQUS</li>
+                                <li data-skill-category="engineering">SAP2000</li>
+                                <li data-skill-category="management">Project management</li>
+                                <li data-skill-category="management">Team coordination</li>
+                            </ul>
+                        </article>
+                        <details class="earlier-internships" id="earlier-internships">
+                            <summary>Earlier internships <span>(2014&ndash;2017)</span></summary>
+                            <div class="internship-list" id="internship-list">
+                                <article class="internship-entry" data-experience-categories="design" aria-labelledby="experience-cifi">
+                                    <h3 id="experience-cifi">CIFI Group</h3>
+                                    <p class="internship-context">Internship · Wuhan, Hubei, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Social Media Operation</h4>
+                                        <span class="experience-dates"><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2017-04">Apr 2017</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Supported social media operations, designed promotional materials and worked as a photographer.</li></ul>
+                                    <ul class="experience-tools" aria-label="Social Media Operation skills"><li data-skill-category="design">Graphic design</li><li data-skill-category="design">Social media</li><li data-skill-category="design">Photography</li></ul>
+                                </article>
+                                <article class="internship-entry" data-experience-categories="engineering" aria-labelledby="experience-hanlin">
+                                    <h3 id="experience-hanlin">Fujian Hanlin Survey and Design Co., Ltd</h3>
+                                    <p class="internship-context">Internship · Fuzhou, Fujian Province, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Structural Engineer Intern</h4>
+                                        <span class="experience-dates"><time datetime="2015-07">Jul 2015</time> &ndash; <time datetime="2015-09">Sep 2015</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Performed structural analysis and produced drawings using YJK and AutoCAD.</li></ul>
+                                    <ul class="experience-tools" aria-label="Structural Engineer Intern skills"><li data-skill-category="engineering">Structural analysis</li><li data-skill-category="engineering">YJK</li><li data-skill-category="engineering">AutoCAD</li></ul>
+                                </article>
+                                <article class="internship-entry" data-experience-categories="engineering" aria-labelledby="experience-minnan">
+                                    <h3 id="experience-minnan">Fujian MINNAN Construction Engineering Group Co., Ltd.</h3>
+                                    <p class="internship-context">Internship · Fuzhou, Fujian Province, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Construction Project Engineer Intern</h4>
+                                        <span class="experience-dates"><time datetime="2014-07">Jul 2014</time> &ndash; <time datetime="2014-09">Sep 2014</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Worked on construction drawings and site operations.</li></ul>
+                                    <ul class="experience-tools" aria-label="Construction Project Engineer Intern skills"><li data-skill-category="engineering">Structural design</li><li data-skill-category="engineering">Construction drawings</li><li data-skill-category="engineering">Site operations</li></ul>
+                                </article>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Leadership Starts ***** -->
+    <section class="section" id="testimonials" aria-labelledby="volunteer-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h6>領 導 力 + 志 願 經 歷</h6>
+                <h2 id="volunteer-heading">Leadership &amp; Volunteer</h2>
+            </div>
+            <div class="volunteer-highlights">
+                <article class="volunteer-highlight">
+                    <h3>OPS GIS Summit</h3>
+                    <h4>Volunteer &middot; OPS GIS Community of Practice</h4>
+                    <p class="volunteer-dates"><time datetime="2025-12">Dec 2025</time> &ndash; <time datetime="2026-06">Jun 2026</time></p>
+                    <!-- <p>Supported planning and coordination for the 2026 Mapathon, collaborating with the executive team and colleagues across ministries on event delivery and participant engagement.</p> -->
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Science Rendezvous</h3>
+                    <h4>Web Developer / Designer</h4>
+                    <p class="volunteer-dates"><time datetime="2024-11">Nov 2024</time> &ndash; <time datetime="2025-08">Aug 2025</time></p>
+                    <!-- <p>Developed and maintained the Western Science Rendezvous website, and designed event maps, passports, social media posters and videos. Coordinated promotional work across committees and with the national executive team.</p> -->
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Western International</h3>
+                    <h4>Photographer / Volunteer Ambassador</h4>
+                    <p class="volunteer-dates"><time datetime="2024-10">Oct 2024</time> &ndash; <time datetime="2025-08">Aug 2028</time></p>
+                    <!-- <a class="volunteer-spotlight" href="https://international.uwo.ca/spotlights/2025/student_spotlight_peitao_xu.html" target="_blank" rel="noopener noreferrer" aria-label="Student spotlight at Western International (opens in a new tab)">Student spotlight <span aria-hidden="true">&nearr;</span></a> -->
+                 </article>
+                <article class="volunteer-highlight">
+                    <h3>Fanshawe College</h3>
+                    <h4>International Digital Ambassador / Peer Tutor</h4>
+                    <p class="volunteer-dates"><time datetime="2023-10">Oct 2023</time> &ndash; <time datetime="2024-09">Sep 2024</time></p>
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Pride Toronto</h3>
+                    <h4>Events Volunteer</h4>
+                    <p class="volunteer-dates"><time datetime="2024-05">May 2024</time> &ndash; <time datetime="2024-07">Jul 2024</time></p>
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Wuhan LGBTQ+ Center</h3>
+                    <h4>Events Volunteer &amp; Designer</h4>
+                    <p class="volunteer-dates"><time datetime="2016-10">Oct 2016</time> &ndash; <time datetime="2018-12">Dec 2018</time></p>
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Ontario Public Service Pride Network（OPN）</h3>
+                    <h4>Events Volunteer</h4>
+                    <p class="volunteer-dates"><time datetime="2024-06">Jun 2024</time> &ndash; <time datetime="2024-08">Aug 2024</time></p>
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Forest City Film Festival   London ON</h3>
+                    <h4>Volunteer &amp; Usher</h4>
+                    <p class="volunteer-dates"><time datetime="2024-10">Oct 2024</time></p>
+                </article>
+                <article class="volunteer-highlight">
+                    <h3>Wuhan University of Technology</h3>
+                    <h4>Vice President of Graduate Student Union</h4>
+                    <p class="volunteer-dates"><time datetime="2015-09">Sep 2015</time> &ndash; <time datetime="2017-09">Sep 2017</time></p>
+                    <!-- <p>Organized student union activities, launched the &ldquo;Instant Chats&rdquo; livestreaming platform with <strong>15,000+ views</strong>, and led the union to win the &ldquo;Outstanding Graduate Student Union&rdquo; award.</p> -->
+                </article>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-down scroll-to-section"><a href="#contact-us"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Testimonials Ends ***** -->
+
+    <!-- ***** Contact Us Area Starts ***** -->
+    <section class="section footprint-section" id="contact-us" aria-labelledby="footprint-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h6>Map my footprint</h6>
+                <h2 id="footprint-heading">Where I've been | 我 的 足 跡</h2>
+            </div>
+            <figure class="footprint-map">
+                <img src="assets/pic/Map_I.png" alt="Map of places I have visited, showing my journey from China to Canada" loading="lazy">
+                <figcaption lang="zh-Hant">你走出千萬人群獨行，往柳暗花明山窮水盡去 —— 張懸
+                    <a href="https://www.youtube.com/watch?v=CMH-VJ9cvG8">&lt;玫瑰色的你&gt;</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xs-12">
                     <div class="left-text-content">
-                        <p>Copyright &copy; 2025 Peitao Xu | Evan.</p>
+                        <p>Copyright &copy; 2026 Peitao Xu | Evan.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xs-12">
                     <div class="right-text-content">
-                            <ul class="social-icons">
-                                <li><p>Contact</p></li>
-                                <li><a rel="nofollow" href="https://github.com/xupeitao"><i class="fa fa-github"></i></a></li>&emsp;
-                                <li><a rel="nofollow" href="https://x.com/PeitaoXu"><i class="fa fa-twitter"></i></a></li>&emsp;
-                                <li><a rel="nofollow" href="https://www.linkedin.com/in/peitaoxu"><i class="fa fa-linkedin"></i></a></li>&emsp;
-                                <li><a rel="nofollow" href="https://scholar.google.com/citations?authuser=1&user=BbBzK24AAAAJ"><i class="fa fa-google"></i></a></li>&emsp;
-                                <li><a rel="nofollow" href="mailto:peitao.xu@outlook.com"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
+                        <ul class="social-icons">
+                            <li>
+                                <p>Contact</p>
+                            </li>
+                            <li><a rel="nofollow" href="https://github.com/xupeitao"><i class="fa fa-github"></i></a>
+                            </li>&emsp;
+                            <li><a rel="nofollow" href="https://x.com/PeitaoXu"><i class="fa fa-twitter"></i></a></li>
+                            &emsp;
+                            <li><a rel="nofollow" href="https://www.linkedin.com/in/peitaoxu"><i
+                                        class="fa fa-linkedin"></i></a></li>&emsp;
+                            <li><a rel="nofollow"
+                                    href="https://scholar.google.com/citations?authuser=1&user=BbBzK24AAAAJ"><i
+                                        class="fa fa-google"></i></a></li>&emsp;
+                            <li><a rel="nofollow" href="mailto:peitao.xu@outlook.com"><i class="fa fa-envelope"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -171,33 +723,19 @@ https://templatemo.com/tm-543-breezed
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
-    
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/profile.js?v=20261031-experience-consistency"></script>
 
-    <script>
 
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
 
-    </script>
-
-      <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/site-nav.js"></script>
 
 </body>
+
 </html>

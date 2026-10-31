@@ -30,7 +30,7 @@ https://templatemo.com/tm-543-breezed
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
-    <link rel="stylesheet" href="assets/css/profile.css?v=20261031-profile-update">
+    <link rel="stylesheet" href="assets/css/profile.css?v=20261031-experience-consistency">
 
     <link rel="stylesheet" href="assets/css/site-nav.css">
     <link rel="stylesheet" href="assets/css/landing.css">
@@ -337,15 +337,15 @@ https://templatemo.com/tm-543-breezed
                     <div class="experience-sidebar">
                         <div class="experience-filters" data-experience-filters role="group"
                             aria-label="Filter experience by area" hidden>
-                            <button type="button" data-experience-filter="all" aria-pressed="true" aria-controls="experience-list">All experience</button>
-                            <button type="button" data-experience-filter="data" data-skill-category="data" aria-pressed="false" aria-controls="experience-list">Data &amp; automation</button>
-                            <button type="button" data-experience-filter="gis" data-skill-category="gis" aria-pressed="false" aria-controls="experience-list">GIS &amp; spatial analysis</button>
-                            <button type="button" data-experience-filter="analytics" data-skill-category="analytics" aria-pressed="false" aria-controls="experience-list">Analytics &amp; visualization</button>
-                            <button type="button" data-experience-filter="engineering" data-skill-category="engineering" aria-pressed="false" aria-controls="experience-list">Structural design &amp; BIM</button>
-                            <button type="button" data-experience-filter="design" data-skill-category="design" aria-pressed="false" aria-controls="experience-list">Graphic &amp; web design</button>
-                            <button type="button" data-experience-filter="management" data-skill-category="management" aria-pressed="false" aria-controls="experience-list">Project delivery</button>
+                            <button type="button" data-experience-filter="all" aria-pressed="true" aria-controls="experience-list internship-list">All experience</button>
+                            <button type="button" data-experience-filter="data" data-skill-category="data" aria-pressed="false" aria-controls="experience-list internship-list">Data &amp; automation</button>
+                            <button type="button" data-experience-filter="gis" data-skill-category="gis" aria-pressed="false" aria-controls="experience-list internship-list">GIS &amp; spatial analysis</button>
+                            <button type="button" data-experience-filter="analytics" data-skill-category="analytics" aria-pressed="false" aria-controls="experience-list internship-list">Analytics &amp; visualization</button>
+                            <button type="button" data-experience-filter="engineering" data-skill-category="engineering" aria-pressed="false" aria-controls="experience-list internship-list">Structural design &amp; BIM</button>
+                            <button type="button" data-experience-filter="design" data-skill-category="design" aria-pressed="false" aria-controls="experience-list internship-list">Graphic &amp; web design</button>
+                            <button type="button" data-experience-filter="management" data-skill-category="management" aria-pressed="false" aria-controls="experience-list internship-list">Project delivery</button>
                         </div>
-                        <p class="experience-count" data-experience-count role="status" aria-live="polite">Showing 6 experiences</p>
+                        <p class="experience-count" data-experience-count role="status" aria-live="polite">Showing 6 experiences + 3 earlier internships</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-9">
@@ -437,14 +437,17 @@ https://templatemo.com/tm-543-breezed
 
                         <article class="experience-entry" data-experience-categories="data gis analytics design management" aria-labelledby="experience-labt">
                             <h3 id="experience-labt">Lab T+</h3>
-                            <p class="experience-context">Signboard Lens in Urban Streets · Remote, project-based</p>
+                            <p class="experience-context">Shanghai, China / London, ON, Canada · Remote, project-based</p>
                             <div class="experience-role">
                                 <h4>GIS Analyst &amp; Team Lead</h4>
                                 <span class="experience-dates"><time datetime="2023-10">Oct 2023</time> &ndash; <time datetime="2024-01">Jan 2024</time></span>
                             </div>
-                            <ul class="experience-summary">
-                                <li>Led a 3-person remote team to deliver a machine learning and geospatial analysis project within a 3-month timeline, coordinating tasks and producing heatmaps and spatial design outputs using ArcGIS, Python and Adobe Illustrator.</li>
-                                <li>Developed a natural language processing (NLP) model analyzing relationships between signboards, social activity, physical flow and social media data, generating data-driven insights for urban infrastructure design.</li>
+                            <ul class="experience-projects">
+                                <li>
+                                    <h5>Signboard Lens in Urban Streets</h5>
+                                    <p>Led a 3-person remote team to deliver a machine learning and geospatial analysis project within a 3-month timeline, coordinating tasks and producing heatmaps and spatial design outputs using ArcGIS, Python and Adobe Illustrator.</p>
+                                    <p>Developed a natural language processing (NLP) model analyzing relationships between signboards, social activity, physical flow and social media data, generating data-driven insights for urban infrastructure design.</p>
+                                </li>
                             </ul>
                             <ul class="experience-tools" aria-label="Tools and methods used at Lab T+">
                                 <li data-skill-category="data">Python</li>
@@ -539,11 +542,11 @@ https://templatemo.com/tm-543-breezed
                             <ul class="experience-projects">
                                 <li>
                                     <h5>Engineering Technology Research of Wuhan Public Railway Joint Construction of Super Large Diameter Shield Tunnel (Shanghai Tunnel Engineering Co., Ltd.)</h5>
-                                    <p><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2018-01">Jan 2018</time></p>
+                                    <p class="experience-project-dates"><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2018-01">Jan 2018</time></p>
                                 </li>
                                 <li>
                                     <h5>Theoretical analysis and experimental study of dry opening beam and column joints and seismic performance</h5>
-                                    <p><time datetime="2016-07">Jul 2016</time> &ndash; <time datetime="2016-11">Nov 2016</time></p>
+                                    <p class="experience-project-dates"><time datetime="2016-07">Jul 2016</time> &ndash; <time datetime="2016-11">Nov 2016</time></p>
                                 </li>
                             </ul>
                             <ul class="experience-tools" aria-label="Tools and methods used at Wuhan University of Technology">
@@ -553,26 +556,38 @@ https://templatemo.com/tm-543-breezed
                                 <li data-skill-category="management">Team coordination</li>
                             </ul>
                         </article>
-                        <details class="earlier-internships">
+                        <details class="earlier-internships" id="earlier-internships">
                             <summary>Earlier internships <span>(2014&ndash;2017)</span></summary>
-                            <div class="internship-list">
-                                <article class="internship-entry">
-                                    <h3>Social Media Operation</h3>
-                                    <p class="internship-context">CIFI Group · Internship · Wuhan, Hubei, China · On-site</p>
-                                    <p class="internship-dates"><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2017-04">Apr 2017</time></p>
-                                    <ul><li>Supported social media operations, designed promotional materials and worked as a photographer.</li></ul>
+                            <div class="internship-list" id="internship-list">
+                                <article class="internship-entry" data-experience-categories="design" aria-labelledby="experience-cifi">
+                                    <h3 id="experience-cifi">CIFI Group</h3>
+                                    <p class="internship-context">Internship · Wuhan, Hubei, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Social Media Operation</h4>
+                                        <span class="experience-dates"><time datetime="2016-09">Sep 2016</time> &ndash; <time datetime="2017-04">Apr 2017</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Supported social media operations, designed promotional materials and worked as a photographer.</li></ul>
+                                    <ul class="experience-tools" aria-label="Social Media Operation skills"><li data-skill-category="design">Graphic design</li><li data-skill-category="design">Social media</li><li data-skill-category="design">Photography</li></ul>
                                 </article>
-                                <article class="internship-entry">
-                                    <h3>Structural Engineer Intern</h3>
-                                    <p class="internship-context">Fujian Hanlin Survey and Design Co., Ltd · Internship · Fuzhou, Fujian Province, China · On-site</p>
-                                    <p class="internship-dates"><time datetime="2015-07">Jul 2015</time> &ndash; <time datetime="2015-09">Sep 2015</time></p>
-                                    <ul><li>Performed structural analysis and produced drawings using YJK and AutoCAD.</li></ul>
+                                <article class="internship-entry" data-experience-categories="engineering" aria-labelledby="experience-hanlin">
+                                    <h3 id="experience-hanlin">Fujian Hanlin Survey and Design Co., Ltd</h3>
+                                    <p class="internship-context">Internship · Fuzhou, Fujian Province, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Structural Engineer Intern</h4>
+                                        <span class="experience-dates"><time datetime="2015-07">Jul 2015</time> &ndash; <time datetime="2015-09">Sep 2015</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Performed structural analysis and produced drawings using YJK and AutoCAD.</li></ul>
+                                    <ul class="experience-tools" aria-label="Structural Engineer Intern skills"><li data-skill-category="engineering">Structural analysis</li><li data-skill-category="engineering">YJK</li><li data-skill-category="engineering">AutoCAD</li></ul>
                                 </article>
-                                <article class="internship-entry">
-                                    <h3>Construction Project Engineer Intern</h3>
-                                    <p class="internship-context">Fujian MINNAN Construction Engineering Group Co., Ltd. · Internship · Fuzhou, Fujian Province, China · On-site</p>
-                                    <p class="internship-dates"><time datetime="2014-07">Jul 2014</time> &ndash; <time datetime="2014-09">Sep 2014</time></p>
-                                    <ul><li>Worked on construction drawings and site operations.</li></ul>
+                                <article class="internship-entry" data-experience-categories="engineering" aria-labelledby="experience-minnan">
+                                    <h3 id="experience-minnan">Fujian MINNAN Construction Engineering Group Co., Ltd.</h3>
+                                    <p class="internship-context">Internship · Fuzhou, Fujian Province, China · On-site</p>
+                                    <div class="experience-role">
+                                        <h4>Construction Project Engineer Intern</h4>
+                                        <span class="experience-dates"><time datetime="2014-07">Jul 2014</time> &ndash; <time datetime="2014-09">Sep 2014</time></span>
+                                    </div>
+                                    <ul class="experience-summary"><li>Worked on construction drawings and site operations.</li></ul>
+                                    <ul class="experience-tools" aria-label="Construction Project Engineer Intern skills"><li data-skill-category="engineering">Structural design</li><li data-skill-category="engineering">Construction drawings</li><li data-skill-category="engineering">Site operations</li></ul>
                                 </article>
                             </div>
                         </details>
@@ -715,7 +730,7 @@ https://templatemo.com/tm-543-breezed
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/profile.js?v=20261031-experience-consistency"></script>
 
 
 

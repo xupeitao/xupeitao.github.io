@@ -323,6 +323,7 @@
 }
 
 .experience-entry h3[id],
+.internship-entry h3[id],
 .experience-role h4[id] {
   scroll-margin-top: 100px;
 }
@@ -335,7 +336,9 @@
 }
 
 .experience-filters[hidden],
-.experience-entry[hidden] {
+.experience-entry[hidden],
+.internship-entry[hidden],
+.earlier-internships[hidden] {
   display: none;
 }
 
@@ -409,7 +412,8 @@
   border-left: 4px solid #246746;
 }
 
-.experience-entry h3 {
+.experience-entry h3,
+.internship-entry h3 {
   margin-bottom: 10px;
   color: #203b30;
   font-size: 20px;
@@ -417,10 +421,12 @@
   line-height: 1.4;
 }
 
-.experience-entry .experience-context {
+.experience-entry .experience-context,
+.internship-entry .internship-context {
   margin-bottom: 18px;
   color: #5a6d61;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.65;
 }
 
@@ -441,11 +447,14 @@
 
 .experience-dates {
   flex-shrink: 0;
-  color: #58665d;
+  color: #5a6d61;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
-.experience-entry .experience-summary {
+.experience-entry .experience-summary,
+.internship-entry .experience-summary {
   margin: 18px 0 0;
   padding-left: 20px;
   list-style: disc;
@@ -483,16 +492,31 @@
 
 .experience-projects p {
   margin: 0;
+}
+
+.experience-projects p + p {
+  margin-top: 10px;
+}
+
+.experience-projects p,
+.experience-summary li {
   color: #394b40;
   font-size: 15px;
+  font-weight: 400;
   line-height: 1.75;
 }
 
 .experience-summary li {
   margin-top: 10px;
-  color: #394b40;
-  font-size: 16px;
-  line-height: 1.75;
+  list-style: disc;
+}
+
+.experience-projects .experience-project-dates,
+.internship-entry .internship-dates {
+  color: #5a6d61;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
 .experience-tools {
@@ -512,6 +536,7 @@
   color: #315842;
   font-size: 12px;
   font-weight: 600;
+  line-height: 1.55;
 }
 
 .experience-tools li[data-skill-category] {
@@ -558,35 +583,6 @@
 .internship-entry + .internship-entry {
   padding-top: 20px;
   border-top: 1px solid #e4ebe6;
-}
-
-.internship-entry h3 {
-  margin: 0 0 6px;
-  color: #263d30;
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.internship-entry .internship-context,
-.internship-entry .internship-dates {
-  margin: 0 0 8px;
-  color: #59685f;
-  font-size: 14px;
-  line-height: 1.65;
-}
-
-.internship-entry ul {
-  margin: 10px 0 0;
-  padding-left: 20px;
-  list-style: disc;
-}
-
-.internship-entry li {
-  color: #394b40;
-  font-size: 15px;
-  line-height: 1.75;
-  list-style: disc;
 }
 
 #testimonials .volunteer-highlights {
@@ -703,16 +699,6 @@
   .career-role {
     font-size: 13px;
   }
-
-  .experience-entry h3.experience-title-long {
-    font-size: 17.5px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .experience-entry h3.experience-title-long {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -826,10 +812,6 @@
 
   .earlier-internships {
     padding: 22px 18px;
-  }
-
-  .experience-entry h3 {
-    font-size: 20px;
   }
 
   .experience-role {

@@ -241,7 +241,7 @@
 .career-step::before {
   content: "";
   position: absolute;
-  top: 82px;
+  top: 60px;
   right: 0;
   left: 0;
   height: 2px;
@@ -259,7 +259,7 @@
 .career-step a {
   position: relative;
   display: grid;
-  grid-template-rows: 66px 18px minmax(22px, auto) auto;
+  grid-template-rows: 44px 18px minmax(22px, auto) auto;
   justify-items: center;
   gap: 8px;
   min-width: 0;
@@ -270,13 +270,16 @@
 }
 
 .career-role {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: block;
+  align-self: end;
   max-width: 100%;
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: 600;
   line-height: 1.45;
+}
+
+.career-role-line {
+  display: block;
 }
 
 .career-marker {
@@ -448,6 +451,43 @@
   list-style: disc;
 }
 
+.experience-role-details {
+  min-width: 0;
+}
+
+.experience-role-details + .experience-role-details {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e4ebe6;
+}
+
+.experience-projects {
+  display: grid;
+  gap: 18px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-projects > li {
+  min-width: 0;
+}
+
+.experience-projects h5 {
+  margin: 0 0 5px;
+  color: #263d30;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.experience-projects p {
+  margin: 0;
+  color: #394b40;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
 .experience-summary li {
   margin-top: 10px;
   color: #394b40;
@@ -480,9 +520,78 @@
   color: var(--skill-color);
 }
 
+.earlier-internships {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid #dbe5df;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.earlier-internships > summary {
+  color: #203b30;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.earlier-internships > summary:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+.earlier-internships[open] > summary {
+  margin-bottom: 24px;
+}
+
+.internship-list {
+  display: grid;
+  gap: 20px;
+}
+
+.internship-entry {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.internship-entry + .internship-entry {
+  padding-top: 20px;
+  border-top: 1px solid #e4ebe6;
+}
+
+.internship-entry h3 {
+  margin: 0 0 6px;
+  color: #263d30;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.internship-entry .internship-context,
+.internship-entry .internship-dates {
+  margin: 0 0 8px;
+  color: #59685f;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.internship-entry ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.internship-entry li {
+  color: #394b40;
+  font-size: 15px;
+  line-height: 1.75;
+  list-style: disc;
+}
+
 #testimonials .volunteer-highlights {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   margin: 28px 0 0;
 }
@@ -591,6 +700,10 @@
 }
 
 @media (min-width: 1200px) {
+  .career-role {
+    font-size: 13px;
+  }
+
   .experience-entry h3.experience-title-long {
     font-size: 17.5px;
   }
@@ -603,6 +716,10 @@
 }
 
 @media (max-width: 991px) {
+  #testimonials .volunteer-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .career-timeline {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -642,8 +759,12 @@
   }
 
   .career-role {
-    justify-content: flex-start;
-    font-size: 15px;
+    align-self: start;
+    font-size: 14px;
+  }
+
+  .career-role-line {
+    display: inline;
   }
 
   .career-marker {
@@ -700,6 +821,10 @@
   }
 
   .experience-entry {
+    padding: 22px 18px;
+  }
+
+  .earlier-internships {
     padding: 22px 18px;
   }
 

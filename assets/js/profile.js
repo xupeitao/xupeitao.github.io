@@ -12,22 +12,33 @@
     var buttons = controls.querySelectorAll('[data-experience-filter]');
     controls.hidden = false;
 
+    function applyFilter(filter) {
+        var visible = 0;
+
+        entries.forEach(function (entry) {
+            var categories = entry.getAttribute('data-experience-categories').split(' ');
+            entry.hidden = filter !== 'all' && categories.indexOf(filter) === -1;
+            if (!entry.hidden) visible += 1;
+        });
+
+        buttons.forEach(function (button) {
+            button.setAttribute('aria-pressed', String(button.getAttribute('data-experience-filter') === filter));
+        });
+
+        count.textContent = 'Showing ' + visible + (visible === 1 ? ' experience' : ' experiences');
+    }
+
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-            var filter = button.getAttribute('data-experience-filter');
-            var visible = 0;
-
-            entries.forEach(function (entry) {
-                var categories = entry.getAttribute('data-experience-categories').split(' ');
-                entry.hidden = filter !== 'all' && categories.indexOf(filter) === -1;
-                if (!entry.hidden) visible += 1;
-            });
-
-            buttons.forEach(function (other) {
-                other.setAttribute('aria-pressed', String(other === button));
-            });
-
-            count.textContent = 'Showing ' + visible + (visible === 1 ? ' experience' : ' experiences');
+            applyFilter(button.getAttribute('data-experience-filter'));
         });
     });
+
+    var timeline = section.querySelector('.career-timeline');
+    if (timeline) {
+        // Reveal the destination before the template's hash-link scrolling handlers run.
+        timeline.addEventListener('click', function (event) {
+            if (event.target.closest('[data-career-link]')) applyFilter('all');
+        }, true);
+    }
 })();

@@ -1,26 +1,44 @@
 (function () {
     'use strict';
 
-    var menus = document.querySelectorAll('.more-menu');
-    document.addEventListener('click', function (event) {
-        menus.forEach(function (menu) {
-            if (!menu.contains(event.target)) menu.open = false;
-        });
+    var header = document.querySelector('.responsive-header');
+    if (!header) return;
+
+    var trigger = header.querySelector('.menu-trigger');
+    var navigation = header.querySelector('#primary-navigation');
+    if (!trigger || !navigation) return;
+    var mobile = window.matchMedia('(max-width: 991px)');
+
+    // Use one responsive menu state instead of the template slideToggle handler.
+    if (window.jQuery) window.jQuery(trigger).off('click');
+
+    function setMenu(open) {
+        header.classList.toggle('is-menu-open', open);
+        trigger.classList.toggle('active', open);
+        trigger.setAttribute('aria-expanded', String(open));
+        if (window.jQuery) window.jQuery(navigation).stop(true, true).removeAttr('style');
+    }
+
+    trigger.addEventListener('click', function () {
+        setMenu(!header.classList.contains('is-menu-open'));
     });
+
+    navigation.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setMenu(false);
+    }, true);
+
+    document.addEventListener('click', function (event) {
+        if (!header.contains(event.target)) setMenu(false);
+    }, true);
 
     document.addEventListener('keydown', function (event) {
-        if (event.key !== 'Escape') return;
-        menus.forEach(function (menu) {
-            if (!menu.open) return;
-            menu.open = false;
-            menu.querySelector('summary').focus();
-        });
+        if (event.key === 'Escape' && header.classList.contains('is-menu-open')) {
+            setMenu(false);
+            trigger.focus();
+        }
     });
 
-    var trigger = document.querySelector('.menu-trigger');
-    if (trigger) {
-        trigger.addEventListener('click', function () {
-            trigger.setAttribute('aria-expanded', String(trigger.classList.contains('active')));
-        });
-    }
+    mobile.addEventListener('change', function () { setMenu(false); });
+    setMenu(false);
+
 })();

@@ -221,6 +221,109 @@
   margin-bottom: 24px;
 }
 
+.career-overview {
+  margin: 0 0 40px;
+}
+
+.career-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.career-step {
+  position: relative;
+  min-width: 0;
+}
+
+.career-step::before {
+  content: "";
+  position: absolute;
+  top: 82px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: #bdd6c9;
+}
+
+.career-step:first-child::before {
+  left: 50%;
+}
+
+.career-step:last-child::before {
+  right: 50%;
+}
+
+.career-step a {
+  position: relative;
+  display: grid;
+  grid-template-rows: 66px 18px minmax(22px, auto) auto;
+  justify-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 0 8px 12px;
+  border-radius: 6px;
+  color: #203b30;
+  text-align: center;
+}
+
+.career-role {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.career-marker {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #65ac95;
+  box-sizing: content-box;
+  align-self: center;
+}
+
+.career-step time {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.career-organization {
+  max-width: 100%;
+  color: #65776b;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.career-step-current .career-marker,
+.career-step a:hover .career-marker {
+  background: #246746;
+}
+
+.career-step a:hover .career-role {
+  color: #246746;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.career-step a:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 3px;
+}
+
+.experience-entry h3[id],
+.experience-role h4[id] {
+  scroll-margin-top: 100px;
+}
+
 .experience-filters {
   display: flex;
   flex-direction: column;
@@ -500,6 +603,55 @@
 }
 
 @media (max-width: 991px) {
+  .career-timeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .career-step::before,
+  .career-step:first-child::before,
+  .career-step:last-child::before {
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .career-step:first-child::before {
+    top: 22px;
+  }
+
+  .career-step:last-child::before {
+    bottom: calc(100% - 22px);
+  }
+
+  .career-step a {
+    grid-template-columns: 22px minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+    gap: 4px 16px;
+    padding: 10px 0 16px;
+    text-align: left;
+  }
+
+  .career-role,
+  .career-step time,
+  .career-organization {
+    grid-column: 2;
+  }
+
+  .career-role {
+    justify-content: flex-start;
+    font-size: 15px;
+  }
+
+  .career-marker {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: start;
+  }
+
   .experience-sidebar {
     position: static;
     margin-bottom: 28px;

@@ -1,0 +1,114 @@
+/* Compact category-specific recommendations and the final route to all projects. */
+.project-related {
+  padding: 36px 0 44px;
+  border-top: 1px solid #e1e9e4;
+  background: #f7faf8;
+}
+
+.project-related .project-related-heading {
+  margin: 0 0 8px;
+  color: #203b30;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.project-related .project-related-intro {
+  margin: 0 0 22px;
+  color: #596c60;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.project-related-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-related-card {
+  display: block;
+  min-width: 0;
+  border: 1px solid #dce6df;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  color: #203b30;
+}
+
+.project-related-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #edf3ef;
+}
+
+.project-related-card .project-related-title {
+  display: block;
+  margin: 0;
+  padding: 12px;
+  color: #203b30;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.project-related-card:hover {
+  border-color: #246746;
+  color: #246746;
+}
+
+.project-bottom-navigation {
+  margin-top: 28px;
+}
+
+.project-bottom-navigation a {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #246746;
+  border-radius: 6px;
+  background: #fff;
+  color: #246746;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.project-bottom-navigation a:hover {
+  background: #246746;
+  color: #fff;
+}
+
+.project-related-card:focus-visible,
+.project-bottom-navigation a:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+.project-storymap {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: 1px solid #dce6df;
+  border-radius: 10px;
+  background: #f7faf8;
+}
+
+@media (max-width: 1199px) {
+  .project-related-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 991px) {
+  .project-related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 767px) {
+  .project-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-storymap { height: 75vh; min-height: 500px; }
+}
+
+@media (max-width: 359px) {
+  .project-related-grid { grid-template-columns: minmax(0, 1fr); }
+}

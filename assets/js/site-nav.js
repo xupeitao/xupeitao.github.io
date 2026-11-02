@@ -1,6 +1,15 @@
 (function () {
     'use strict';
 
+    // Update every footer before checking whether this page has a navigation menu.
+    var currentYear = new Intl.DateTimeFormat('en-CA', {
+        year: 'numeric',
+        timeZone: 'America/Toronto'
+    }).format(new Date());
+    document.querySelectorAll('[data-current-year]').forEach(function (element) {
+        element.textContent = currentYear;
+    });
+
     var header = document.querySelector('.responsive-header');
     if (!header) return;
 

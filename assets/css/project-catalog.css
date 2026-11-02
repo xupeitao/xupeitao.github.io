@@ -251,6 +251,11 @@
   object-fit: cover;
 }
 
+.project-card-image-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .project-card-body {
   display: flex;
   flex: 1;

@@ -1,0 +1,235 @@
+/* Forest inventory project detail and embedded Tableau views. */
+.data-project-page .project-hero h1 {
+  max-width: 1050px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.25;
+}
+
+.data-project-page .project-intro {
+  max-width: 820px;
+}
+
+.data-back-link {
+  display: inline-block;
+  color: #246746;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.project-hero .data-back-link {
+  margin-bottom: 24px;
+}
+
+.data-project-content {
+  display: grid;
+  gap: 52px;
+}
+
+.data-overview > p,
+.data-section-intro {
+  max-width: 940px;
+  margin: 0 0 18px;
+  color: #52665a;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.data-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.data-tools li {
+  padding: 5px 11px;
+  border: 1px solid #deceec;
+  border-radius: 5px;
+  background: #f4eef9;
+  color: #70429a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.data-architecture > a {
+  padding: 14px;
+  background: #fff;
+}
+
+.data-architecture img {
+  height: auto;
+}
+
+.data-dashboards {
+  display: grid;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.data-dashboard {
+  min-width: 0;
+  border: 1px solid #dbe5df;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.data-dashboard-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  padding: 24px;
+  border-bottom: 1px solid #dbe5df;
+  background: #f4f8f5;
+}
+
+.data-dashboard-heading h3 {
+  margin: 0 0 8px;
+  color: #203b30;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.data-dashboard-heading p,
+.data-dashboard-note {
+  margin: 0;
+  color: #596c60;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.data-dashboard-heading a {
+  color: #246746;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.dashboard-fit {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--dashboard-width) / var(--dashboard-height);
+  overflow: hidden;
+  background: #f7f9f8;
+}
+
+.dashboard-fit-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--dashboard-width) * 1px);
+  height: calc(var(--dashboard-height) * 1px);
+  transform-origin: top left;
+}
+
+.dashboard-fit-stage tableau-viz,
+.dashboard-fit-stage iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.data-dashboard-note {
+  margin-top: 18px;
+}
+
+.data-back-link:hover,
+.data-dashboard-heading a:hover {
+  color: #1b5036;
+  text-decoration: underline;
+}
+
+.data-back-link:focus-visible,
+.data-dashboard-heading a:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+.data-presentation {
+  display: grid;
+  gap: 30px;
+}
+
+.data-presentation .resource-sheet {
+  margin: 0;
+}
+
+.data-presentation .resource-sheet > a {
+  background: #fff;
+}
+
+.project-split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-areas: "results overview";
+  align-items: start;
+  gap: 32px;
+  width: calc(100% - 48px);
+  max-width: 1600px;
+  padding: 0;
+}
+
+.project-split-results {
+  grid-area: results;
+  min-width: 0;
+}
+
+.project-split-overview {
+  grid-area: overview;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid #e1e9e4;
+  border-radius: 10px;
+  background: #f4f7f5;
+}
+
+.project-split-overview .project-group-heading h2 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.project-split-overview > p {
+  font-size: 15px;
+}
+
+.project-split-overview .data-tools {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .project-split-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "overview" "results";
+  }
+}
+
+@media (max-width: 575px) {
+  .data-project-content {
+    gap: 38px;
+  }
+
+  .data-dashboard-heading {
+    padding: 18px;
+  }
+
+  .data-architecture > a {
+    padding: 6px;
+  }
+
+  .project-split-layout {
+    width: calc(100% - 32px);
+    gap: 28px;
+  }
+
+  .project-split-overview {
+    padding: 20px;
+  }
+}

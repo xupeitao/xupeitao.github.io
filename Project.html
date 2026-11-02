@@ -80,24 +80,37 @@
             <div class="container">
                 <div class="project-toolbar">
                     <div class="project-filters" data-project-filters role="group" aria-label="Filter projects by discipline" hidden>
-                        <button type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-results">All <span data-filter-count>10</span></button>
-                        <button type="button" data-project-filter="data" aria-pressed="false" aria-controls="project-results">Data Analytics <span data-filter-count>0</span></button>
+                        <button type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-results">All <span data-filter-count>14</span></button>
+                        <button type="button" data-project-filter="data" aria-pressed="false" aria-controls="project-results">Data Analytics <span data-filter-count>4</span></button>
                         <button type="button" data-project-filter="gis" aria-pressed="false" aria-controls="project-results">GIS <span data-filter-count>8</span></button>
                         <button type="button" data-project-filter="structure" aria-pressed="false" aria-controls="project-results">Structural Design <span data-filter-count>1</span></button>
                         <button type="button" data-project-filter="bim" aria-pressed="false" aria-controls="project-results">BIM <span data-filter-count>1</span></button>
                     </div>
-                    <p class="project-count" data-project-count role="status" aria-live="polite">Showing 10 projects</p>
+                    <p class="project-count" data-project-count role="status" aria-live="polite">Showing 14 projects</p>
                 </div>
                 <div class="project-groups" id="project-results">
-            <section class="project-group" id="project-data" data-project-group="data" aria-labelledby="project-heading-data" hidden>
+            <section class="project-group" id="project-data" data-project-group="data" aria-labelledby="project-heading-data">
                 <div class="project-group-heading">
                     <div>
                         <p class="project-eyebrow">01 / DATA</p>
                         <h2 id="project-heading-data">Data Analytics</h2>
                     </div>
-                    <span class="project-group-count" data-project-group-count>0 projects</span>
+                    <span class="project-group-count" data-project-group-count>4 projects</span>
                 </div>
                 <div class="project-grid">
+                    <article class="project-card" data-project-categories="data">
+                        <a class="project-card-link" href="Data_FRI_T2.html" aria-labelledby="project-title-fri-t2">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/Data/T2%20face.png" alt="Ontario Forest Resources Inventory Term 2 dashboards showing forest-level analysis and FMU comparison views" width="1595" height="897" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Tableau dashboards</p>
+                                <h3 id="project-title-fri-t2">Term 2 Forest Inventory Analysis and Tableau Dashboard Project</h3>
+                                <p class="project-description">Forest inventory data validation, spatial analysis and interactive Tableau dashboards for forest-level insights and comparisons.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
                     <article class="project-card" data-project-categories="data">
                         <a class="project-card-link" href="GIS_Signboard.html" aria-labelledby="project-title-4">
                             <div class="project-card-image">
@@ -124,6 +137,19 @@
                             </div>
                         </a>
                     </article>
+                    <article class="project-card" data-project-categories="data">
+                        <a class="project-card-link" href="Data_Mapathon.html" aria-labelledby="project-title-mapathon">
+                            <div class="project-card-image project-card-image-contain">
+                                <img src="assets/pic/Project/GIS/mapthon%201.png" alt="2026 OPS GIS Summit Mapathon project cover" width="1097" height="603" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Tableau dashboard</p>
+                                <h3 id="project-title-mapathon">2026 OPS GIS Summit Mapathon</h3>
+                                <p class="project-description">An interactive visualization of humanitarian mapping contributions, connecting Ontario participants with projects around the world.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </section>
 
@@ -137,7 +163,7 @@
                 </div>
                 <div class="project-grid">
                     <article class="project-card" data-project-categories="gis">
-                        <a class="project-card-link" href="https://fanshawe.maps.arcgis.com/apps/dashboards/9bcf3c426c0a4ba89cb78fce14088f0d" aria-labelledby="project-title-0">
+                        <a class="project-card-link" href="GIS_School.html" aria-labelledby="project-title-0">
                             <div class="project-card-image">
                                 <img src="assets/pic/Project/GIS/01.png" alt="School Zone and Enrolment Insights in Ontario project preview" loading="lazy" decoding="async">
                             </div>
@@ -145,12 +171,25 @@
                                 <p class="project-type">Dashboard</p>
                                 <h3 id="project-title-0">School Zone and Enrolment Insights in Ontario</h3>
                                 <p class="project-description">School zones and enrolment patterns presented in an interactive ArcGIS dashboard.</p>
-                                <span class="project-card-cta">View dashboard <span aria-hidden="true">&rarr;</span></span>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
                             </div>
                         </a>
                     </article>
                     <article class="project-card" data-project-categories="gis">
-                        <a class="project-card-link" href="https://storymaps.arcgis.com/stories/6474b334b9524f00b8e20eccf58fbcc5" aria-labelledby="project-title-1">
+                        <a class="project-card-link" href="GIS_OntarioForestFire.html" aria-labelledby="project-title-ontario-fire">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/GIS/Ontario%20Forest%20Fire%20cover.png" alt="Ontario Forest Fire Analysis in the 2010s StoryMap cover" width="2542" height="1341" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">StoryMap</p>
+                                <h3 id="project-title-ontario-fire">Ontario Forest Fire Analysis (2010s)</h3>
+                                <p class="project-description">SQL for tabular and spatial data management, with an interactive StoryMap supporting evidence-based planning and communication.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_FireService.html" aria-labelledby="project-title-1">
                             <div class="project-card-image">
                                 <img src="assets/pic/Project/GIS/02.png" alt="Fire Service Coverage Study in Toronto project preview" loading="lazy" decoding="async">
                             </div>
@@ -158,7 +197,7 @@
                                 <p class="project-type">StoryMap</p>
                                 <h3 id="project-title-1">Fire Service Coverage Study in Toronto</h3>
                                 <p class="project-description">A spatial study of fire service coverage, presented as an ArcGIS StoryMap.</p>
-                                <span class="project-card-cta">View StoryMap <span aria-hidden="true">&rarr;</span></span>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
                             </div>
                         </a>
                     </article>
@@ -189,6 +228,19 @@
                         </a>
                     </article>
                     
+                    <article class="project-card" data-project-categories="gis">
+                        <a class="project-card-link" href="GIS_LyttonFire.html" aria-labelledby="project-title-lytton">
+                            <div class="project-card-image project-card-image-contain">
+                                <img src="assets/pic/Project/GIS/3.4%20NDVI/XUAssign3_4%20NBR-1.jpg" alt="Lytton wildfire impact assessment comparing burn severity before and after the 2021 fire" width="3299" height="2550" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Raster analysis</p>
+                                <h3 id="project-title-lytton">BC Wildfire Impact Assessment (2021 Lytton Fire)</h3>
+                                <p class="project-description">Satellite imagery and NDVI/NBR analysis evaluating vegetation loss, burn severity and forest disturbance impacts.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
                     <article class="project-card" data-project-categories="gis">
                         <a class="project-card-link" href="GIS_LONS.html" aria-labelledby="project-title-5">
                             <div class="project-card-image">
@@ -279,7 +331,7 @@
             <div class="row">
                 <div class="col-lg-6 col-xs-12">
                     <div class="left-text-content">
-                        <p>Copyright &copy; 2025 Peitao Xu | Evan.</p>
+                        <p>Copyright &copy; <span data-current-year>2026</span> Peitao Xu | Evan.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xs-12">

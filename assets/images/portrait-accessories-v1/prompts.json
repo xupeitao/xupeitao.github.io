@@ -1,0 +1,48 @@
+{
+  "tool": "Built-in image_gen",
+  "transparent_background": true,
+  "shared_prompt": "Create one production-ready transparent PNG accessory for overlaying on top of a real portrait's head on a personal GIS/data portfolio. Square canvas, truly transparent background. Standalone object ONLY: no human, no mannequin, no head, no hair, no scenery, no text, no watermark, no sticker border, no drop shadow outside the object. Cohesive charming editorial illustration: clean warm charcoal outlines, softly shaded flat colors, warm ivory highlights, muted natural palette; sophisticated, friendly, readable at 70px. Front-facing, nearly symmetrical where appropriate, slight dimensionality, viewed straight-on. Keep entire object inside canvas with 10-15% transparent margin; horizontally centered; bottom of the object at 82% canvas height. This is a small wearable/perched object, not an app icon, not a badge.",
+  "subjects": [
+    {
+      "file": "hard-hat.png",
+      "prompt": "Subject: A golden yellow construction engineer's hard hat, front view. Raised center ridge, simple subtle highlights, a broad gently curved brim with a dark underside. No branding. Shape should fit over a person's hair like an actual hat."
+    },
+    {
+      "file": "graduation-cap.png",
+      "prompt": "Subject: A black charcoal master's graduation mortarboard with a warm golden tassel hanging on the viewer's right. Front view with subtly visible diamond-shaped flat top and a short fitted headband beneath it. Elegant clean silhouette, no diploma, no books."
+    },
+    {
+      "file": "crown.png",
+      "prompt": "Subject: A small elegant golden crown with three rounded tips, tiny red and green jewel details. Front view. Simple playful royalty, no face, no cushion, no other objects."
+    },
+    {
+      "file": "christmas-antlers.png",
+      "prompt": "Subject: A Christmas reindeer antler headband: two curved warm brown branching antlers attached to a thin festive red-and-deep-green headband, with a tiny holly cluster at center. Front view, open transparent gap between the antlers. No animal face, no Santa hat."
+    },
+    {
+      "file": "sprout.png",
+      "prompt": "Subject: A single adorable fresh sprouting seedling: one gently curved short green stem and two lush leaves, one to either side. No soil, no pot, no face. The tiny rounded bottom stem is the contact point where it will seem to grow from a person's head."
+    },
+    {
+      "file": "squirrel.png",
+      "prompt": "Subject: One tiny cute red squirrel perched upright, with small front paws held together, pointed furry ears and a large curled fluffy russet tail curving behind on the viewer's right. Entire body and feet visible, tiny dark eyes, warm cream chest. No branch, no ground, no acorn, no hat. A tasteful miniature woodland companion."
+    },
+    {
+      "file": "red-maple.png",
+      "prompt": "Subject: One miniature red maple tree, full tree: a short warm-brown trunk and a delicate broad crown of recognizable red/orange five-lobed maple leaves. Compact bonsai-like silhouette without a pot or soil. No landscape, no ground. Tree trunk bottom is the contact point on a person's head."
+    },
+    {
+      "file": "cat.png",
+      "prompt": "Subject: One tiny cute orange-and-cream kitten resting in a compact crouched loaf pose, facing forward with little front paws and a curled tail visible, triangular ears and bright gentle eyes. Whole body visible, no collar, no hat, no cushion, no ground. A tasteful miniature companion small enough to perch on a person's head."
+    }
+  ],
+  "revisions": [
+    {
+      "file": "antlers-only.png",
+      "input": "christmas-antlers.png",
+      "tool": "Built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Edit this transparent portrait accessory. Remove the entire red-and-green headband, holly leaves, and red berries. Keep ONLY the two warm brown branching reindeer antlers, preserving their existing illustration style, shading, color, approximate left/right positions, and square transparent canvas. The two antlers should be separate, with clean natural rounded bases around the middle of the canvas; everything below the antler bases must be truly transparent. Do not connect the antlers with anything. No headband, no ring, no wreath, no ribbon, no foliage, no berries, no new objects, no shadow outside the antlers. This is a transparent PNG overlay for a portrait. Preserve the rest of the empty transparent canvas."
+    }
+  ]
+}

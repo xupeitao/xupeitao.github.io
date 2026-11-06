@@ -30,10 +30,10 @@ https://templatemo.com/tm-543-breezed
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
-    <link rel="stylesheet" href="assets/css/profile.css?v=20261031-experience-consistency">
+    <link rel="stylesheet" href="assets/css/profile.css?v=20261106-section-navigation">
 
     <link rel="stylesheet" href="assets/css/site-nav.css">
-    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/landing.css?v=20261106-accessories-sprout">
 
 </head>
 
@@ -82,35 +82,51 @@ https://templatemo.com/tm-543-breezed
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner header-text about-hero" id="top" aria-labelledby="intro-heading">
-        <img class="hero-background" src="assets/images/slide-02.jpg" alt="">
+        <!-- <img class="hero-background" src="assets/images/Dark autumn paper texture.png" alt=""> -->
+        <video class="hero-background" autoplay muted loop playsinline aria-hidden="true">
+  <source src="assets/videos/autumn-leaves-loop.mp4" type="video/mp4">
+</video>
         <div class="hero-layout">
             <div class="about-intro">
-                <h1 id="intro-heading">Hi, I'm Peitao (Evan) Xu.</h1>
-                <p>I work across data engineering, analytics and GIS.</p>
-                <p class="intro-translation" lang="zh-Hant">您好，我是徐沛韜，專注於數據工程、數據分析與地理信息系統（GIS）。</p>
+                <p class="hero-kicker">
+                    <span lang="zh-Hant">數據 · 地圖 · 探索世界</span>
+                    <span class="hero-kicker-translation">Connecting the dots between data, maps, and the world.</span>
+                </p>
+                <!-- <p class="hero-greeting">Hello, I'm</p> -->
+                <h1 id="intro-heading">Hello   <span class="hero-alias"> <h2>👋 </h2> ~ </span>  I'm Peitao</h1> 
+                <p class="hero-statement">
+                    <span>An engineer's curiosity.</span> 
+                    <span>A geospatial way of seeing.</span>
+                </p>
 
-                <p>At Ontario Ministry of Natural Resources, I support the Forest Resources Inventory program
-                    by analyzing geospaital vector and raster data with GIS, building data pipelines with Python, SQL, Azure and Databricks, automating data
-                    quality checks, and developing Tableau dashboards for analysis and reporting.
-                    My background in civil engineering and BIM helps me connect data workflows
-                    with environmental and infrastructure needs.</p>
-
-                <p class="intro-translation" lang="zh-Hant">目前，我在 安大略省自然資源部 森林資源清查計畫 工作，
-                    使用GIS分析地理空間矢量和柵格數據，運用 Python、SQL、Azure 與 Databricks 建置數據管道、自動化數據品質檢查與更新，
-                    並以 Tableau 製作分析與報告儀表板。<br>
-                    我的土木工程與 BIM 背景，這些經理讓我能將數據工作與環境及基礎設施需求連結。</p>
+                <div class="hero-bio">
+                    <p>My path began in Civil Engineering, where I learned to see how individual Structural Conponent
+                        fit into a bigger Architecture. That curiosity now guides my work across Geographic Information Systems \GIS/, 
+                        Data Engineering, and Analytics.</p></br>
+                    <p>At Ontario's Ministry of Natural Resources, I support the Forest Resources Inventory program
+                        by building reliable Data Workflows, Automating Quality Validation, and making forest data
+                        easier to explore through Maps and Dashboards.</p>
+                </div>
 
                 <nav class="hero-actions" aria-label="About sections">
-                    <a href="#about" class="main-filled-button"><b>Education</b></a>
-                    <a href="#subscribe" class="main-filled-button"><b>Skills</b></a>
-                    <a href="#projects" class="main-filled-button"><b>Experience</b></a>
-                    <a href="#testimonials" class="main-filled-button"><b>Leadership &amp; Volunteer</b></a>
-                    <a href="#contact-us" class="main-filled-button"><b>Footprint</b></a>
+                    <a href="#about" class="main-filled-button">Education</a>
+                    <a href="#subscribe" class="main-filled-button">Skills</a>
+                    <a href="#projects" class="main-filled-button">Experience</a>
+                    <a href="#testimonials" class="main-filled-button">Leadership &amp; Volunteer</a>
+                    <a href="#contact-us" class="main-filled-button">Footprint</a>
                 </nav>
             </div>
 
-            <figure class="hero-portrait">
-                <img src="assets/pic/PX.png" alt="Peitao (Evan) Xu" width="800" height="1000">
+            <figure class="hero-portrait" data-portrait-accessories>
+                <button class="portrait-switch" type="button" data-portrait-switch disabled title="Click to change the head accessory"
+                    aria-label="Peitao (Evan) Xu with a little green sprout. Change head accessory."
+                    aria-describedby="portrait-accessory-help">
+                    <img class="portrait-photo" src="assets/pic/PX Avatar Portrait 4.png" alt="Peitao (Evan) Xu" width="1254" height="1254">
+                    <img class="portrait-accessory is-visible" data-accessory-layer src="assets/images/portrait-accessories-v1/sprout.png" alt="" aria-hidden="true" width="1254" height="1254" decoding="async">
+                    <img class="portrait-accessory" data-accessory-layer alt="" aria-hidden="true" width="1254" height="1254" decoding="async">
+                </button>
+                <span class="sr-only" id="portrait-accessory-help">Click or press Enter or Space to change the head accessory. Start with a sprout, then antlers, no accessory, and a crown. Further activations choose a random look, including undecorated options. Accessories change only when you activate the portrait.</span>
+                <figcaption class="portrait-hint">Click my photo to try on a hat</figcaption>
             </figure>
         </div>
     </div>
@@ -122,7 +138,7 @@ https://templatemo.com/tm-543-breezed
     <section class="section education-section" id="about" aria-labelledby="education-heading">
         <div class="container">
             <div class="section-heading">
-                <h6>教 育 背 景</h6>
+                <h6 lang="zh-Hant">教 育 背 景</h6>
                 <h2 id="education-heading">Education</h2>
             </div>
             <ol class="education-grid" aria-label="Education, most recent first">
@@ -177,7 +193,7 @@ https://templatemo.com/tm-543-breezed
     <section class="section skills-section" id="subscribe" aria-labelledby="skills-heading">
         <div class="container">
             <div class="section-heading">
-                <h6>專 業 技 能</h6>
+                <h6 lang="zh-Hant">專 業 技 能</h6>
                 <h2 id="skills-heading">Skills &amp; Tools</h2>
                 <p class="skills-note">Colors match the filters and skill tags in Experience below.</p>
             </div>
@@ -269,7 +285,7 @@ https://templatemo.com/tm-543-breezed
     <section class="section experience-section" id="projects" aria-labelledby="experience-heading">
         <div class="container">
             <div class="section-heading">
-                <h6>工 作 經 歷</h6>
+                <h6 lang="zh-Hant">工 作 經 歷</h6>
                 <h2 id="experience-heading">Experience</h2>
             </div>
             <nav class="career-overview" aria-label="Career timeline, earliest to most recent">
@@ -346,6 +362,9 @@ https://templatemo.com/tm-543-breezed
                             <button type="button" data-experience-filter="management" data-skill-category="management" aria-pressed="false" aria-controls="experience-list internship-list">Project delivery</button>
                         </div>
                         <p class="experience-count" data-experience-count role="status" aria-live="polite">Showing 6 experiences + 3 earlier internships</p>
+                        <div class="section-next section-next--sidebar scroll-to-section">
+                            <a href="#testimonials"><span class="section-next-label">Next section</span><span class="section-next-title">Leadership &amp; Volunteer</span><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-9">
@@ -601,7 +620,7 @@ https://templatemo.com/tm-543-breezed
     <section class="section" id="testimonials" aria-labelledby="volunteer-heading">
         <div class="container">
             <div class="section-heading">
-                <h6>領 導 力 + 志 願 經 歷</h6>
+                <h6 lang="zh-Hant">領 導 力 + 志 願 經 歷</h6>
                 <h2 id="volunteer-heading">Leadership &amp; Volunteer</h2>
             </div>
             <div class="volunteer-highlights">
@@ -664,15 +683,20 @@ https://templatemo.com/tm-543-breezed
     <section class="section footprint-section" id="contact-us" aria-labelledby="footprint-heading">
         <div class="container">
             <div class="section-heading">
-                <h6>Map my footprint</h6>
-                <h2 id="footprint-heading">Where I've been | 我 的 足 跡</h2>
+                <h6 lang="zh-Hant">我 的 足 跡</h6>
+                <h2 id="footprint-heading">Where I've been</h2>
             </div>
             <figure class="footprint-map">
-                <img src="assets/pic/Map_I.png" alt="Map of places I have visited, showing my journey from China to Canada" loading="lazy">
+                <a class="footprint-preview" href="https://felt.com/map/Where-Ive-been-9CRGsbm55SMKBjN15y0rgdB?share=1&amp;loc=40.29,41.44,3.22z" target="_blank" rel="noopener noreferrer" aria-label="Open my interactive footprint map on Felt (opens in a new tab)">
+                    <img src="assets/pic/Map_I.png" alt="Map of places I have visited, showing my journey from China to Canada" loading="lazy">
+                </a>
                 <figcaption lang="zh-Hant">你走出千萬人群獨行，往柳暗花明山窮水盡去 —— 張懸
                     <a href="https://www.youtube.com/watch?v=CMH-VJ9cvG8">&lt;玫瑰色的你&gt;</a>
                 </figcaption>
             </figure>
+            <!-- <div class="footprint-actions">
+                <a class="footprint-link" href="https://felt.com/map/Where-Ive-been-9CRGsbm55SMKBjN15y0rgdB?share=1&amp;loc=40.29,41.44,3.22z" target="_blank" rel="noopener noreferrer">Explore the interactive map on Felt <span aria-hidden="true">&nearr;</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div> -->
         </div>
     </section>
     <!-- ***** Contact Us Area Ends ***** -->
@@ -735,6 +759,7 @@ https://templatemo.com/tm-543-breezed
 
 
     <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/portrait-accessories.js?v=20261106-intro-random" defer></script>
 
 </body>
 

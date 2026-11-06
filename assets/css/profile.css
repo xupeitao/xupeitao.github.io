@@ -1,4 +1,81 @@
 /* About-page additions. */
+
+/* Section links stay in the document flow, including the sticky sidebar. */
+.section-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: calc(100% - 48px);
+  max-width: 1140px;
+  margin: 24px auto;
+}
+
+.section-next::before,
+.section-next::after {
+  content: "";
+  width: clamp(24px, 8vw, 96px);
+  border-top: 1px solid #dbe5df;
+}
+
+.section-next a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 4px;
+  color: #246746;
+  line-height: 1.6;
+}
+
+.section-next-label {
+  color: #59685f;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-next-title {
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section-next .fa { font-size: 13px; }
+.section-next a:hover .section-next-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.section-next a:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
+}
+
+.section-next--sidebar {
+  display: block;
+  width: 100%;
+  margin: 20px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #dbe5df;
+}
+
+.section-next--sidebar::before,
+.section-next--sidebar::after { display: none; }
+.section-next--sidebar a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 12px;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.section-next--sidebar .section-next-label { grid-column: 1; grid-row: 1; }
+.section-next--sidebar .section-next-title { grid-column: 1; grid-row: 2; }
+.section-next--sidebar .fa { grid-column: 2; grid-row: 2; }
+
 #about.education-section {
   scroll-margin-top: 90px;
 }
@@ -687,6 +764,39 @@
   color: #246746;
   text-decoration: underline !important;
   text-underline-offset: 3px;
+}
+
+.footprint-preview {
+  display: block;
+  border-radius: 10px;
+}
+
+.footprint-actions {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footprint-link {
+  display: inline-block;
+  max-width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #246746;
+  border-radius: 999px;
+  color: #246746;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.footprint-link:hover {
+  background: #246746;
+  color: #fff;
+}
+
+.footprint-preview:focus-visible,
+.footprint-link:focus-visible {
+  outline: 3px solid #9458bb;
+  outline-offset: 4px;
 }
 
 @media (max-width: 1199px) {

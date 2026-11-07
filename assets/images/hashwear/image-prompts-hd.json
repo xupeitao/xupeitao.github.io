@@ -1,0 +1,60 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "pepero-sticks",
+      "reference": "BF-16861_playwith_pepero_Hashmoji_Part1.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: Exactly THREE parallel slender chocolate-coated biscuit sticks angled from lower-left to upper-right, glossy deep reddish chocolate with thin pale highlights and golden exposed biscuit ends.",
+      "selected": true
+    },
+    {
+      "id": "pepero-pair",
+      "reference": "BF-16862_playwith_pepero_Hashmoji_Part2.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same TWO overlapping vivid red snack packets forming a small V, each with the same dark chocolate-stick graphic and golden biscuit details. Preserve the original packet silhouettes and arrangement; do not invent lettering.",
+      "selected": true
+    },
+    {
+      "id": "jewel-crown",
+      "reference": "WWECrownJewel2026.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same ornate gold and deep emerald-green crown: high central point with the large green jewel, white/silver round jewels, gold edging and pearl-like base. Preserve the original crown silhouette, symmetry and jewel layout.",
+      "selected": true
+    },
+    {
+      "id": "vivo-buddy",
+      "reference": "BF-16782_VIVO_hashmoji.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same tiny white angel/robot character with navy-blue faceplate, TWO yellow star eyes, pale lavender halo and wings, and the same little white body with dark blue details. Preserve the original pose and proportions.",
+      "selected": true
+    },
+    {
+      "id": "ebenezer-hat",
+      "reference": "EBENEZERALLGLOBAL.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same dark teal Victorian top hat with tall slightly tapered cylinder, elliptical top, softly highlighted teal brim and subtle blue-green shading. Preserve its original angle and proportions.",
+      "selected": true
+    },
+    {
+      "id": "survivorace-mascot",
+      "reference": "BF-16798_Survivorace_JP_BeijingPlanet_Mascot102026.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same happy orange/tan cat-like aviator mascot with blue goggles on its head, expressive face, brown explorer jacket, cream chest, raised paws, striped tail to the right and the same sparse colorful confetti. Keep the whole mascot within the image, without clipping, and preserve its recognizable pose and face.",
+      "selected": true
+    },
+    {
+      "id": "smbc-buddy",
+      "reference": "BF-16707_Sumitomo_Mitsui_Banking_Corporation_Emoji.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same rounded green character with two black oval eyes, black nose, simple curved smile, white lower face and bright yellow-green swoosh/leaf around the bottom. Preserve the original simple shapes.",
+      "selected": true
+    },
+    {
+      "id": "dignitas-badge",
+      "reference": "dignitasLoLEsports2026v2.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same flat black alien/flame-shaped badge outlined in bright golden yellow, two slanted yellow oval eyes and the same upper-right pointed flourish. Preserve the exact recognizable silhouette.",
+      "selected": true
+    },
+    {
+      "id": "blue-loading-ring",
+      "reference": "Net_Emoji_Evergreen_SpanishAdd.png",
+      "prompt": "Use case: precise-object-edit. Reconstruct this very small 72px reference as a crisp HIGH-RESOLUTION transparent PNG web sticker, about 1024 pixels square. Faithfully redraw the same illustration with clean, smooth anti-aliased outlines and solid, well-defined colors, preserving recognizable geometry, composition, count of parts and palette. Do not merely blur, interpolate or stretch the low-resolution pixels. Center the entire artwork with an even margin of about 10–12 percent on each side. Background must be genuinely transparent alpha, including holes and empty spaces inside the design. No outer halo, white flecks, speckles, checkerboard, ground, drop shadow, added text or unrelated objects. Subject: The same circular loading ring formed by TWELVE separate rounded blue/cyan radial strokes, with the clockwise progression from pale cyan through vivid medium blue to dark blue and a completely transparent open center. Preserve the evenly spaced strokes and simple flat geometry.",
+      "selected": false
+    }
+  ],
+  "loadingRing": "Final loading ring is drawn as a code-native SVG for exact, clean geometry."
+}

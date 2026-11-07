@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hashwear_progress_flag",
+      "prompt": "Use case: background-extraction. Edit only the supplied Progress Pride flag illustration. Remove its outer white background to genuine transparent alpha, preserving the flag's waving shape, black outline, rainbow stripes, and the black/brown/light-blue/pink/white chevron exactly as drawn. The white stripe inside the flag MUST stay opaque white. Keep the whole flag visible, with modest even transparent margins. No pole, no added symbols, no text, no checkerboard. Output a crisp isolated transparent PNG suitable as a small portrait sticker."
+    },
+    {
+      "id": "hashwear_canada_wave",
+      "prompt": "Use case: background-extraction. Edit the supplied curved Canadian flag illustration into an isolated transparent PNG portrait accessory. Remove the outer white canvas; keep the entire waving rectangular flag, heavy black outline, two dark red side panels, central red maple leaf, and OPAQUE near-white central flag panel. Preserve the illustration's original shape and proportions. Isolate the flag itself with compact even transparent margins. The tiny stock-site footer under the flag is outside the flag and should not be included in the isolated flag asset. No other text, no new decorations, no checkerboard."
+    },
+    {
+      "id": "hashwear_canada_rectangle",
+      "prompt": "Use case: background-extraction. Edit the supplied glossy rectangular Canadian flag sticker. Remove ONLY the outer white canvas to genuine transparent alpha. Preserve the whole flag's rectangular silhouette, dark red/brown border, red side panels, white central flag panel, red maple leaf, white specular highlights and gray lower shading INSIDE the flag. The white center and highlights must remain fully opaque. Keep the original landscape proportions centered on a square transparent canvas with compact even margins; no new symbols, text, or fake checkerboard."
+    },
+    {
+      "id": "hashwear_silver_cat",
+      "prompt": "Use case: precise-object-edit. Edit the supplied little orange kitten portrait accessory into a silver-shaded British shorthair kitten (银渐层). Change the orange tabby coat to luminous silver-white with soft cool gray shading and subtle charcoal-tipped fur on the crown, ears, back and curled tail, with a pale cream-white muzzle, chest and paws. Keep the same cute forward-facing compact crouched loaf pose, two front paws, curled tail on the right, gentle round eyes, pink nose and inner ears, soft painterly fur illustration, silhouette, scale and position on the square canvas. Preserve all existing transparent margins and true background transparency, including the generous space above the cat. No hat, collar, ground, cushion, text or additional objects. Output only this silver kitten on a truly transparent background."
+    },
+    {
+      "id": "hashwear_orbit_buddy",
+      "prompt": "Use case: background-extraction. The supplied screenshot contains two UI cards. Recreate/extract ONLY the little satellite artwork inside the LEFT card labeled Orbit Buddy as a clean isolated transparent PNG. Preserve the same charming tiny golden box satellite, two blue/teal gridded solar panels, short upper antenna/crescent-like gold accent, tiny golden star sparkles and the curved dotted orbital trail underneath. Preserve its diagonal pose and muted gold/teal/cream palette and illustrated sticker look. Remove ALL card UI, labels, rectangular backgrounds, borders and the right card; do not include the words Orbit Buddy or Contour Stamp. Keep the complete satellite, trail and sparkles visible, centered with moderate even transparent margins in a square canvas. True alpha transparency, no ground or checkerboard."
+    },
+    {
+      "id": "hashwear_contour_stamp",
+      "prompt": "Use case: background-extraction. The supplied screenshot contains two UI cards. Recreate/extract ONLY the small topographic contour sticker inside the RIGHT card labeled Contour Stamp as a clean isolated transparent PNG. Preserve the same irregular organic island-shaped cream die-cut border, several nested muted mint/sage contour lines and dark forest-green spaces forming a topographic hill stamp. Same approximate slightly diagonal shape, soft illustrated edges and colors. Remove ALL card UI, labels, rectangular dark/brown backgrounds, borders and the left satellite card. Do not include any words. Center the complete single contour sticker with moderate even transparent margins on a square canvas. Actual transparent alpha outside the cream sticker, not checkerboard."
+    },
+    {
+      "id": "hashwear_rainbow_flag_final",
+      "prompt": "Create a clean web-icon version of the supplied six-stripe rainbow flag on a yellow pole. Keep the same waving flag silhouette, diagonal golden pole and round gold finial, thick clean black outline and the same red/orange/yellow/green/blue/purple stripes. Remove BOTH the outside white sticker rim and the entire pale gray background and shadow. The outermost contour should be BLACK only, immediately surrounded by perfectly empty transparent alpha pixels. Use smooth flat vector-style shapes and crisp edges; no white outline, no white flecks, no halo, no grain, no texture, no glow and no drop shadow. The whole flag and pole should fit centered in a square transparent PNG with even modest padding. No text or extra symbols."
+    }
+  ]
+}

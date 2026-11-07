@@ -1,0 +1,27 @@
+/* Add new accessories here. See docs/hashwear.md for the catalog format. */
+window.HashwearCatalog = {
+    portrait: 'assets/pic/PX Avatar Portrait 4.png',
+    items: [
+        { id: 'sprout', name: 'Little sprout', category: 'nature', note: 'A little room to grow.', file: 'sprout.png', head: { width: 30, anchor: 83, tilt: -8, y: 7 } },
+        { id: 'antlers', name: 'Woodland antlers', category: 'hats', note: 'A small walk on the wild side.', file: 'antlers-only.png', head: { width: 62, anchor: 53, tilt: -3, y: 9 } },
+        { id: 'crown', name: 'Little crown', category: 'hats', note: 'For your everyday royal duties.', file: 'crown.png', head: { width: 44, anchor: 75, tilt: -5, y: 7 } },
+        { id: 'hard-hat', name: 'Work in progress', category: 'hats', note: 'Good things are under construction.', file: 'hard-hat.png', head: { width: 43, anchor: 79, tilt: -4, y: 7 } },
+        { id: 'graduation-cap', name: 'One more chapter', category: 'hats', note: 'For everything you’re becoming.', file: 'graduation-cap.png', head: { width: 50, anchor: 76, tilt: -4, y: 7 } },
+        { id: 'cat', name: 'Silver company', category: 'companions', note: 'A little silver-shaded friend.', file: 'cat-silver.png', head: { width: 43, anchor: 77, tilt: 0, y: 7 } },
+        { id: 'orbit-buddy', name: 'Orbit Buddy', category: 'extras', note: 'A little company from outer space.', src: 'assets/images/hashwear/orbit-buddy.png', head: { width: 36, anchor: 75, tilt: -7, y: 7 } },
+        { id: 'contour-stamp', name: 'Contour Stamp', category: 'extras', note: 'A small landscape to take along.', src: 'assets/images/hashwear/contour-stamp.png', head: { width: 30, anchor: 80, tilt: 0, y: 7 } },
+        { id: 'pride-pole', name: 'Rainbow flag', category: 'flags', note: 'A little colour, carried proudly.', src: 'assets/images/hashwear/pride-pole.png', head: { width: 37, anchor: 80, tilt: -6, y: 7 } },
+        { id: 'progress-pride', name: 'Progress Pride', category: 'flags', note: 'Room for everyone.', src: 'assets/images/hashwear/progress-pride.png', head: { width: 40, anchor: 80, tilt: -5, y: 7 } },
+        { id: 'canada-wave', name: 'Canada, in the breeze', category: 'flags', note: 'A waving Canadian flag.', src: 'assets/images/hashwear/canada-wave.png', head: { width: 40, anchor: 95, tilt: -4, y: 7 } },
+        { id: 'canada-rectangle', name: 'A little Canada', category: 'flags', note: 'A bright Canadian flag sticker.', src: 'assets/images/hashwear/canada-rectangle.png', head: { width: 40, anchor: 80, tilt: 0, y: 7 } },
+        { id: 'pepero-sticks', name: 'Pepero sticks', category: 'hashflags', note: 'Pepero · Part 1', src: 'assets/images/hashwear/hashflags/hd/pepero-sticks.png', source: 'https://wongmjane.com/hashflags/BF-16861_playwith_pepero_Hashmoji_Part1', redrawn: true, head: { width: 33.7, anchor: 90.7, tilt: -8, y: 7 } },
+        { id: 'pepero-pair', name: 'Pepero pair', category: 'hashflags', note: 'Pepero · Part 2', src: 'assets/images/hashwear/hashflags/hd/pepero-pair.png', source: 'https://wongmjane.com/hashflags/BF-16862_playwith_pepero_Hashmoji_Part2', redrawn: true, head: { width: 34.3, anchor: 86.6, tilt: -5, y: 7 } },
+        { id: 'jewel-crown', name: 'Jewel crown', category: 'hashflags', note: 'WWE Crown Jewel 2026', src: 'assets/images/hashwear/hashflags/hd/jewel-crown.png', source: 'https://wongmjane.com/hashflags/WWECrownJewel2026', redrawn: true, head: { width: 47.3, anchor: 88.3, tilt: -4, y: 8 } },
+        { id: 'vivo-buddy', name: 'Starry vivo buddy', category: 'hashflags', note: 'vivo campaign artwork', src: 'assets/images/hashwear/hashflags/hd/vivo-buddy.png', source: 'https://wongmjane.com/hashflags/BF-16782_VIVO_hashmoji', redrawn: true, head: { width: 29.8, anchor: 93.1, tilt: 0, y: 7 } },
+        { id: 'ebenezer-hat', name: 'Ebenezer top hat', category: 'hashflags', note: 'EBENEZER ALL GLOBAL', src: 'assets/images/hashwear/hashflags/hd/ebenezer-hat.png', source: 'https://wongmjane.com/hashflags/EBENEZERALLGLOBAL', redrawn: true, head: { width: 44, anchor: 85.5, tilt: -5, y: 7 } },
+        { id: 'survivorace-mascot', name: 'Pilot buddy', category: 'hashflags', note: 'Survivorace campaign mascot', src: 'assets/images/hashwear/hashflags/hd/survivorace-mascot.png', source: 'https://wongmjane.com/hashflags/BF-16798_Survivorace_JP_BeijingPlanet_Mascot102026', redrawn: true, head: { width: 35.2, anchor: 90, tilt: 0, y: 7 } },
+        { id: 'smbc-buddy', name: 'SMBC green buddy', category: 'hashflags', note: 'Sumitomo Mitsui Banking Corporation', src: 'assets/images/hashwear/hashflags/hd/smbc-buddy.png', source: 'https://wongmjane.com/hashflags/BF-16707_Sumitomo_Mitsui_Banking_Corporation_Emoji', redrawn: true, head: { width: 31.7, anchor: 85.1, tilt: 0, y: 7 } },
+        { id: 'dignitas-badge', name: 'Dignitas badge', category: 'hashflags', note: 'Dignitas LoL Esports 2026', src: 'assets/images/hashwear/hashflags/hd/dignitas-badge.png', source: 'https://wongmjane.com/hashflags/dignitasLoLEsports2026v2', redrawn: true, head: { width: 26.4, anchor: 91.1, tilt: -5, y: 7 } },
+        { id: 'blue-loading-ring', name: 'Blue loading ring', category: 'hashflags', note: 'Evergreen campaign artwork', src: 'assets/images/hashwear/hashflags/hd/blue-loading-ring.svg', source: 'https://wongmjane.com/hashflags/Net_Emoji_Evergreen_SpanishAdd', redrawn: true, head: { width: 29.6, anchor: 89.1, tilt: 0, y: 7 } }
+    ]
+};

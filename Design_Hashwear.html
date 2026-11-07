@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hashwear by Peitao Xu: a growing collection of little illustrated accessories. Try them on a portrait or your own photo, then save your picture.">
+    <meta name="author" content="Peitao Xu">
+    <title>Hashwear | Peitao Xu</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pic/GIs%20Icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+    <link rel="stylesheet" href="assets/css/project-catalog.css">
+    <link rel="stylesheet" href="assets/css/site-nav.css">
+    <link rel="stylesheet" href="assets/css/hashwear.css?v=20261107-hd-grid">
+</head>
+<body class="project-page hashwear-page">
+    <header class="header-area header-sticky responsive-header">
+        <div class="container"><div class="row"><div class="col-12">
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="logo">.Peitao Xu | Evan.</a>
+                <ul class="nav" id="primary-navigation">
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Publications.html">Publications</a></li>
+                    <li><a href="GraphicDesign.html" class="active">Graphic Design</a></li>
+                </ul>
+                <button type="button" class="menu-trigger" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation"><span>Menu</span></button>
+            </nav>
+        </div></div></div>
+    </header>
+    <main id="hashwear">
+        <section class="project-hero header-text" id="top" aria-labelledby="hashwear-heading">
+            <div class="container">
+                <a class="hw-back" href="GraphicDesign.html">&larr; Back to Graphic Design</a>
+                <p class="project-eyebrow" lang="zh-Hant">互動插畫 / 隨身小裝飾</p>
+                <div class="hw-title-row"><h1 id="hashwear-heading">Hashwear<span aria-hidden="true"> ✳</span></h1><span class="hw-edition">An ongoing little collection</span></div>
+                <p class="project-intro">Little things to wear in pictures. A sprout on your head, a cat on your shoulder, a little more you.</p>
+            </div>
+        </section>
+        <div class="project-catalog">
+            <div class="container hw-content">
+                <noscript><p class="hw-notice">Turn on JavaScript to explore the collection, try on accessories and save a picture. <a href="index.html">See the portrait on my homepage.</a></p></noscript>
+                <section aria-labelledby="studio-heading">
+                    <div class="project-group-heading hw-section-heading">
+                        <div><p class="project-eyebrow">01 / THE PLAYGROUND</p><h2 id="studio-heading">Make yourself at home.</h2></div>
+                        <a class="hw-text-link" href="#collection">Browse the collection &darr;</a>
+                    </div>
+                    <div class="hw-studio">
+                        <div class="hw-preview-panel">
+                            <div class="hw-stage" id="hw-stage" aria-busy="true">
+                                <canvas id="hw-canvas" width="1200" height="1200" role="img" aria-label="Portrait preview. Loading the photo and accessories.">Your browser needs Canvas support to preview this picture.</canvas>
+                                <div id="hw-handles"></div>
+                                <span class="hw-stage-label" aria-hidden="true">YOUR LITTLE LOOK</span>
+                            </div>
+                            <p class="hw-preview-help" id="hw-drag-help">Drag an accessory to move it. When focused, use arrow keys; hold Shift for bigger steps.</p>
+                            <div class="hw-photo-actions">
+                                <label class="hw-button hw-upload" for="hw-photo">Try your photo <span aria-hidden="true">&uarr;</span></label>
+                                <input class="hw-file" id="hw-photo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="hw-photo-help">
+                                <button class="hw-text-button" id="hw-demo" type="button">Use my portrait</button>
+                            </div>
+                            <p class="hw-fine-print" id="hw-photo-help">JPG, PNG or WebP &middot; Up to 20 MB. Your photo stays in your browser.</p>
+                            <div class="hw-cutout-actions">
+                                <button class="hw-text-button" id="hw-cutout" type="button" disabled>Remove photo background</button>
+                                <button class="hw-text-button" id="hw-restore-photo" type="button" hidden>Restore original photo</button>
+                            </div>
+                            <p class="hw-fine-print" id="hw-cutout-help">Portrait cutout works best with one clearly visible person. Everything is processed on your device.</p>
+                        </div>
+                        <div class="hw-controls">
+                            <p class="hw-control-eyebrow">A LITTLE DRESSING ROOM</p>
+                            <fieldset class="hw-edit-target"><legend>What would you like to adjust?</legend>
+                                <div class="hw-slot-options hw-target-options">
+                                    <label><input type="radio" name="hw-target" value="photo"><span>Your photo</span></label>
+                                    <label><input type="radio" name="hw-target" value="accessories" checked><span>Accessories</span></label>
+                                </div>
+                            </fieldset>
+                            <div id="hw-photo-editor" hidden>
+                                <h3>Your photo</h3>
+                                <p class="hw-control-intro">Drag your photo in the preview, or use these controls. Accessories move with it.</p>
+                                <label class="hw-range-label" for="hw-photo-scale">Photo size <output id="hw-photo-scale-value" for="hw-photo-scale">100%</output></label>
+                                <input id="hw-photo-scale" type="range" min="25" max="200" step="1" value="100">
+                                <label class="hw-range-label" for="hw-photo-rotation">Photo rotation <output id="hw-photo-rotation-value" for="hw-photo-rotation">0°</output></label>
+                                <input id="hw-photo-rotation" type="range" min="-180" max="180" step="1" value="0">
+                                <label class="hw-range-label" for="hw-photo-x">Left / right <output id="hw-photo-x-value" for="hw-photo-x">50%</output></label>
+                                <input id="hw-photo-x" type="range" min="0" max="100" step="0.1" value="50">
+                                <label class="hw-range-label" for="hw-photo-y">Up / down <output id="hw-photo-y-value" for="hw-photo-y">58%</output></label>
+                                <input id="hw-photo-y" type="range" min="0" max="100" step="0.1" value="58">
+                                <div class="hw-edit-actions"><button class="hw-text-button" id="hw-photo-reset" type="button">Reset photo position</button></div>
+                            </div>
+                            <div id="hw-accessory-editor">
+                            <h3 id="hw-selection">Little sprout</h3>
+                            <p class="hw-control-intro">Choose a spot, then pick a little something from the collection below.</p>
+                            <fieldset class="hw-placement">
+                                <legend>Where to wear it</legend>
+                                <div class="hw-slot-options">
+                                    <label><input type="radio" name="hw-slot" value="head" checked><span>Head</span></label>
+                                    <label><input type="radio" name="hw-slot" value="shoulder"><span>Shoulder</span></label>
+                                    <label><input type="radio" name="hw-slot" value="cheek"><span>Cheek</span></label>
+                                </div>
+                            </fieldset>
+                            <div class="hw-adjustments" id="hw-adjustments">
+                                <label class="hw-range-label" for="hw-size">Size <output id="hw-size-value" for="hw-size">23%</output></label>
+                                <input id="hw-size" type="range" min="4" max="90" step="0.1" value="23">
+                                <label class="hw-range-label" for="hw-rotation">Rotation <output id="hw-rotation-value" for="hw-rotation">−8°</output></label>
+                                <input id="hw-rotation" type="range" min="-180" max="180" step="1" value="-8">
+                                <details class="hw-position-details"><summary>Fine-tune position</summary>
+                                    <label class="hw-range-label" for="hw-x">Left / right <output id="hw-x-value" for="hw-x">50%</output></label>
+                                    <input id="hw-x" type="range" min="0" max="100" step="0.1" value="50">
+                                    <label class="hw-range-label" for="hw-y">Up / down <output id="hw-y-value" for="hw-y">18%</output></label>
+                                    <input id="hw-y" type="range" min="0" max="100" step="0.1" value="18">
+                                </details>
+                                <div class="hw-edit-actions">
+                                    <button class="hw-text-button" id="hw-reset" type="button">Reset position</button>
+                                    <button class="hw-text-button" id="hw-remove" type="button">Remove accessory</button>
+                                </div>
+                            </div>
+                            <p class="hw-empty-slot" id="hw-empty-slot" hidden>This spot is waiting for a little something. Pick an accessory below.</p>
+                            </div>
+                            <fieldset class="hw-backgrounds"><legend>Picture background</legend>
+                                <div class="hw-background-options">
+                                    <label><input type="radio" name="hw-background" value="sage" checked><span class="hw-swatch hw-swatch-sage" title="Sage"><span class="sr-only">Sage</span></span></label>
+                                    <label><input type="radio" name="hw-background" value="cream"><span class="hw-swatch hw-swatch-cream" title="Cream"><span class="sr-only">Cream</span></span></label>
+                                    <label><input type="radio" name="hw-background" value="lilac"><span class="hw-swatch hw-swatch-lilac" title="Lilac"><span class="sr-only">Lilac</span></span></label>
+                                    <label><input type="radio" name="hw-background" value="transparent"><span class="hw-swatch hw-swatch-transparent" title="Transparent"><span class="sr-only">Transparent</span></span></label>
+                                </div>
+                            </fieldset>
+                            <p class="hw-fine-print">For a cutout look, choose “Remove photo background” below the preview, then pick a colour here.</p>
+                            <button class="hw-button hw-download" id="hw-download" type="button" disabled>Save your picture <span aria-hidden="true">&darr;</span></button>
+                            <p class="hw-fine-print hw-export-note">1200 &times; 1200 PNG &middot; Made right here, just for you.</p>
+                            <p class="hw-status" id="hw-status" role="status" aria-live="polite" aria-atomic="true">Loading the dressing room…</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="hw-collection" id="collection" aria-labelledby="collection-heading">
+                    <div class="project-group-heading hw-section-heading">
+                        <div><p class="project-eyebrow">02 / THE COLLECTION</p><h2 id="collection-heading">Small things, plenty of character.</h2></div>
+                        <span class="project-group-count" id="hw-count"></span>
+                    </div>
+                    <div class="hw-collection-toolbar">
+                        <p>Pick one to try on. New little things will find their way here.</p>
+                        <div class="hw-filters" role="group" aria-label="Filter accessories">
+                            <button type="button" data-hw-filter="all" aria-pressed="true">All</button>
+                            <button type="button" data-hw-filter="hats" aria-pressed="false">Hats</button>
+                            <button type="button" data-hw-filter="nature" aria-pressed="false">Nature</button>
+                            <button type="button" data-hw-filter="companions" aria-pressed="false">Companions</button>
+                            <button type="button" data-hw-filter="extras" aria-pressed="false">Little extras</button>
+                            <button type="button" data-hw-filter="flags" aria-pressed="false">Flags</button>
+                            <button type="button" data-hw-filter="hashflags" aria-pressed="false">Hashflags</button>
+                        </div>
+                    </div>
+                    <div class="hw-gallery" id="hw-gallery" aria-label="Accessory collection"></div>
+                    <details class="hw-credits"><summary>Hashflag sources &amp; artwork credits</summary>
+                        <p>The Hashflags selection is redrawn at higher resolution from campaign artwork found through <a href="https://wongmjane.com/hashflags" target="_blank" rel="noopener noreferrer">Jane Manchun Wong’s directory</a>. Original designs belong to their respective owners. These are separate from my portrait accessory illustrations.</p>
+                        <ul id="hw-credit-list"></ul>
+                    </details>
+                </section>
+                <section class="hw-about" aria-labelledby="about-hashwear">
+                    <div><p class="project-eyebrow">03 / A NOTE FROM ME</p><h2 id="about-hashwear">It started with a little sprout.</h2></div>
+                    <div><p>These little accessories began as a playful detail on my homepage portrait. Hashwear gives them a place of their own: an ongoing collection of illustrations to collect, combine and try on.</p>
+                        <p>The headwear series is called <strong>Hashhat</strong>. Here, those same little things can also sit on a shoulder or become a cheek decoration. Start with my portrait, or make a look with your own photo.</p>
+                        <p class="hw-fine-print">Collection format inspired by <a href="https://wongmjane.com/hashflags" target="_blank" rel="noopener noreferrer">Jane Manchun Wong’s Hashflags</a>.</p>
+                    </div>
+                </section>
+                <nav class="hw-bottom-nav" aria-label="Project navigation"><a class="hw-back" href="GraphicDesign.html">&larr; Back to Graphic Design</a><a class="hw-text-link" href="#top">Back to top &uarr;</a></nav>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container"><div class="row">
+        <div class="col-lg-6 col-xs-12"><div class="left-text-content"><p>Copyright &copy; <span data-current-year>2026</span> Peitao Xu | Evan.</p></div></div>
+        <div class="col-lg-6 col-xs-12"><div class="right-text-content"><ul class="social-icons">
+            <li><p>Contact</p></li>
+            <li><a href="https://github.com/xupeitao" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://x.com/PeitaoXu" aria-label="X"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/peitaoxu" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=BbBzK24AAAAJ" aria-label="Google Scholar"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:peitao.xu@outlook.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul></div></div>
+    </div></div></footer>
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/hashwear-catalog.js?v=20261107-hd-grid"></script>
+    <script src="assets/js/hashwear-background.js"></script>
+    <script src="assets/js/hashwear.js?v=20261107-hd-grid"></script>
+</body>
+</html>

@@ -8,22 +8,25 @@
     if (!button || layers.length !== 2) return;
 
     var base = 'assets/images/portrait-accessories-v1/';
+    var catalog = window.HashwearCatalog;
+    if (!catalog || !catalog.items || !catalog.items.length) return;
     // Coordinates are percentages of the portrait, including its transparent margins.
     // Anchor is the point in each illustration that touches the hair, not its canvas edge.
-    var accessories = [
-        { file: 'sprout', name: 'a little green sprout', width: '30%', x: '50%', y: '7%', anchor: '-83%', tilt: '-8deg' },
-        { file: 'antlers-only', name: 'reindeer antlers', width: '62%', x: '50%', y: '9%', anchor: '-53%', tilt: '-3deg' },
-        { file: null, name: 'no accessory' },
-        { file: 'crown', name: 'a little crown', width: '44%', x: '50%', y: '7%', anchor: '-75%', tilt: '-5deg' },
-        { file: 'hard-hat', name: "an engineer's hard hat", width: '43%', x: '50%', y: '7%', anchor: '-79%', tilt: '-4deg' },
-        { file: 'graduation-cap', name: "a master's graduation cap", width: '50%', x: '50%', y: '7%', anchor: '-76%', tilt: '-4deg' },
-        { file: null, name: 'no accessory' },
-        { file: 'squirrel', name: 'a little squirrel', width: '35%', x: '50%', y: '7%', anchor: '-84%', tilt: '0deg' },
-        { file: null, name: 'no accessory' },
-        { file: 'red-maple', name: 'a little red maple tree', width: '40%', x: '50%', y: '7%', anchor: '-78%', tilt: '0deg' },
-        { file: 'cat', name: 'a little cat', width: '43%', x: '50%', y: '7%', anchor: '-77%', tilt: '0deg' },
-        { file: null, name: 'no accessory' }
-    ];
+    var looks = catalog.items.map(function (item) {
+        return {
+            id: item.id, name: item.name, src: item.src || base + item.file,
+            width: item.head.width + '%', x: '50%', y: item.head.y + '%',
+            anchor: '-' + item.head.anchor + '%', tilt: item.head.tilt + 'deg'
+        };
+    });
+    var undecorated = { id: null, name: 'no accessory' };
+    var introIds = ['sprout', 'antlers', 'crown'];
+    var introLooks = introIds.map(function (id) { return looks.find(function (look) { return look.id === id; }); });
+    if (introLooks.some(function (look) { return !look; })) return;
+    var accessories = [introLooks[0], introLooks[1], undecorated, introLooks[2]].concat(
+        looks.filter(function (look) { return introIds.indexOf(look.id) === -1; }),
+        [undecorated, undecorated, undecorated]
+    );
 
     var activeLayer = layers[0];
     var requestedIndex = 0;
@@ -33,31 +36,31 @@
     var cache = new Map();
 
     function describe(accessory) {
-        var description = accessory.file ? ' with ' + accessory.name : ' without a head accessory';
+        var description = accessory.id ? ' with ' + accessory.name : ' without a head accessory';
         button.setAttribute('aria-label', 'Peitao (Evan) Xu' + description + '. Change head accessory.');
-        button.setAttribute('data-current-accessory', accessory.file || 'none');
+        button.setAttribute('data-current-accessory', accessory.id || 'none');
     }
 
     function load(accessory) {
-        if (!cache.has(accessory.file)) {
-            cache.set(accessory.file, new Promise(function (resolve, reject) {
+        if (!cache.has(accessory.id)) {
+            cache.set(accessory.id, new Promise(function (resolve, reject) {
                 var image = new Image();
                 image.onload = function () {
                     if (image.decode) image.decode().then(function () { resolve(image); }, function () { resolve(image); });
                     else resolve(image);
                 };
                 image.onerror = reject;
-                image.src = base + accessory.file + '.png';
+                image.src = accessory.src;
             }));
         }
-        return cache.get(accessory.file);
+        return cache.get(accessory.id);
     }
 
     function show(index) {
         requestedIndex = index;
         var version = ++requestVersion;
         var accessory = accessories[index];
-        if (!accessory.file) {
+        if (!accessory.id) {
             layers.forEach(function (layer) { layer.classList.remove('is-visible'); });
             describe(accessory);
             return;
@@ -90,10 +93,10 @@
         }
         // Keep the four undecorated entries as weighted options. Exclude the
         // current look so every click produces a change, including blank slots.
-        var currentFile = accessories[requestedIndex].file;
+        var currentId = accessories[requestedIndex].id;
         var choices = [];
         accessories.forEach(function (accessory, index) {
-            if (!failed.has(index) && accessory.file !== currentFile) choices.push(index);
+            if (!failed.has(index) && accessory.id !== currentId) choices.push(index);
         });
         if (choices.length) show(choices[Math.floor(Math.random() * choices.length)]);
     }

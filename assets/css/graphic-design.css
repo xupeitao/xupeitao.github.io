@@ -47,8 +47,8 @@
 .design-project-card { min-width: 0; display: flex; flex-direction: column; overflow: hidden; border: 1px solid #dbe5df; border-radius: 10px; background: #fff; color: #203b30; }
 .design-project-card:hover { border-color: #246746; color: #203b30; }
 .design-project-card:focus-visible { outline: 3px solid #9458bb; outline-offset: 4px; }
-.design-project-cover { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: #f4f7f5; padding: 12px; }
-.design-project-cover img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.design-project-cover { position: relative; flex: 0 0 auto; aspect-ratio: 16 / 10; background: #f4f7f5; }
+.design-project-cover img { position: absolute; inset: 12px; display: block; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: contain; }
 .design-project-copy { display: flex; flex-direction: column; flex: 1; align-items: flex-start; padding: 26px; }
 .design-project-type { color: #64746a; font-size: 10px; font-weight: 600; letter-spacing: 1px; line-height: 1.8; }
 .design-project-copy h3 { margin: 12px 0; font-size: 23px; font-weight: 700; line-height: 1.35; }

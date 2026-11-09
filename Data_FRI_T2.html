@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Term 2 Forest Inventory Analysis and Tableau Dashboard Project by Peitao Xu: data validation, spatial analysis, workflow architecture and interactive Ontario FRI dashboards.">
+    <meta name="description" content="Term 2 Forest Inventory Analysis and Tableau Dashboard Project by Peitao Xu: data validation, spatial analysis, original dashboard designs and the Ontario FRI delivery workflow.">
+    <meta name="color-scheme" content="light">
     <meta name="author" content="Peitao Xu">
     <title>Term 2 Forest Inventory Analysis | Peitao Xu</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&amp;display=swap" rel="stylesheet">
@@ -15,8 +16,9 @@
     <link rel="stylesheet" href="assets/css/site-nav.css">
     <link rel="stylesheet" href="assets/css/data-project.css">
     <link rel="stylesheet" href="assets/css/project-navigation.css">
+    <link rel="stylesheet" href="assets/css/t2-case-study.css?v=20261108-png-gallery">
 </head>
-<body class="project-page data-project-page">
+<body class="project-page data-project-page t2-page">
     <header class="header-area header-sticky responsive-header">
         <div class="container">
             <div class="row">
@@ -36,94 +38,206 @@
         </div>
     </header>
     <main>
-        <section class="project-hero header-text" id="top" aria-labelledby="fri-project-heading">
-            <div class="container">
-                <a class="data-back-link" href="Project.html">&larr; Back to project page (All)</a>
-                <p class="project-eyebrow" lang="zh-Hant">數據分析 / 安大略省森林資源清查</p>
-                <h1 id="fri-project-heading">Term 2 Forest Inventory Analysis and Tableau Dashboard Project</h1>
-                <p class="project-intro">Connecting forest inventory data, spatial analysis and interactive dashboards to explore Ontario's forests.</p>
-            </div>
-        </section>
-        <div class="project-catalog">
-            <div class="container data-project-content">
-                <section class="data-overview" aria-labelledby="overview-heading">
-                    <div class="project-group-heading">
-                        <div>
-                            <p class="project-eyebrow" lang="zh-Hant">01 / 專案概覽</p>
-                            <h2 id="overview-heading">From forest inventory to interactive insights</h2>
-                        </div>
-                    </div>
-                    <p>Ontario's Term 2 Forest Resources Inventory (FRI) provides spatial and tabular information for understanding forests at the Forest Management Unit (FMU) level. This project brings inventory data into interactive Tableau dashboards for forest-level exploration and comparisons across inventories.</p>
-                    <p>Working with eight Crown Forest inventories, I validated and analyzed spatial and tabular data using ArcGIS Pro and Python, and developed dashboards to communicate the results. The workflow connects data ingestion, validation and transformation with cloud storage, data modelling and Tableau delivery.</p>
-                    <ul class="data-tools" aria-label="Project tools and methods">
-                        <li>ArcGIS Pro</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Azure</li>
-                        <li>Databricks</li>
-                        <li>Tableau Prep</li>
-                        <li>Tableau</li>
-                    </ul>
-                    <a class="resource-link" href="https://public.tableau.com/app/profile/ontariofri/vizzes" target="_blank" rel="noopener noreferrer">View the Ontario FRI Tableau Public profile &rarr;</a>
-                </section>
-                <section aria-labelledby="architecture-heading">
-                    <div class="project-group-heading">
-                        <div>
-                            <p class="project-eyebrow" lang="zh-Hant">02 / 數據與方法</p>
-                            <h2 id="architecture-heading">Project architecture</h2>
-                        </div>
-                    </div>
-                    <p class="data-section-intro">The architecture connects inventory polygons, FMU boundaries, disturbance data and satellite imagery with data processing, spatial analysis and dashboard publishing.</p>
-                    <figure class="resource-sheet data-architecture">
-                        <a href="assets/pic/Project/Data/T2%201.png" target="_blank" rel="noopener noreferrer" aria-label="Open the project architecture diagram at full size">
-                            <img src="assets/pic/Project/Data/T2%201.png" alt="Project architecture showing forest inventory data sources, ingestion through Azure and FRI GeoHub, spatial validation, Databricks and Tableau Prep transformation, cloud storage, dashboard development and Tableau Public delivery" width="3207" height="1536" loading="lazy" decoding="async">
-                        </a>
-                        <figcaption>Data sources, ingestion, validation, transformation, storage, development and delivery. Select the diagram to view it at full size.</figcaption>
-                    </figure>
-                </section>
-                <section aria-labelledby="dashboards-heading">
-                    <div class="project-group-heading">
-                        <div>
-                            <p class="project-eyebrow" lang="zh-Hant">03 / 互動儀表板</p>
-                            <h2 id="dashboards-heading">Explore the inventory</h2>
-                        </div>
-                    </div>
-                    <p class="data-section-intro">Explore an individual forest inventory, then use the navigator to discover the wider dashboard collection.</p>
-                    <div class="data-dashboards">
-                        <article class="data-dashboard" aria-labelledby="fmu930-heading">
-                            <div class="data-dashboard-heading">
-                                <div>
-                                    <h3 id="fmu930-heading">FMU 930 &mdash; Term 2 Dashboard</h3>
-                                    <p>Explore forest inventory maps and analytical views for FMU 930.</p>
-                                </div>
-                                <a href="https://public.tableau.com/app/profile/ontariofri/viz/fmu930_T2/Db6" target="_blank" rel="noopener noreferrer">Open FMU 930 on Tableau Public &rarr;</a>
-                            </div>
-                            <div class="dashboard-fit" data-dashboard-fit data-dashboard-width="1600" data-dashboard-height="927" style="--dashboard-width:1600; --dashboard-height:927" role="region" aria-label="Complete interactive FMU 930 dashboard">
-                                <div class="dashboard-fit-stage">
-                                    <tableau-viz id="fmu930-viz" src="https://public.tableau.com/views/fmu930_T2/Db6" width="1600px" height="927px" device="desktop" toolbar="bottom" hide-tabs iframe-attr-loading="lazy" aria-label="FMU 930 Term 2 Forest Inventory Dashboard"></tableau-viz>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="data-dashboard" aria-labelledby="navigator-heading">
-                            <div class="data-dashboard-heading">
-                                <div>
-                                    <h3 id="navigator-heading">FMU Navigator</h3>
-                                    <p>Navigate Ontario's Term 2 Forest Resources Inventory dashboard collection.</p>
-                                </div>
-                                <a href="https://public.tableau.com/app/profile/ontariofri/viz/fmu_navigator/Db2" target="_blank" rel="noopener noreferrer">Open FMU Navigator on Tableau Public &rarr;</a>
-                            </div>
-                            <div class="dashboard-fit" data-dashboard-fit data-dashboard-width="1600" data-dashboard-height="927" style="--dashboard-width:1600; --dashboard-height:927" role="region" aria-label="Complete interactive FMU Navigator dashboard">
-                                <div class="dashboard-fit-stage">
-                                    <tableau-viz id="navigator-viz" src="https://public.tableau.com/views/fmu_navigator/Db2" width="1600px" height="927px" device="desktop" toolbar="bottom" hide-tabs iframe-attr-loading="lazy" aria-label="Ontario FRI Term 2 FMU Navigator"></tableau-viz>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <p class="data-dashboard-note">Each complete dashboard scales to fit the page. Use the Tableau Public links for a larger view.</p>
-                    <noscript><p class="data-dashboard-note">Enable JavaScript to use the embedded dashboards, or open them directly using the Tableau Public links above.</p></noscript>
-                </section>
-            </div>
+<article id="t2-portfolio-case" aria-labelledby="fri-project-heading">
+  <section class="project-hero t2-hero" id="top" aria-labelledby="fri-project-heading">
+    <div class="t2-wrap t2-hero-grid">
+      <div class="t2-hero-content">
+        <a class="data-back-link" href="Project.html">&larr; Back to project page (All)</a>
+        <p class="t2-eyebrow">FOREST RESOURCES INVENTORY / TERM 2</p>
+        <h1 id="fri-project-heading">FRI Term 2<br>Forest Inventory Dashboards</h1>
+        <p class="t2-deck">A Tableau dashboard series for exploring LiDAR-derived forest inventory and comparing results across forest management units.</p>
+        <div class="t2-hero-actions">
+          <a class="t2-action t2-action-primary" href="#dashboard-walkthrough">Explore the dashboards</a>
+          <a class="t2-action t2-action-outline" href="#system-architecture">See the architecture</a>
         </div>
+        <dl class="t2-hero-facts">
+          <div><dt>My role</dt><dd>Primary dashboard developer</dd></div>
+          <div><dt>Tools</dt><dd>Tableau · Databricks · GIS</dd></div>
+        </dl>
+      </div>
+      <figure class="t2-hero-figure">
+        <div class="t2-hero-figure-top"><span>Dashboard OVERVIEW </span><span></span></div>
+        <img src="assets/pic/Project/Data/T2/02-dashboard-overview.png" width="1331" height="749" alt="Overview of the FRI Term 2 dashboard series and its inventory analysis views.">
+        <!-- <figcaption>The original Tableau layout, with the unit identifier masked.</figcaption> -->
+      </figure>
+    </div>
+  </section>
+
+  <nav class="t2-case-nav" aria-label="Case study sections">
+    <ol class="t2-wrap t2-jump-list">
+      <li><a href="#overview"><span>01</span> Overview &amp; My Role</a></li>
+      <li><a href="#dashboard-walkthrough"><span>02</span> Dashboard Walkthrough</a></li>
+      <li><a href="#system-architecture"><span>03</span> System Architecture</a></li>
+      <li><a href="#databricks-workflow"><span>04</span> Databricks Workflow</a></li>
+      <li><a href="#results"><span>05</span> Results &amp; Collaboration</a></li>
+    </ol>
+  </nav>
+
+  <div class="t2-wrap t2-main">
+    <section class="t2-section" id="overview" aria-labelledby="overview-heading">
+      <div class="t2-section-heading">
+        <span class="t2-section-number" aria-hidden="true">01</span>
+        <div>
+          <p class="t2-eyebrow">CONTEXT &amp; CONTRIBUTION</p>
+          <h2 id="overview-heading">Overview &amp; My Role</h2>
+          <p>Ontario’s Forest Resources Inventory (FRI) program uses a collaborative review process to prepare and deliver forest inventories. The Term 2 dashboard series brought the maps, LiDAR-derived stand measures, and review information together at the Forest Management Unit (FMU) level.</p>
+        </div>
+      </div>
+      <div class="t2-grid t2-overview-grid">
+        <div class="t2-story">
+          <h3>What I built</h3>
+          <p>As the primary dashboard developer, I built the Navigator, unit-level Tableau views, and comparison layouts. I designed reusable templates, calculated fields, and parameters so analysts could prepare new FMU views using the same structure.</p>
+          <h3>Who it supported</h3>
+          <p>I worked with FRI scientists to review spatial patterns and unusual values. I also worked with platform colleagues on data preparation and used forestry partner feedback to refine the views for inventory review and delivery.</p>
+        </div>
+        <figure class="t2-figure">
+          <div class="t2-figure-label">PROJECT CONTEXT <span>ORIGINAL DIAGRAM</span></div>
+          <img src="assets/pic/Project/Data/T2/01-review-checkpoints.png" width="1331" height="750" alt="Original Term 2 collaborative checkpoint diagram showing pre-inventory discussion, validation, and draft inventory review." loading="lazy">
+          <figcaption>The original checkpoint diagram shows where remote-sensing validation and draft inventory review fit in the Term 2 process. <a class="t2-open-image" href="assets/pic/Project/Data/T2/01-review-checkpoints.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="t2-section" id="dashboard-walkthrough" aria-labelledby="dashboards-heading">
+      <div class="t2-section-heading">
+        <span class="t2-section-number" aria-hidden="true">02</span>
+        <div>
+          <p class="t2-eyebrow">TABLEAU PRODUCT DESIGN</p>
+          <h2 id="dashboards-heading">Dashboard Walkthrough</h2>
+          <p>The Navigator helps users locate a unit. The unit dashboard brings together species composition, stand metrics, and LiDAR maps. The comparison view lets reviewers apply the same controls to two units.</p>
+        </div>
+      </div>
+      <div class="t2-route" aria-label="Dashboard sequence">
+        <div><span>01</span><strong>Locate a unit</strong><small>Navigator and review status</small></div>
+        <div><span>02</span><strong>Explore its inventory</strong><small>Composition, metrics, and map filters</small></div>
+        <div><span>03</span><strong>Compare units</strong><small>Side-by-side maps with shared controls</small></div>
+      </div>
+      <div class="t2-gallery">
+        <div class="t2-gallery-top">
+          <h3>Original design gallery</h3>
+          <p>9 views</p>
+        </div>
+        <noscript><p class="t2-gallery-note">Open a design board to explore all nine views:</p><ul class="t2-static-gallery"><li><a href="assets/pic/Project/Data/T2/02-home-page.png" target="_blank" rel="noopener">Home Page</a></li><li><a href="assets/pic/Project/Data/T2/02-dashboard-navigator.png" target="_blank" rel="noopener">Navigator</a></li><li><a href="assets/pic/Project/Data/T2/02-unit-overview.png" target="_blank" rel="noopener">Unit Overview</a></li><li><a href="assets/pic/Project/Data/T2/02-stand-metrics.png" target="_blank" rel="noopener">Stand Metrics</a></li><li><a href="assets/pic/Project/Data/T2/02-lidar-attributes.png" target="_blank" rel="noopener">LiDAR Attributes</a></li><li><a href="assets/pic/Project/Data/T2/02-age-site-class.png" target="_blank" rel="noopener">Age &amp; Site Class</a></li><li><a href="assets/pic/Project/Data/T2/02-lidar-metric-map.png" target="_blank" rel="noopener">LiDAR Metric Map</a></li><li><a href="assets/pic/Project/Data/T2/02-metadata.png" target="_blank" rel="noopener">About &amp; Metadata</a></li><li><a href="assets/pic/Project/Data/T2/02-fmu-comparison.png" target="_blank" rel="noopener">FMU Comparison</a></li></ul></noscript>
+        <div class="t2-board-picker" role="group" aria-label="Choose a dashboard design">
+          <button type="button" data-t2-view="home" aria-pressed="true">Home Page</button>
+          <button type="button" id="navigator-heading" data-t2-view="navigator" aria-pressed="false">Navigator</button>
+          <button type="button" id="fmu930-heading" data-t2-view="unit" aria-pressed="false">Unit Overview</button>
+          <button type="button" data-t2-view="stand" aria-pressed="false">Stand Metrics</button>
+          <button type="button" data-t2-view="attributes" aria-pressed="false">LiDAR Attributes</button>
+          <button type="button" data-t2-view="age" aria-pressed="false">Age &amp; Site Class</button>
+          <button type="button" data-t2-view="map" aria-pressed="false">LiDAR Metric Map</button>
+          <button type="button" data-t2-view="metadata" aria-pressed="false">About &amp; Metadata</button>
+          <button type="button" data-t2-view="compare" aria-pressed="false">FMU Comparison</button>
+
+        </div>
+        <figure class="t2-board">
+          <img data-t2-board-image src="assets/pic/Project/Data/T2/02-home-page.png" width="1335" height="749" alt="FRI Term 2 dashboard home page introducing the FMU Navigator, unit inventory analysis and FMU Comparison views." loading="lazy">
+          <figcaption class="t2-board-caption">
+            <div aria-live="polite" aria-atomic="true">
+              <h4 data-t2-board-title>Home Page</h4>
+              <p data-t2-board-description>The home page introduces the dashboard series and guides reviewers to the FMU Navigator or the side-by-side FMU Comparison view.</p>
+            </div>
+            <a class="t2-open-image" data-t2-board-original href="assets/pic/Project/Data/T2/02-home-page.png" target="_blank" rel="noopener">Open full image</a>
+          </figcaption>
+        </figure>
+        <p class="t2-gallery-note">These are original design boards and screenshots. Unit identifiers, live map layers, and example values are masked where they appear.</p>
+      </div>
+    </section>
+
+    <section class="t2-section" id="system-architecture" aria-labelledby="architecture-heading">
+      <div class="t2-section-heading">
+        <span class="t2-section-number" aria-hidden="true">03</span>
+        <div>
+          <p class="t2-eyebrow">DATA MODEL &amp; DELIVERY</p>
+          <h2 id="architecture-heading">System Architecture</h2>
+          <p>The original architecture follows the work from inventory inputs and spatial validation through transformation, storage, Tableau development, and delivery. It also shows where QA, version control, and publishing standards apply.</p>
+        </div>
+      </div>
+      <figure class="t2-figure t2-full-figure">
+        <div class="t2-figure-label">SEVEN-STAGE PIPELINE <span>ORIGINAL DIAGRAM</span></div>
+        <img src="assets/pic/Project/Data/T2/03-system-architecture.png" width="1821" height="868" alt="Original seven-stage architecture with data sources, ingestion, validation, transformation, storage, development, and delivery." loading="lazy">
+        <figcaption>The architecture brings LiDAR-derived polygons, unit boundaries, disturbance layers, and imagery into a repeatable process for producing maps and reports. <a class="t2-open-image" href="assets/pic/Project/Data/T2/03-system-architecture.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+      </figure>
+      <div class="t2-grid t2-model-grid">
+        <div class="t2-story">
+          <p class="t2-eyebrow">RELATING THE SOURCES</p>
+          <h3>MU Code as the unit identifier</h3>
+          <p>The FMU schedule supplies unit-level context. MU Code relates it to boundaries, reporting status, and stand and raster products. A single FMU can contain many stand records, so unit-level and stand-level measures are handled at their respective levels of detail.</p>
+          <p>The reporting model also distinguishes inventory periods, forest regions, and ownership classes so filters can narrow the scope of a review.</p>
+        </div>
+        <figure class="t2-figure">
+          <div class="t2-figure-label">MU CODE DATA MODEL <span>ORIGINAL DIAGRAM</span></div>
+          <img src="assets/pic/Project/Data/T2/03-mu-code-data-model.png" width="1821" height="893" alt="Original model diagram relating the FMU schedule and MU Code to unit boundaries, classifications, LiDAR polygons, and rasters." loading="lazy">
+          <figcaption>The model connects temporal and spatial classifications with the review products. <a class="t2-open-image" href="assets/pic/Project/Data/T2/03-mu-code-data-model.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="t2-section" id="databricks-workflow" aria-labelledby="workflow-heading">
+      <div class="t2-section-heading">
+        <span class="t2-section-number" aria-hidden="true">04</span>
+        <div>
+          <p class="t2-eyebrow">DATABRICKS TO TABLEAU</p>
+          <h2 id="workflow-heading">Databricks Workflow</h2>
+          <p>The workflow prepares tabular and spatial sources separately. Tableau uses the prepared tables for status and lookups and uses geometry layers for the inventory maps.</p>
+        </div>
+      </div>
+      <figure class="t2-figure t2-full-figure">
+        <div class="t2-figure-label">SOURCE TO DASHBOARD <span>ORIGINAL WORKFLOW</span></div>
+        <img src="assets/pic/Project/Data/T2/04-databricks-workflow.png" width="1551" height="676" alt="Original workflow diagram connecting Azure source storage, Databricks preparation, and Tableau. Test workbook details are masked." loading="lazy">
+        <figcaption>The design connects cloud storage, Databricks, Tableau Desktop, and delivery. The test workbook details are masked. <a class="t2-open-image" href="assets/pic/Project/Data/T2/04-databricks-workflow.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+      </figure>
+      <div class="t2-grid t2-paths">
+        <div class="t2-path">
+          <div class="t2-path-body">
+            <p class="t2-eyebrow">TABULAR PATH</p>
+            <h3>Excel to Delta</h3>
+            <p>The notebook reads workbook sheets, normalizes fields, and writes Delta tables for metadata and lookups. The Navigator reads the prepared status record for each FMU.</p>
+          </div>
+          <figure class="t2-path-figure">
+            <img src="assets/pic/Project/Data/T2/04-excel-to-delta.png" width="1551" height="1365" alt="Original Databricks Excel-to-Delta notebook with workspace and storage details masked." loading="lazy">
+            <figcaption>Original notebook with catalog and storage details masked. <a class="t2-open-image" href="assets/pic/Project/Data/T2/04-excel-to-delta.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+          </figure>
+        </div>
+        <div class="t2-path">
+          <div class="t2-path-body">
+            <p class="t2-eyebrow">SPATIAL PATH</p>
+            <h3>Shapefiles to Lakebase</h3>
+            <p>Geometry preparation includes checking the spatial reference system and loading stand and unit layers into Lakebase PostgreSQL. Tableau uses the prepared geometry in unit maps.</p>
+          </div>
+          <figure class="t2-path-figure">
+            <img src="assets/pic/Project/Data/T2/04-shapefile-to-lakebase.png" width="1551" height="745" alt="Original Databricks spatial loading notebook and table preview with source identifiers and inventory rows masked." loading="lazy">
+            <figcaption>Original spatial load and table preview with connection details and inventory records masked. <a class="t2-open-image" href="assets/pic/Project/Data/T2/04-shapefile-to-lakebase.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="t2-section t2-last" id="results" aria-labelledby="results-heading">
+      <div class="t2-section-heading">
+        <span class="t2-section-number" aria-hidden="true">05</span>
+        <div>
+          <p class="t2-eyebrow">REUSABILITY &amp; REVIEW</p>
+          <h2 id="results-heading">Results &amp; Collaboration</h2>
+          <p>The reusable Tableau template gave analysts a consistent set of calculations, filters, and layouts for new units. It also gave reviewers familiar views when moving between units.</p>
+        </div>
+      </div>
+      <figure class="t2-figure t2-full-figure">
+        <div class="t2-figure-label">REUSABLE TABLEAU TEMPLATE <span>ORIGINAL DESIGN BOARD</span></div>
+        <img src="assets/pic/Project/Data/T2/05-reusable-template.png" width="1821" height="858" alt="Original Tableau template board showing a reusable unit overview, standardized calculated fields, and parameter controls." loading="lazy">
+        <figcaption>The original template board shows the layout, calculation rules, and parameters used to adapt the view to different FMUs. <a class="t2-open-image" href="assets/pic/Project/Data/T2/05-reusable-template.png" target="_blank" rel="noopener">Open full image</a></figcaption>
+      </figure>
+      <div class="t2-outcomes">
+        <div><h3>Review unusual values</h3><p>I used summaries and maps together to compare inventory periods and locate stands for follow-up with FRI scientists.</p></div>
+        <div><h3>Refine the views</h3><p>Feedback from forestry partners informed the placement of filters, comparison views, and reference material.</p></div>
+        <div><h3>Prepare the next unit</h3><p>The template pairs common calculation logic with unit-specific inputs so the workflow can be repeated across FMUs.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="t2-wrap t2-back-top"><a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a></div>
+  <script type="application/json" data-t2-gallery>{"home":{"asset":"02-home-page","title":"Home Page","alt":"FRI Term 2 dashboard home page introducing the FMU Navigator, unit inventory analysis and FMU Comparison views.","description":"The home page introduces the dashboard series and guides reviewers to the FMU Navigator or the side-by-side FMU Comparison view.","src":"assets/pic/Project/Data/T2/02-home-page.png","width":1335,"height":749},"navigator":{"asset":"02-dashboard-navigator","title":"Navigator","alt":"FMU Navigator with a unit map, dashboard status and map theme controls.","description":"Users can switch map themes and check whether a dashboard is available for a unit. The original status cards explain each stage in the delivery process.","src":"assets/pic/Project/Data/T2/02-dashboard-navigator.png","width":1331,"height":749},"unit":{"asset":"02-unit-overview","title":"Unit Overview","alt":"Original unit design with area-by-species summaries, age-class charts, and a map panel for leading species.","description":"A species map sits beside area and age-class summaries. Selecting a chart element narrows the view so a reviewer can look at one species at a time.","src":"assets/pic/Project/Data/T2/02-unit-overview.png","width":1754,"height":987},"stand":{"asset":"02-stand-metrics","title":"Stand Metrics","alt":"Original stand metrics design with a vertical structure chart, age and site class controls, and metric maps.","description":"The layout combines vertical structure, species, and site-class summaries. Filters help the reviewer compare stand measures within the selected unit.","src":"assets/pic/Project/Data/T2/02-stand-metrics.png","width":1755,"height":986},"attributes":{"asset":"02-lidar-attributes","title":"LiDAR Attributes","alt":"Original LiDAR attributes design pairing weighted stand averages by species with metric distributions by bin.","description":"The view pairs area-weighted stand averages with distributions by species and bin. Users can choose the metric, age group, site class, and bin size.","src":"assets/pic/Project/Data/T2/02-lidar-attributes.png","width":1753,"height":984},"age":{"asset":"02-age-site-class","title":"Age & Site Class","alt":"Original age and site class board with a ten-year age-class trend chart and distribution summaries.","description":"The layout pairs stand-level mean values by age class with measures of variability and area distributions. The accompanying definitions help users interpret non-applicable site classes.","src":"assets/pic/Project/Data/T2/02-age-site-class.png","width":1754,"height":988},"map":{"asset":"02-lidar-metric-map","title":"LiDAR Metric Map","alt":"Original LiDAR metric map design with separate steps to select a metric and then apply filters.","description":"The first panel selects the LiDAR metric. The second applies species, age, site class, and vertical structure filters so the reviewer can focus the map.","src":"assets/pic/Project/Data/T2/02-lidar-metric-map.png","width":1756,"height":987},"metadata":{"asset":"02-metadata","title":"About & Metadata","alt":"Dashboard reference page with LiDAR metric definitions, bin sizes and species codes.","description":"The reference page keeps LiDAR attribute definitions, bin sizes, and species codes close to the analysis so reviewers can check how the values are classified.","src":"assets/pic/Project/Data/T2/02-metadata.png","width":1761,"height":985},"compare":{"asset":"02-fmu-comparison","title":"FMU Comparison","alt":"Original comparison board with two FMU map panels and shared metric and filter controls.","description":"Both selected units stay in view. The shared metric and filter controls let users compare the same slice of inventory across the two maps.","src":"assets/pic/Project/Data/T2/02-fmu-comparison.png","width":1754,"height":988}}</script>
+</article>
     <section class="project-related" aria-labelledby="related-projects-heading" data-related-category="data">
         <div class="container">
             <h2 class="project-related-heading" id="related-projects-heading">Related Projects</h2>
@@ -170,7 +284,6 @@
         </div>
     </footer>
     <script src="assets/js/site-nav.js"></script>
-    <script src="assets/js/dashboard-fit.js"></script>
-    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <script src="assets/js/t2-case-study.js?v=20261108"></script>
 </body>
 </html>

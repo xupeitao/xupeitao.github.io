@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Term 2 Forest Inventory Analysis and Tableau Dashboard Project by Peitao Xu: data validation, spatial analysis, workflow architecture and interactive Ontario FRI dashboards.">
+    <meta name="author" content="Peitao Xu">
+    <title>Term 2 Forest Inventory Analysis | Peitao Xu</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pic/GIs%20Icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+    <link rel="stylesheet" href="assets/css/project-catalog.css">
+    <link rel="stylesheet" href="assets/css/site-nav.css">
+    <link rel="stylesheet" href="assets/css/data-project.css">
+    <link rel="stylesheet" href="assets/css/project-navigation.css">
+</head>
+<body class="project-page data-project-page">
+    <header class="header-area header-sticky responsive-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav" aria-label="Main navigation">
+                        <a href="index.html" class="logo">.Peitao Xu | Evan.</a>
+                        <ul class="nav" id="primary-navigation">
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="Project.html" class="active">Projects</a></li>
+                            <li><a href="Publications.html">Publications</a></li>
+                            <li><a href="GraphicDesign.html">Graphic Design</a></li>
+                        </ul>
+                        <button type="button" class="menu-trigger" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation"><span>Menu</span></button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="project-hero header-text" id="top" aria-labelledby="fri-project-heading">
+            <div class="container">
+                <a class="data-back-link" href="Project.html">&larr; Back to project page (All)</a>
+                <p class="project-eyebrow" lang="zh-Hant">數據分析 / 安大略省森林資源清查</p>
+                <h1 id="fri-project-heading">Term 2 Forest Inventory Analysis and Tableau Dashboard Project</h1>
+                <p class="project-intro">Connecting forest inventory data, spatial analysis and interactive dashboards to explore Ontario's forests.</p>
+            </div>
+        </section>
+        <div class="project-catalog">
+            <div class="container data-project-content">
+                <section class="data-overview" aria-labelledby="overview-heading">
+                    <div class="project-group-heading">
+                        <div>
+                            <p class="project-eyebrow" lang="zh-Hant">01 / 專案概覽</p>
+                            <h2 id="overview-heading">From forest inventory to interactive insights</h2>
+                        </div>
+                    </div>
+                    <p>Ontario's Term 2 Forest Resources Inventory (FRI) provides spatial and tabular information for understanding forests at the Forest Management Unit (FMU) level. This project brings inventory data into interactive Tableau dashboards for forest-level exploration and comparisons across inventories.</p>
+                    <p>Working with eight Crown Forest inventories, I validated and analyzed spatial and tabular data using ArcGIS Pro and Python, and developed dashboards to communicate the results. The workflow connects data ingestion, validation and transformation with cloud storage, data modelling and Tableau delivery.</p>
+                    <ul class="data-tools" aria-label="Project tools and methods">
+                        <li>ArcGIS Pro</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Azure</li>
+                        <li>Databricks</li>
+                        <li>Tableau Prep</li>
+                        <li>Tableau</li>
+                    </ul>
+                    <a class="resource-link" href="https://public.tableau.com/app/profile/ontariofri/vizzes" target="_blank" rel="noopener noreferrer">View the Ontario FRI Tableau Public profile &rarr;</a>
+                </section>
+                <section aria-labelledby="architecture-heading">
+                    <div class="project-group-heading">
+                        <div>
+                            <p class="project-eyebrow" lang="zh-Hant">02 / 數據與方法</p>
+                            <h2 id="architecture-heading">Project architecture</h2>
+                        </div>
+                    </div>
+                    <p class="data-section-intro">The architecture connects inventory polygons, FMU boundaries, disturbance data and satellite imagery with data processing, spatial analysis and dashboard publishing.</p>
+                    <figure class="resource-sheet data-architecture">
+                        <a href="assets/pic/Project/Data/T2%201.png" target="_blank" rel="noopener noreferrer" aria-label="Open the project architecture diagram at full size">
+                            <img src="assets/pic/Project/Data/T2%201.png" alt="Project architecture showing forest inventory data sources, ingestion through Azure and FRI GeoHub, spatial validation, Databricks and Tableau Prep transformation, cloud storage, dashboard development and Tableau Public delivery" width="3207" height="1536" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption>Data sources, ingestion, validation, transformation, storage, development and delivery. Select the diagram to view it at full size.</figcaption>
+                    </figure>
+                </section>
+                <section aria-labelledby="dashboards-heading">
+                    <div class="project-group-heading">
+                        <div>
+                            <p class="project-eyebrow" lang="zh-Hant">03 / 互動儀表板</p>
+                            <h2 id="dashboards-heading">Explore the inventory</h2>
+                        </div>
+                    </div>
+                    <p class="data-section-intro">Explore an individual forest inventory, then use the navigator to discover the wider dashboard collection.</p>
+                    <div class="data-dashboards">
+                        <article class="data-dashboard" aria-labelledby="fmu930-heading">
+                            <div class="data-dashboard-heading">
+                                <div>
+                                    <h3 id="fmu930-heading">FMU 930 &mdash; Term 2 Dashboard</h3>
+                                    <p>Explore forest inventory maps and analytical views for FMU 930.</p>
+                                </div>
+                                <a href="https://public.tableau.com/app/profile/ontariofri/viz/fmu930_T2/Db6" target="_blank" rel="noopener noreferrer">Open FMU 930 on Tableau Public &rarr;</a>
+                            </div>
+                            <div class="dashboard-fit" data-dashboard-fit data-dashboard-width="1600" data-dashboard-height="927" style="--dashboard-width:1600; --dashboard-height:927" role="region" aria-label="Complete interactive FMU 930 dashboard">
+                                <div class="dashboard-fit-stage">
+                                    <tableau-viz id="fmu930-viz" src="https://public.tableau.com/views/fmu930_T2/Db6" width="1600px" height="927px" device="desktop" toolbar="bottom" hide-tabs iframe-attr-loading="lazy" aria-label="FMU 930 Term 2 Forest Inventory Dashboard"></tableau-viz>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="data-dashboard" aria-labelledby="navigator-heading">
+                            <div class="data-dashboard-heading">
+                                <div>
+                                    <h3 id="navigator-heading">FMU Navigator</h3>
+                                    <p>Navigate Ontario's Term 2 Forest Resources Inventory dashboard collection.</p>
+                                </div>
+                                <a href="https://public.tableau.com/app/profile/ontariofri/viz/fmu_navigator/Db2" target="_blank" rel="noopener noreferrer">Open FMU Navigator on Tableau Public &rarr;</a>
+                            </div>
+                            <div class="dashboard-fit" data-dashboard-fit data-dashboard-width="1600" data-dashboard-height="927" style="--dashboard-width:1600; --dashboard-height:927" role="region" aria-label="Complete interactive FMU Navigator dashboard">
+                                <div class="dashboard-fit-stage">
+                                    <tableau-viz id="navigator-viz" src="https://public.tableau.com/views/fmu_navigator/Db2" width="1600px" height="927px" device="desktop" toolbar="bottom" hide-tabs iframe-attr-loading="lazy" aria-label="Ontario FRI Term 2 FMU Navigator"></tableau-viz>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="data-dashboard-note">Each complete dashboard scales to fit the page. Use the Tableau Public links for a larger view.</p>
+                    <noscript><p class="data-dashboard-note">Enable JavaScript to use the embedded dashboards, or open them directly using the Tableau Public links above.</p></noscript>
+                </section>
+            </div>
+        </div>
+    <section class="project-related" aria-labelledby="related-projects-heading" data-related-category="data">
+        <div class="container">
+            <h2 class="project-related-heading" id="related-projects-heading">Related Projects</h2>
+            <p class="project-related-intro">More Data Analytics projects.</p>
+            <div class="project-related-grid">
+                    <a class="project-related-card" href="GIS_Signboard.html">
+                        <img src="assets/pic/Project/GIS/04.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">Signboard Lens in Urban Streets</span>
+                    </a>
+                    <a class="project-related-card" href="GIS_NAPS.html">
+                        <img src="assets/pic/Project/GIS/07.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">NAPS Automation Project</span>
+                    </a>
+                    <a class="project-related-card" href="Data_Mapathon.html">
+                        <img src="assets/pic/Project/GIS/mapthon%201.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">2026 OPS GIS Summit Mapathon</span>
+                    </a>
+            </div>
+            <nav class="project-bottom-navigation" aria-label="Back to all projects">
+                <a href="Project.html">&larr; Back to project page (All)</a>
+            </nav>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content"><p>Copyright &copy; <span data-current-year>2026</span> Peitao Xu | Evan.</p></div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><p>Contact</p></li>
+                            <li><a href="https://github.com/xupeitao" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://x.com/PeitaoXu" aria-label="X"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/peitaoxu" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://scholar.google.com/citations?authuser=1&amp;user=BbBzK24AAAAJ" aria-label="Google Scholar"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:peitao.xu@outlook.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/dashboard-fit.js"></script>
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</body>
+</html>

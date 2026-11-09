@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="700" viewBox="0 0 1440 700" role="img" aria-labelledby="title description">
+<title id="title">Forest inventory system architecture</title>
+<desc id="description">The tabular and spatial data paths use Delta tables and Lakebase PostgreSQL, respectively. Both supply the Tableau reporting model and relate via FMU ID.</desc>
+<rect x="0" y="0" width="1440" height="700" rx="0" fill="#f2f5ee" stroke="none" stroke-width="2"/>
+<rect x="48" y="42" width="41" height="31" rx="8" fill="#23604a" stroke="none" stroke-width="2"/>
+<text x="59" y="63" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">02</text>
+<text x="102" y="63" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">SYSTEM ARCHITECTURE</text>
+<text x="48" y="126" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="51" font-weight="700" letter-spacing="-1.3">Forest inventory system architecture</text>
+<text x="50" y="162" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="400" letter-spacing="0">Two data paths support the same inventory views</text>
+<path d="M48 186L1392 186" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="230" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">INPUTS</text>
+<text x="383" y="230" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">VALIDATION &amp; PREPARATION</text>
+<text x="718" y="230" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">PREPARED DATA</text>
+<text x="1053" y="230" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">REPORTING</text>
+<path d="M342 335L372 335" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M365 329l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M677 335L707 335" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M700 329l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1012 335L1042 335" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M1035 329l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M342 503L372 503" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M365 497l9 6-9 6" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M677 503L707 503" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M700 497l9 6-9 6" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1012 503L1042 503" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M1035 497l9 6-9 6" fill="none" stroke="#41666c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="48" y="260" width="285" height="149" rx="13" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="65" y="290" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">TABULAR INPUTS</text>
+<text x="65" y="324" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Inventory metadata</text>
+<text x="65" y="361" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Planning and review status</text>
+<text x="65" y="385" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Attribute and species lookups</text>
+<rect x="383" y="260" width="285" height="149" rx="13" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="400" y="290" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">DATABRICKS</text>
+<text x="400" y="324" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Prepare attributes</text>
+<text x="400" y="361" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Check unit IDs and categories</text>
+<text x="400" y="385" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Standardize tabular attributes</text>
+<rect x="718" y="260" width="285" height="149" rx="13" fill="#e4efe1" stroke="#d3dfd6" stroke-width="2"/>
+<text x="735" y="290" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">DELTA</text>
+<text x="735" y="324" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Delta tables</text>
+<text x="735" y="361" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Prepared status records</text>
+<text x="735" y="385" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Inventory metadata</text>
+<rect x="48" y="428" width="285" height="149" rx="13" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="65" y="458" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">SPATIAL INPUTS</text>
+<text x="65" y="492" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Spatial inventory</text>
+<text x="65" y="529" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">LiDAR-derived stand polygons</text>
+<text x="65" y="553" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Unit boundaries</text>
+<rect x="383" y="428" width="285" height="149" rx="13" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="400" y="458" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">SPATIAL PROCESSING</text>
+<text x="400" y="492" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Prepare geometry</text>
+<text x="400" y="529" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Check geometry and CRS</text>
+<text x="400" y="553" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Prepare unit and stand layers</text>
+<rect x="718" y="428" width="285" height="149" rx="13" fill="#e3eef0" stroke="#d3dfd6" stroke-width="2"/>
+<text x="735" y="458" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">POSTGRESQL</text>
+<text x="735" y="492" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.28">Lakebase</text>
+<text x="735" y="529" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Prepared spatial layers</text>
+<text x="735" y="553" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Geometry available to reporting</text>
+<rect x="1053" y="260" width="339" height="317" rx="14" fill="#1b3b30" stroke="none" stroke-width="2"/>
+<text x="1076" y="296" fill="#bcddca" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">TABLEAU</text>
+<text x="1076" y="336" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.45">Reusable reporting</text>
+<text x="1076" y="370" fill="#d8e8de" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="400" letter-spacing="0">Common calculations, filters</text>
+<text x="1076" y="395" fill="#d8e8de" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="400" letter-spacing="0">and layouts across units</text>
+<path d="M1076 408L1368 408" fill="none" stroke="#426555" stroke-width="2" stroke-linecap="round"/>
+<text x="1076" y="434" fill="#f8fcf9" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">Navigator</text>
+<path d="M1076 447L1368 447" fill="none" stroke="#426555" stroke-width="2" stroke-linecap="round"/>
+<text x="1076" y="473" fill="#f8fcf9" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">Single FMU exploration</text>
+<path d="M1076 486L1368 486" fill="none" stroke="#426555" stroke-width="2" stroke-linecap="round"/>
+<text x="1076" y="512" fill="#f8fcf9" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">FMU comparison</text>
+<rect x="48" y="604" width="1344" height="56" rx="10" fill="#dde9dd" stroke="none" stroke-width="2"/>
+<text x="69" y="639" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="700" letter-spacing="0">Shared FMU ID</text>
+<text x="288" y="639" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="400" letter-spacing="0">A consistent unit identifier relates metadata to unit boundaries and stand records.</text>
+<text x="48" y="684" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">Simplified architecture for the portfolio case study</text>
+</svg>

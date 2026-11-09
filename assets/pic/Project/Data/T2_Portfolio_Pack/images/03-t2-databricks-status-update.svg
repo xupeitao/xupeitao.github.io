@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680" role="img" aria-labelledby="title description">
+<title id="title">Databricks status update</title>
+<desc id="description">The simulated status for FMU A changes from In preparation to Ready for review. A spreadsheet record is validated, written to Delta, and read by the Navigator.</desc>
+<rect x="0" y="0" width="1440" height="680" rx="0" fill="#f2f5ee" stroke="none" stroke-width="2"/>
+<rect x="48" y="42" width="41" height="31" rx="8" fill="#23604a" stroke="none" stroke-width="2"/>
+<text x="59" y="63" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">03</text>
+<text x="102" y="63" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">DATABRICKS WORKFLOW</text>
+<text x="48" y="126" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="51" font-weight="700" letter-spacing="-1.3">One status update through Databricks</text>
+<text x="50" y="162" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="400" letter-spacing="0">A fictional change to FMU A, from the source spreadsheet to the Navigator</text>
+<path d="M48 186L1392 186" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<rect x="48" y="222" width="312" height="367" rx="15" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="67" y="257" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">01 / SOURCE</text>
+<text x="67" y="298" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.4">Spreadsheet</text>
+<rect x="392" y="222" width="312" height="367" rx="15" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="411" y="257" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">02 / TRANSFORM</text>
+<text x="411" y="298" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.4">Validation</text>
+<rect x="736" y="222" width="312" height="367" rx="15" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="755" y="257" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">03 / STORE</text>
+<text x="755" y="298" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.4">Delta record</text>
+<rect x="1080" y="222" width="312" height="367" rx="15" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="1099" y="257" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">04 / DISPLAY</text>
+<text x="1099" y="298" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.4">Navigator</text>
+<path d="M365 407L383 407" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M376 401l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M709 407L727 407" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M720 401l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1053 407L1071 407" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M1064 401l9 6-9 6" fill="none" stroke="#23604a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="68" y="341" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="700" letter-spacing="0">FMU A status</text>
+<rect x="68" y="359" width="272" height="64" rx="8" fill="#eff2ed" stroke="none" stroke-width="2"/>
+<text x="83" y="381" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">BEFORE</text>
+<text x="83" y="406" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="400" letter-spacing="0">In preparation</text>
+<rect x="68" y="437" width="272" height="72" rx="8" fill="#e4efe1" stroke="none" stroke-width="2"/>
+<text x="83" y="462" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">AFTER</text>
+<text x="83" y="490" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="21" font-weight="700" letter-spacing="0">Ready for review</text>
+<text x="68" y="553" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">A metadata edit for one unit</text>
+<rect x="412" y="327" width="272" height="42" rx="7" fill="#edf3e9" stroke="none" stroke-width="2"/>
+<path d="M426 347l5 5 9 -10" fill="none" stroke="#23604a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="451" y="353" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Recognized FMU ID</text>
+<rect x="412" y="382" width="272" height="42" rx="7" fill="#edf3e9" stroke="none" stroke-width="2"/>
+<path d="M426 402l5 5 9 -10" fill="none" stroke="#23604a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="451" y="408" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Permitted status value</text>
+<rect x="412" y="437" width="272" height="42" rx="7" fill="#edf3e9" stroke="none" stroke-width="2"/>
+<path d="M426 457l5 5 9 -10" fill="none" stroke="#23604a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="451" y="463" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">One status row per unit</text>
+<text x="412" y="518" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Check the input before writing</text>
+<text x="412" y="543" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">the prepared status record.</text>
+<text x="756" y="344" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="20" font-weight="700" letter-spacing="0">Prepared status table</text>
+<rect x="756" y="365" width="272" height="105" rx="8" fill="#e4efe1" stroke="#d3dfd6" stroke-width="2"/>
+<text x="771" y="393" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">UNIT</text>
+<text x="851" y="393" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">REVIEW STATUS</text>
+<path d="M768 410L1016 410" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<text x="771" y="444" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="0">FMU A</text>
+<text x="851" y="444" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">Ready for review</text>
+<text x="756" y="519" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Write the validated row</text>
+<text x="756" y="544" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">to a Delta table.</text>
+<rect x="1100" y="320" width="272" height="156" rx="10" fill="#eaf0e8" stroke="#d3dfd6" stroke-width="2"/>
+<svg x="1105" y="325" width="262" height="146" viewBox="0 0 240 175">
+<path d="M3 135C37 117 36 105 68 102S107 102 130 77S166 41 236 50" fill="none" stroke="#d0e2e4" stroke-width="9"/>
+<path d="M13 26L68 19L93 34L84 82L42 94L13 71Z" fill="#cbd8cb" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M97 33L141 19L180 34L171 80L130 98L85 82Z" fill="#23604a" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M183 34L223 31L230 81L206 102L173 81Z" fill="#d5dfd4" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M42 97L83 85L129 101L123 147L65 153L33 131Z" fill="#d2ded1" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M131 101L173 83L206 103L223 131L185 154L126 146Z" fill="#a8c9bc" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="124" y="66" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="25" font-weight="700" letter-spacing="0">A</text>
+<text x="162" y="127" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="700" letter-spacing="0">B</text>
+</svg>
+<rect x="1100" y="491" width="272" height="68" rx="8" fill="#e4efe1" stroke="none" stroke-width="2"/>
+<text x="1116" y="517" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">FMU A</text>
+<text x="1116" y="542" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">Ready for review</text>
+<path d="M48 632L1392 632" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="661" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">Illustrative workflow with synthetic data</text>
+</svg>

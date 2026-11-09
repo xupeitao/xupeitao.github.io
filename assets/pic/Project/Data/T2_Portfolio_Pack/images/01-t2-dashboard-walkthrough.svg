@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="790" viewBox="0 0 1440 790" role="img" aria-labelledby="title description">
+<title id="title">Dashboard walkthrough</title>
+<desc id="description">Three synthetic dashboard views show a fictional forest management unit Navigator, stand-height map, and side-by-side comparison.</desc>
+<rect x="0" y="0" width="1440" height="790" rx="0" fill="#f2f5ee" stroke="none" stroke-width="2"/>
+<rect x="48" y="42" width="41" height="31" rx="8" fill="#23604a" stroke="none" stroke-width="2"/>
+<text x="59" y="63" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">01</text>
+<text x="102" y="63" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">DASHBOARD WALKTHROUGH</text>
+<text x="48" y="126" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="51" font-weight="700" letter-spacing="-1.3">Explore a forest inventory</text>
+<text x="50" y="162" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="400" letter-spacing="0">From locating a unit to comparing the same stand metric across two units</text>
+<path d="M48 186L1392 186" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<rect x="48" y="208" width="290" height="515" rx="17" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<rect x="355" y="208" width="730" height="515" rx="17" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<rect x="1102" y="208" width="290" height="515" rx="17" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="68" y="236" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">01 / NAVIGATOR</text>
+<text x="68" y="274" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.3">Find a unit</text>
+<text x="68" y="300" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Illustrative unit map</text>
+<rect x="68" y="318" width="250" height="184" rx="10" fill="#eaf0e8" stroke="#d3dfd6" stroke-width="2"/>
+<svg x="73" y="323" width="240" height="174" viewBox="0 0 240 175">
+<path d="M3 135C37 117 36 105 68 102S107 102 130 77S166 41 236 50" fill="none" stroke="#d0e2e4" stroke-width="9"/>
+<path d="M13 26L68 19L93 34L84 82L42 94L13 71Z" fill="#cbd8cb" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M97 33L141 19L180 34L171 80L130 98L85 82Z" fill="#23604a" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M183 34L223 31L230 81L206 102L173 81Z" fill="#d5dfd4" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M42 97L83 85L129 101L123 147L65 153L33 131Z" fill="#d2ded1" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M131 101L173 83L206 103L223 131L185 154L126 146Z" fill="#a8c9bc" stroke="#fffefa" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="124" y="66" fill="#ffffff" font-family="Arial, Liberation Sans, sans-serif" font-size="25" font-weight="700" letter-spacing="0">A</text>
+<text x="162" y="127" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="23" font-weight="700" letter-spacing="0">B</text>
+</svg>
+<rect x="68" y="521" width="250" height="80" rx="10" fill="#e4efe1" stroke="none" stroke-width="2"/>
+<text x="84" y="551" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="22" font-weight="700" letter-spacing="0">FMU A</text>
+<text x="84" y="579" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="0">Ready for review</text>
+<text x="68" y="644" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Locate a forest unit</text>
+<text x="68" y="669" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">and read its status.</text>
+<text x="375" y="236" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">02 / SINGLE FMU</text>
+<text x="375" y="274" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.3">Inspect stand height</text>
+<text x="375" y="300" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">FMU A</text>
+<rect x="375" y="318" width="171" height="247" rx="10" fill="#f5f7f2" stroke="#d3dfd6" stroke-width="2"/>
+<text x="391" y="350" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">METRIC</text>
+<rect x="389" y="363" width="143" height="41" rx="7" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="400" y="389" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">Stand height</text>
+<text x="391" y="438" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">AGE CLASS</text>
+<rect x="389" y="451" width="143" height="41" rx="7" fill="#fffefa" stroke="#d3dfd6" stroke-width="2"/>
+<text x="400" y="477" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">40–59 years</text>
+<text x="391" y="535" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Species group</text>
+<text x="512" y="535" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="700" letter-spacing="0">All</text>
+<rect x="561" y="318" width="503" height="247" rx="10" fill="#eaf0e8" stroke="#d3dfd6" stroke-width="2"/>
+<svg x="584" y="325" width="457" height="231" viewBox="0 0 240 175">
+<polygon points="25,31 64,19 61,57 16,66" fill="#d9ead2" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="64,19 118,26 112,68 61,57" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="118,26 174,19 170,58 112,68" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="174,19 218,32 230,73 170,58" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="16,66 61,57 53,105 18,111" fill="#d9ead2" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="61,57 112,68 111,111 53,105" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="112,68 170,58 164,106 111,111" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="170,58 230,73 219,111 164,106" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="18,111 53,105 75,153 31,147" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="53,105 111,111 126,143 75,153" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="111,111 164,106 182,153 126,143" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="164,106 219,111 212,143 182,153" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+</svg>
+<text x="375" y="607" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="0">Stand height (m)</text>
+<rect x="375" y="622" width="19" height="19" rx="3" fill="#d9ead2" stroke="#a2b7a7" stroke-width="2"/>
+<text x="403" y="638" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">10–14</text>
+<rect x="503" y="622" width="19" height="19" rx="3" fill="#a5c6a3" stroke="#a2b7a7" stroke-width="2"/>
+<text x="531" y="638" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">15–19</text>
+<rect x="631" y="622" width="19" height="19" rx="3" fill="#68a385" stroke="#a2b7a7" stroke-width="2"/>
+<text x="659" y="638" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">20–24</text>
+<rect x="759" y="622" width="19" height="19" rx="3" fill="#2a6550" stroke="#a2b7a7" stroke-width="2"/>
+<text x="787" y="638" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">25–29</text>
+<text x="375" y="690" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="400" letter-spacing="0">Choose the metric, then refine the map by age or species.</text>
+<text x="1122" y="236" fill="#23604a" font-family="Arial, Liberation Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="1.55">03 / COMPARISON</text>
+<text x="1122" y="274" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.3">Compare units</text>
+<text x="1122" y="300" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Side-by-side maps</text>
+<rect x="1122" y="318" width="250" height="77" rx="10" fill="#e3eef0" stroke="none" stroke-width="2"/>
+<text x="1137" y="346" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="19" font-weight="700" letter-spacing="0">Shared filters</text>
+<text x="1137" y="373" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="16" font-weight="400" letter-spacing="0">Stand height / 40–59 years</text>
+<text x="1122" y="428" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="0">FMU A</text>
+<rect x="1122" y="440" width="120" height="113" rx="8" fill="#eaf0e8" stroke="#d3dfd6" stroke-width="2"/>
+<svg x="1126" y="452" width="112" height="89" viewBox="0 0 240 175">
+<polygon points="25,31 64,19 61,57 16,66" fill="#d9ead2" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="64,19 118,26 112,68 61,57" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="118,26 174,19 170,58 112,68" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="174,19 218,32 230,73 170,58" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="16,66 61,57 53,105 18,111" fill="#d9ead2" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="61,57 112,68 111,111 53,105" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="112,68 170,58 164,106 111,111" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="170,58 230,73 219,111 164,106" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="18,111 53,105 75,153 31,147" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="53,105 111,111 126,143 75,153" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="111,111 164,106 182,153 126,143" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="164,106 219,111 212,143 182,153" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+</svg>
+<text x="1252" y="428" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="700" letter-spacing="0">FMU B</text>
+<rect x="1252" y="440" width="120" height="113" rx="8" fill="#eaf0e8" stroke="#d3dfd6" stroke-width="2"/>
+<svg x="1256" y="452" width="112" height="89" viewBox="0 0 240 175">
+<polygon points="18,45 62,32 70,68 24,79" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="62,32 103,19 115,61 70,68" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="103,19 161,23 165,68 115,61" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="161,23 214,38 224,77 165,68" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="24,79 70,68 72,112 31,119" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="70,68 115,61 119,104 72,112" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="115,61 165,68 171,116 119,104" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="165,68 224,77 225,122 171,116" fill="#2a6550" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="31,119 72,112 78,149 43,153" fill="#d9ead2" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="72,112 119,104 131,157 78,149" fill="#a5c6a3" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="119,104 171,116 178,145 131,157" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+<polygon points="171,116 225,122 207,150 178,145" fill="#68a385" stroke="#fffefa" stroke-width="2.3" stroke-linejoin="round"/>
+</svg>
+<text x="1122" y="584" fill="#172e26" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="700" letter-spacing="0">Same height ranges (m)</text>
+<rect x="1122" y="596" width="57" height="14" rx="3" fill="#d9ead2" stroke="none" stroke-width="2"/>
+<text x="1125" y="629" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="14" font-weight="400" letter-spacing="0">10–14</text>
+<rect x="1184" y="596" width="57" height="14" rx="3" fill="#a5c6a3" stroke="none" stroke-width="2"/>
+<text x="1187" y="629" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="14" font-weight="400" letter-spacing="0">15–19</text>
+<rect x="1246" y="596" width="57" height="14" rx="3" fill="#68a385" stroke="none" stroke-width="2"/>
+<text x="1249" y="629" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="14" font-weight="400" letter-spacing="0">20–24</text>
+<rect x="1308" y="596" width="57" height="14" rx="3" fill="#2a6550" stroke="none" stroke-width="2"/>
+<text x="1311" y="629" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="14" font-weight="400" letter-spacing="0">25–29</text>
+<text x="1122" y="666" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Both maps use the same</text>
+<text x="1122" y="691" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="18" font-weight="400" letter-spacing="0">metric and age class.</text>
+<path d="M48 742L1392 742" fill="none" stroke="#d3dfd6" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="771" fill="#455d53" font-family="Arial, Liberation Sans, sans-serif" font-size="17" font-weight="400" letter-spacing="0">Illustrative reconstruction with synthetic data</text>
+</svg>

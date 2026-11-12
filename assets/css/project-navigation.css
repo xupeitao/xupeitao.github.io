@@ -112,3 +112,20 @@
 @media (max-width: 359px) {
   .project-related-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Data projects show all four other projects in their category. */
+.project-related[data-related-category="data"] .project-related-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 991px) {
+  .project-related[data-related-category="data"] .project-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 359px) {
+  .project-related[data-related-category="data"] .project-related-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -301,6 +301,15 @@
   line-height: 1.6;
 }
 
+.project-card-body .project-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.project-card-body .project-types .project-type { margin: 0; }
+
 .project-group .project-empty {
   margin: 0;
   padding: 24px;

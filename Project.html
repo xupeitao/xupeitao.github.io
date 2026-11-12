@@ -80,13 +80,13 @@
             <div class="container">
                 <div class="project-toolbar">
                     <div class="project-filters" data-project-filters role="group" aria-label="Filter projects by discipline" hidden>
-                        <button type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-results">All <span data-filter-count>14</span></button>
-                        <button type="button" data-project-filter="data" aria-pressed="false" aria-controls="project-results">Data Analytics <span data-filter-count>4</span></button>
+                        <button type="button" data-project-filter="all" aria-pressed="true" aria-controls="project-results">All <span data-filter-count>15</span></button>
+                        <button type="button" data-project-filter="data" aria-pressed="false" aria-controls="project-results">Data Analytics <span data-filter-count>5</span></button>
                         <button type="button" data-project-filter="gis" aria-pressed="false" aria-controls="project-results">GIS <span data-filter-count>8</span></button>
                         <button type="button" data-project-filter="structure" aria-pressed="false" aria-controls="project-results">Structural Design <span data-filter-count>1</span></button>
                         <button type="button" data-project-filter="bim" aria-pressed="false" aria-controls="project-results">BIM <span data-filter-count>1</span></button>
                     </div>
-                    <p class="project-count" data-project-count role="status" aria-live="polite">Showing 14 projects</p>
+                    <p class="project-count" data-project-count role="status" aria-live="polite">Showing 15 projects</p>
                 </div>
                 <div class="project-groups" id="project-results">
             <section class="project-group" id="project-data" data-project-group="data" aria-labelledby="project-heading-data">
@@ -95,7 +95,7 @@
                         <p class="project-eyebrow" lang="zh-Hant">01 / 數據分析</p>
                         <h2 id="project-heading-data">Data Analytics</h2>
                     </div>
-                    <span class="project-group-count" data-project-group-count>4 projects</span>
+                    <span class="project-group-count" data-project-group-count>5 projects</span>
                 </div>
                 <div class="project-grid">
                     <article class="project-card" data-project-categories="data">
@@ -117,9 +117,22 @@
                                 <img src="assets/pic/Project/GIS/04.png" alt="Signboard Lens in Urban Streets project preview" loading="lazy" decoding="async">
                             </div>
                             <div class="project-card-body">
-                                <p class="project-type">Research</p>
+                                <div class="project-types" aria-label="Project themes"><span class="project-type">Smart city</span><span class="project-type">Machine learning</span><span class="project-type">User research</span></div>
                                 <h3 id="project-title-4">Signboard Lens in Urban Streets</h3>
-                                <p class="project-description">Geospatial and text analysis exploring signboards and urban activity.</p>
+                                <p class="project-description">Smart city research combining machine learning, geospatial analysis and user research to understand signboards and urban activity.</p>
+                                <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-project-categories="data">
+                        <a class="project-card-link" href="Data_SoilMoisture_XAI.html" aria-labelledby="project-title-soil-xai">
+                            <div class="project-card-image">
+                                <img src="assets/pic/Project/Data/SoilMoisture/soil-moisture-cover.png" alt="Conceptual illustration of crop roots, soil moisture, rainfall and data networks" width="1586" height="992" loading="lazy" decoding="async">
+                            </div>
+                            <div class="project-card-body">
+                                <p class="project-type">Machine learning &amp; Explainable AI</p>
+                                <h3 id="project-title-soil-xai">Soil Moisture Prediction with Explainable AI</h3>
+                                <p class="project-description">ERA5 climate data preparation, Random Forest, XGBoost and LSTM modelling, with SHAP explanations of precipitation and temperature effects.</p>
                                 <span class="project-card-cta">View project <span aria-hidden="true">&rarr;</span></span>
                             </div>
                         </a>

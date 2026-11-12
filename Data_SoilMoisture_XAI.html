@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A concise introduction to Peitao Xu's soil moisture machine learning project, followed by the original report slides covering ERA5, Random Forest, XGBoost, LSTM and SHAP.">
+    <meta name="author" content="Peitao Xu">
+    <meta name="color-scheme" content="light">
+    <title>Soil Moisture Prediction with Explainable AI | Peitao Xu</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pic/GIs%20Icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
+    <link rel="stylesheet" href="assets/css/project-catalog.css">
+    <link rel="stylesheet" href="assets/css/site-nav.css">
+    <link rel="stylesheet" href="assets/css/data-project.css">
+    <link rel="stylesheet" href="assets/css/project-navigation.css">
+    <link rel="stylesheet" href="assets/css/soil-moisture.css">
+</head>
+<body class="project-page data-project-page soil-page">
+    <header class="header-area header-sticky responsive-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav" aria-label="Main navigation">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            .Peitao Xu | Evan.
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" id="primary-navigation">
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="Project.html" class="active" aria-current="page">Projects</a></li>
+                            <li><a href="Publications.html">Publications</a></li>
+                            <li><a href="GraphicDesign.html">Graphic Design</a></li>
+                        </ul>
+                        <button type="button" class="menu-trigger" aria-controls="primary-navigation"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span>Menu</span>
+                        </button>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="project-hero header-text" id="top" aria-labelledby="soil-heading">
+            <div class="container">
+                <a class="data-back-link" href="Project.html">&larr; Back to project page (All)</a>
+                <p class="project-eyebrow">Data Analytics / Machine Learning &amp; Explainable AI</p>
+                <h1 id="soil-heading">Exploring the Impact of Meteorological Variables on Soil Moisture Using Explainable Artificial Intelligence (XAI)</h1>
+                <p class="project-intro">Predicting soil moisture with machine learning and using SHAP to understand the contributions of precipitation and temperature.</p>
+                <a class="soil-report-link" href="#full-report">Read the full report &darr;</a>
+            </div>
+        </section>
+        <div class="project-catalog">
+            <div class="container data-project-content">
+                <section class="data-overview" id="overview" aria-labelledby="overview-heading">
+                    <div class="project-group-heading"><div><p class="project-eyebrow">01 / Project Overview</p><h2 id="overview-heading">Predicting soil moisture and explaining why</h2></div></div>
+                    <p>In this 2024 project, I used ERA5 monthly climate data from 1950&ndash;2023 to model soil moisture across ten agricultural regions in China. I prepared the data, built temporal features, trained Random Forest, XGBoost and LSTM models, and used SHAP to interpret how weather conditions contributed to their predictions.</p>
+                    <ul class="data-tools" aria-label="Project data and methods"><li>ERA5</li><li>Random Forest</li><li>XGBoost</li><li>LSTM</li><li>SHAP</li><li>Time-series regression</li></ul>
+                </section>
+                <section id="methods" aria-labelledby="workflow-heading">
+                    <div class="project-group-heading"><div><p class="project-eyebrow">02 / Methods &amp; Findings</p><h2 id="workflow-heading">How I applied machine learning</h2></div></div>
+                    <div class="soil-methods">
+                        <div>
+                            <h3 id="data-preparation-heading">Data preparation and temporal validation</h3>
+                            <div class="soil-summary-grid">
+                                <div class="soil-copy"><p>I used <strong>888 months of ERA5 data (1950&ndash;2023)</strong>, with total precipitation and 2 m air temperature as predictors. I combined the first three soil water layers using depth weights to represent moisture in the upper metre. The study covered ten agricultural regions in mainland China, each containing multiple <strong>0.25&deg; grid cells</strong>.</p></div>
+                                <div class="soil-copy"><p>Within each grid cell, I assigned the <strong>earliest 80% of records to training</strong> and the <strong>latest 20% to validation</strong>, preserving time order. I pooled grid-cell records within each region and trained one model per algorithm per region: <strong>30 models in total</strong>.</p></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="model-inputs-heading">Comparing three model configurations</h3>
+                            <p class="data-section-intro">All models predicted current-month soil moisture from precipitation and temperature histories. I constructed lagged inputs for the tree models and sequential inputs for LSTM.</p>
+                            <div class="soil-table-wrap" role="region" aria-labelledby="model-inputs-heading" tabindex="0">
+                                <table class="soil-table">
+                                    <caption>Input data, modelling approach and SHAP method</caption>
+                                    <thead><tr><th scope="col">Model</th><th scope="col">Input history</th><th scope="col">Modelling approach</th><th scope="col">Explanation method</th></tr></thead>
+                                    <tbody>
+                                        <tr><th scope="row">Random Forest</th><td>6 months &times; 2 variables<br>12 lagged predictors</td><td>An ensemble of decision trees to learn nonlinear relationships.</td><td>TreeExplainer</td></tr>
+                                        <tr><th scope="row">XGBoost</th><td>6 months &times; 2 variables<br>12 lagged predictors</td><td>Gradient-boosted trees to model complex relationships between the inputs.</td><td>TreeExplainer</td></tr>
+                                        <tr><th scope="row">LSTM</th><td>12 time steps &times; 2 variables<br>A sequence for each prediction</td><td>A recurrent neural network to learn temporal patterns.</td><td>GradientExplainer</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="soil-note">Each window includes the current month: five previous months for the tree models and eleven for LSTM.</p>
+                        </div>
+                        <div>
+                            <h3 id="performance-heading">Model performance across ten regions</h3>
+                            <p class="data-section-intro">I compared held-out R&sup2; scores by region. <strong>LSTM performed best in nine of the ten regions</strong>; XGBoost was slightly ahead in region 8. Lower scores in some northern and western regions showed where precipitation and temperature alone captured less of the soil moisture variation.</p>
+                            <div class="soil-table-wrap" role="region" aria-labelledby="performance-heading" tabindex="0">
+                                <table class="soil-table">
+                                    <caption>R&sup2; values from presentation slide 22. Bold green cells mark each region's highest score. Region IDs (0&ndash;9) follow the original analysis.</caption>
+                                    <thead><tr><th scope="col">Region</th><th scope="col">Random Forest</th><th scope="col">XGBoost</th><th scope="col">LSTM</th></tr></thead>
+                                    <tbody>
+                                    <tr><th scope="row">0</th><td>0.4110</td><td>0.4670</td><td class="soil-best">0.5063</td></tr>
+                                    <tr><th scope="row">1</th><td>0.2664</td><td>0.2958</td><td class="soil-best">0.3354</td></tr>
+                                    <tr><th scope="row">2</th><td>0.2493</td><td>0.3180</td><td class="soil-best">0.3769</td></tr>
+                                    <tr><th scope="row">3</th><td>0.5307</td><td>0.5894</td><td class="soil-best">0.5999</td></tr>
+                                    <tr><th scope="row">4</th><td>0.3868</td><td>0.4154</td><td class="soil-best">0.4627</td></tr>
+                                    <tr><th scope="row">5</th><td>0.5971</td><td>0.6326</td><td class="soil-best">0.6633</td></tr>
+                                    <tr><th scope="row">6</th><td>0.4769</td><td>0.5333</td><td class="soil-best">0.5644</td></tr>
+                                    <tr><th scope="row">7</th><td>0.6269</td><td>0.6560</td><td class="soil-best">0.6987</td></tr>
+                                    <tr><th scope="row">8</th><td>0.6291</td><td class="soil-best">0.6505</td><td>0.6490</td></tr>
+                                    <tr><th scope="row">9</th><td>0.6064</td><td>0.6157</td><td class="soil-best">0.6575</td></tr>
+                                    </tbody>
+                                    <tfoot><tr><th scope="row">Mean across regions</th><td>0.4781</td><td>0.5174</td><td class="soil-best">0.5514</td></tr></tfoot>
+                                </table>
+                            </div>
+                            <p class="soil-note">The mean is an unweighted average of the ten regional scores, not a pooled R&sup2;. LSTM used a longer input history, so this comparison reflects both the model architecture and the data window.</p>
+                        </div>
+                        <div>
+                            <h3 id="shap-summary-heading">What SHAP revealed</h3>
+                            <p class="data-section-intro">I used TreeExplainer for Random Forest and XGBoost, and GradientExplainer for LSTM, to inspect the contribution of each weather variable and month. Precipitation generally contributed more than temperature, and <strong>previous-month precipitation often ranked first</strong>. Higher precipitation generally pushed predictions upward, while higher temperature pushed them downward.</p>
+                            <div class="soil-shap-grid">
+                                <figure class="resource-sheet"><a href="assets/pic/Project/Data/SoilMoisture/shap-random-forest.png" target="_blank" rel="noopener" aria-label="Open the Random Forest SHAP plot"><img src="assets/pic/Project/Data/SoilMoisture/shap-random-forest.png" width="2400" height="1890" alt="Random Forest SHAP contributions of precipitation and temperature in region 7" loading="lazy" decoding="async"></a><figcaption>Random Forest &middot; Region 7</figcaption></figure>
+                                <figure class="resource-sheet"><a href="assets/pic/Project/Data/SoilMoisture/shap-xgboost.png" target="_blank" rel="noopener" aria-label="Open the XGBoost SHAP plot"><img src="assets/pic/Project/Data/SoilMoisture/shap-xgboost.png" width="2400" height="1890" alt="XGBoost SHAP contributions of precipitation and temperature in region 7" loading="lazy" decoding="async"></a><figcaption>XGBoost &middot; Region 7</figcaption></figure>
+                                <figure class="resource-sheet"><a href="assets/pic/Project/Data/SoilMoisture/shap-lstm.png" target="_blank" rel="noopener" aria-label="Open the LSTM SHAP plot"><img src="assets/pic/Project/Data/SoilMoisture/shap-lstm.png" width="2400" height="3330" alt="LSTM SHAP contributions over twelve months in region 7" loading="lazy" decoding="async"></a><figcaption>LSTM &middot; Region 7</figcaption></figure>
+                            </div>
+                            <p class="soil-note">P = precipitation; T = temperature; 0 = current month; &minus;1 = previous month. Pink indicates higher feature values and blue lower values. Positive SHAP values increase a prediction relative to its reference value; negative values decrease it.</p>
+                            <p class="soil-note"><strong>Limits of interpretation:</strong> regional results varied, and explanations were not always consistent between models. The tree-model SHAP analysis used the full datasets, while LSTM used held-out data only. These differences limit direct comparison. SHAP explains model behaviour and does not establish causation. Future work would add in-situ observations and variables such as vegetation and groundwater.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="full-report" aria-labelledby="report-heading">
+                    <div class="project-group-heading"><div><p class="project-eyebrow">03 / Full Report</p><h2 id="report-heading">Project presentation</h2></div><span class="project-group-count">25 slides</span></div>
+                    <div class="soil-report-intro">
+                        <p class="data-section-intro">The original presentation, from the overview through the conclusions. Select a slide to view it at full size.</p>
+                        <a class="soil-report-download" href="assets/pic/Project/Data/DS%20Project%20Presentation.pptx" download>Download the original PPTX &darr;</a>
+                    </div>
+                    <div class="soil-report-grid">
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-02.png" target="_blank" rel="noopener" aria-label="Open slide 2: Presentation overview"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-02.png" width="1800" height="1350" alt="Slide 2: Presentation overview" loading="lazy" decoding="async"></a>
+                            <figcaption><span>02</span> Presentation overview</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-03.png" target="_blank" rel="noopener" aria-label="Open slide 3: Introduction"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-03.png" width="1800" height="1350" alt="Slide 3: Introduction" loading="lazy" decoding="async"></a>
+                            <figcaption><span>03</span> Introduction</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-04.png" target="_blank" rel="noopener" aria-label="Open slide 4: Machine learning in modern applications"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-04.png" width="1800" height="1350" alt="Slide 4: Machine learning in modern applications" loading="lazy" decoding="async"></a>
+                            <figcaption><span>04</span> Machine learning in modern applications</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-05.png" target="_blank" rel="noopener" aria-label="Open slide 5: The black box problem in machine learning"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-05.png" width="1800" height="1350" alt="Slide 5: The black box problem in machine learning" loading="lazy" decoding="async"></a>
+                            <figcaption><span>05</span> The black box problem in machine learning</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-06.png" target="_blank" rel="noopener" aria-label="Open slide 6: The importance of explainable AI"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-06.png" width="1800" height="1350" alt="Slide 6: The importance of explainable AI" loading="lazy" decoding="async"></a>
+                            <figcaption><span>06</span> The importance of explainable AI</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-07.png" target="_blank" rel="noopener" aria-label="Open slide 7: Explainable AI overview"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-07.png" width="1800" height="1350" alt="Slide 7: Explainable AI overview" loading="lazy" decoding="async"></a>
+                            <figcaption><span>07</span> Explainable AI overview</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-08.png" target="_blank" rel="noopener" aria-label="Open slide 8: Why XAI matters in environmental science"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-08.png" width="1800" height="1350" alt="Slide 8: Why XAI matters in environmental science" loading="lazy" decoding="async"></a>
+                            <figcaption><span>08</span> Why XAI matters in environmental science</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-09.png" target="_blank" rel="noopener" aria-label="Open slide 9: Objective of the study"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-09.png" width="1800" height="1350" alt="Slide 9: Objective of the study" loading="lazy" decoding="async"></a>
+                            <figcaption><span>09</span> Objective of the study</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-10.png" target="_blank" rel="noopener" aria-label="Open slide 10: Methodology and data"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-10.png" width="1800" height="1350" alt="Slide 10: Methodology and data" loading="lazy" decoding="async"></a>
+                            <figcaption><span>10</span> Methodology and data</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-11.png" target="_blank" rel="noopener" aria-label="Open slide 11: Project roadmap"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-11.png" width="1800" height="1350" alt="Slide 11: Project roadmap" loading="lazy" decoding="async"></a>
+                            <figcaption><span>11</span> Project roadmap</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-12.png" target="_blank" rel="noopener" aria-label="Open slide 12: XGBoost"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-12.png" width="1800" height="1350" alt="Slide 12: XGBoost" loading="lazy" decoding="async"></a>
+                            <figcaption><span>12</span> XGBoost</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-13.png" target="_blank" rel="noopener" aria-label="Open slide 13: Random Forest"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-13.png" width="1800" height="1350" alt="Slide 13: Random Forest" loading="lazy" decoding="async"></a>
+                            <figcaption><span>13</span> Random Forest</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-14.png" target="_blank" rel="noopener" aria-label="Open slide 14: Long Short-Term Memory (LSTM)"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-14.png" width="1800" height="1350" alt="Slide 14: Long Short-Term Memory (LSTM)" loading="lazy" decoding="async"></a>
+                            <figcaption><span>14</span> Long Short-Term Memory (LSTM)</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-15.png" target="_blank" rel="noopener" aria-label="Open slide 15: SHAP explainability framework"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-15.png" width="1800" height="1350" alt="Slide 15: SHAP explainability framework" loading="lazy" decoding="async"></a>
+                            <figcaption><span>15</span> SHAP explainability framework</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-16.png" target="_blank" rel="noopener" aria-label="Open slide 16: TreeExplainer and GradientExplainer"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-16.png" width="1800" height="1350" alt="Slide 16: TreeExplainer and GradientExplainer" loading="lazy" decoding="async"></a>
+                            <figcaption><span>16</span> TreeExplainer and GradientExplainer</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-17.png" target="_blank" rel="noopener" aria-label="Open slide 17: ERA5 monthly climate data"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-17.png" width="1800" height="1350" alt="Slide 17: ERA5 monthly climate data" loading="lazy" decoding="async"></a>
+                            <figcaption><span>17</span> ERA5 monthly climate data</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-18.png" target="_blank" rel="noopener" aria-label="Open slide 18: Agricultural study area"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-18.png" width="1800" height="1350" alt="Slide 18: Agricultural study area" loading="lazy" decoding="async"></a>
+                            <figcaption><span>18</span> Agricultural study area</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-19.png" target="_blank" rel="noopener" aria-label="Open slide 19: Regional modelling approach"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-19.png" width="1800" height="1350" alt="Slide 19: Regional modelling approach" loading="lazy" decoding="async"></a>
+                            <figcaption><span>19</span> Regional modelling approach</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-20.png" target="_blank" rel="noopener" aria-label="Open slide 20: Results overview"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-20.png" width="1800" height="1350" alt="Slide 20: Results overview" loading="lazy" decoding="async"></a>
+                            <figcaption><span>20</span> Results overview</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-21.png" target="_blank" rel="noopener" aria-label="Open slide 21: Model training and temporal validation"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-21.png" width="1800" height="1350" alt="Slide 21: Model training and temporal validation" loading="lazy" decoding="async"></a>
+                            <figcaption><span>21</span> Model training and temporal validation</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-22.png" target="_blank" rel="noopener" aria-label="Open slide 22: Model performance comparison"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-22.png" width="1800" height="1350" alt="Slide 22: Model performance comparison" loading="lazy" decoding="async"></a>
+                            <figcaption><span>22</span> Model performance comparison</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-23.png" target="_blank" rel="noopener" aria-label="Open slide 23: SHAP results for region 7"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-23.png" width="1800" height="1350" alt="Slide 23: SHAP results for region 7" loading="lazy" decoding="async"></a>
+                            <figcaption><span>23</span> SHAP results for region 7</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-24.png" target="_blank" rel="noopener" aria-label="Open slide 24: SHAP comparison for region 9"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-24.png" width="1800" height="1350" alt="Slide 24: SHAP comparison for region 9" loading="lazy" decoding="async"></a>
+                            <figcaption><span>24</span> SHAP comparison for region 9</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-25.png" target="_blank" rel="noopener" aria-label="Open slide 25: Conclusion"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-25.png" width="1800" height="1350" alt="Slide 25: Conclusion" loading="lazy" decoding="async"></a>
+                            <figcaption><span>25</span> Conclusion</figcaption>
+                        </figure>
+                        <figure class="resource-sheet">
+                            <a href="assets/pic/Project/Data/SoilMoisture/slides/slide-26.png" target="_blank" rel="noopener" aria-label="Open slide 26: Findings, limitations and future work"><img src="assets/pic/Project/Data/SoilMoisture/slides/slide-26.png" width="1800" height="1350" alt="Slide 26: Findings, limitations and future work" loading="lazy" decoding="async"></a>
+                            <figcaption><span>26</span> Findings, limitations and future work</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="project-related" aria-labelledby="related-projects-heading" data-related-category="data">
+        <div class="container">
+            <h2 class="project-related-heading" id="related-projects-heading">Related Projects</h2>
+            <p class="project-related-intro">More Data Analytics projects.</p>
+            <div class="project-related-grid">
+                    <a class="project-related-card" href="Data_FRI_T2.html">
+                        <img src="assets/pic/Project/Data/T2%20face.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">Term 2 Forest Inventory Analysis and Tableau Dashboard Project</span>
+                    </a>
+                    <a class="project-related-card" href="GIS_Signboard.html">
+                        <img src="assets/pic/Project/GIS/04.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">Signboard Lens in Urban Streets</span>
+                    </a>
+                    <a class="project-related-card" href="GIS_NAPS.html">
+                        <img src="assets/pic/Project/GIS/07.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">NAPS Automation Project</span>
+                    </a>
+                    <a class="project-related-card" href="Data_Mapathon.html">
+                        <img src="assets/pic/Project/GIS/mapthon%201.png" alt="" loading="lazy" decoding="async">
+                        <span class="project-related-title">2026 OPS GIS Summit Mapathon</span>
+                    </a>
+            </div>
+            <nav class="project-bottom-navigation" aria-label="Back to all projects">
+                <a href="Project.html">&larr; Back to project page (All)</a>
+            </nav>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12"><div class="left-text-content"><p>Copyright &copy; <span data-current-year>2026</span> Peitao Xu | Evan.</p></div></div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><p>Contact</p></li>
+                            <li><a href="https://github.com/xupeitao" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://x.com/PeitaoXu" aria-label="X"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/peitaoxu" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://scholar.google.com/citations?authuser=1&amp;user=BbBzK24AAAAJ" aria-label="Google Scholar"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:peitao.xu@outlook.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/site-nav.js"></script>
+</body>
+</html>
